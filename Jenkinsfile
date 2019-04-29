@@ -7,7 +7,7 @@ pipeline {
 	}
 	
 	parameters({
-		string(name: 'SITE_URL', defaultValue: 'git@github.ibm.com:ICP4APPs/code-conjuring.git', description: 'Git ssh url to clone for the site repository')
+		string(name: 'SITE_GIT_URL', defaultValue: 'git@github.ibm.com:ICP4APPs/code-conjuring.git', description: 'Git ssh url to clone for the site repository')
 		string(name: 'SITE_GIT_REVISION', defaultValue: 'master', description: 'Branch to clone for the site repository')
 		
 		credentials(name: 'IBM_CLOUD_CREDENTIALS', credentialType: 'com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl', defaultValue: '', description: 'IBM Cloud credentials to login via cf cli', required: true)
@@ -60,7 +60,7 @@ pipeline {
             }
             steps {
                 script {
-                    sh 'docker build -f "${WORKSPACE}/dockerfile.deploy" -t codeconjuring'
+                    sh 'docker build -f dockerfile.deploy -t codeconjuring .'
                 }
             }
         }
