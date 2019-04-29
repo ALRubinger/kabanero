@@ -26,7 +26,7 @@ def createHrefNewTag(parent, tocHref, tocString):
         hrefTag.string = docVersion
     return hrefTag
 
-featureIndex = BeautifulSoup(open('./target/jekyll-webapp/docs/ref/feature/index.html'), "html.parser")
+featureIndex = BeautifulSoup(open('./target/jekyll-webapp/docs/ref/feature/index.html', 'r+', encoding="utf-8"), "html.parser")
 
 commonTOCs = {};
 # gather TOCs with version in the title
@@ -56,7 +56,7 @@ for commonTOC in commonTOCKeys:
     if len(matchingTitleTOCs) > 1:
         # multiple versions of the same title found, create a new html from the template
         # to put the versions at the top of the page
-        featureVersionTemplate  = BeautifulSoup(open('./scripts/feature-template/common-feature-content-template.html'), "html.parser")
+        featureVersionTemplate  = BeautifulSoup(open('./scripts/feature-template/common-feature-content-template.html', 'r+', encoding="utf-8"), "html.parser")
         featureTitle = featureVersionTemplate.find(id='common_feature_title')
         newTOCHref = ''
         # in reverse descending order
@@ -84,7 +84,7 @@ for commonTOC in commonTOCKeys:
                 featureTitle.append(hrefTag)
                 matchingTOC.parent.decompose()
         # write to the common version doc to a file
-        with open('./target/jekyll-webapp' +  newTOCHref, "w") as file:
+        with open('./target/jekyll-webapp' +  newTOCHref, "w", encoding="utf-8") as file:
             file.write(str(featureVersionTemplate))
     elif len(matchingTitleTOCs) == 1:
         # single version doc is found, just strip off the version from the TOC title
@@ -93,5 +93,5 @@ for commonTOC in commonTOCKeys:
 
 # rename the original index.html and write the new index.html with version control in it
 os.rename('./target/jekyll-webapp/docs/ref/feature/index.html', './target/jekyll-webapp/docs/ref/feature/index.html.orig')
-with open('./target/jekyll-webapp/docs/ref/feature/index.html', "w") as file:
+with open('./target/jekyll-webapp/docs/ref/feature/index.html', "w", encoding="utf-8") as file:
     file.write(str(featureIndex))

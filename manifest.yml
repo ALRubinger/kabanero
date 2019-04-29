@@ -6,62 +6,62 @@ path: target/openliberty.war
 applications:
 # US South
 - name: openliberty-blue
-  routes:
-    - route: www.openliberty.io
-    - route: openliberty.io
-    - route: us-south.openliberty.io
-- name: openliberty-green
-  routes:
-    - route: www.openliberty.io
-    - route: openliberty.io
-    - route: us-south.openliberty.io
-- name: openlibertydev
-  routes:
-    - route: openlibertydev.mybluemix.net
+#  routes:
+#    - route: www.openliberty.io
+#    - route: openliberty.io
+#    - route: us-south.openliberty.io
+#- name: openliberty-green
+#  routes:
+#    - route: www.openliberty.io
+#    - route: openliberty.io
+#    - route: us-south.openliberty.io
+#- name: openlibertydev
+#  routes:
+#    - route: openlibertydev.mybluemix.net
 # US East
-- name: openliberty-blue-east
-  routes:
-    - route: www.openliberty.io
-    - route: openliberty.io
-    - route: us-east.openliberty.io
-- name: openliberty-green-east
-  routes:
-    - route: www.openliberty.io
-    - route: openliberty.io
-    - route: us-east.openliberty.io
+#- name: openliberty-blue-east
+#  routes:
+#    - route: www.openliberty.io
+#    - route: openliberty.io
+#    - route: us-east.openliberty.io
+#- name: openliberty-green-east
+#  routes:
+#    - route: www.openliberty.io
+#    - route: openliberty.io
+#    - route: us-east.openliberty.io
 # United Kingdom
-- name: openliberty-blue-uk
-  routes:
-    - route: www.openliberty.io
-    - route: openliberty.io
-    - route: eu-gb.openliberty.io
-- name: openliberty-green-uk
-  routes:
-    - route: www.openliberty.io
-    - route: openliberty.io
-    - route: eu-gb.openliberty.io
+#- name: openliberty-blue-uk
+#  routes:
+#    - route: www.openliberty.io
+#    - route: openliberty.io
+#    - route: eu-gb.openliberty.io
+#- name: openliberty-green-uk
+#  routes:
+#    - route: www.openliberty.io
+#    - route: openliberty.io
+#    - route: eu-gb.openliberty.io
 # Germany
-- name: openliberty-blue-germany
-  routes:
-    - route: www.openliberty.io
-    - route: openliberty.io
-    - route: eu-de.openliberty.io
-- name: openliberty-green-germany
-  routes:
-    - route: www.openliberty.io
-    - route: openliberty.io
-    - route: eu-de.openliberty.io
+#- name: openliberty-blue-germany
+#  routes:
+#    - route: www.openliberty.io
+#    - route: openliberty.io
+#    - route: eu-de.openliberty.io
+#- name: openliberty-green-germany
+#  routes:
+#    - route: www.openliberty.io
+#    - route: openliberty.io
+#    - route: eu-de.openliberty.io
 # Sydney
-- name: openliberty-blue-sydney
-  routes:
-    - route: www.openliberty.io
-    - route: openliberty.io
-    - route: au-syd.openliberty.io
-- name: openliberty-green-sydney
-  routes:
-    - route: www.openliberty.io
-    - route: openliberty.io
-    - route: au-syd.openliberty.io
+#- name: openliberty-blue-sydney
+#  routes:
+#    - route: www.openliberty.io
+#    - route: openliberty.io
+#    - route: au-syd.openliberty.io
+#- name: openliberty-green-sydney
+#  routes:
+#    - route: www.openliberty.io
+#    - route: openliberty.io
+#    - route: au-syd.openliberty.io
 
 env:
   JBP_CONFIG_LIBERTY: 'app_archive: {features: ["microProfile-1.0","webCache-1.0"]}'

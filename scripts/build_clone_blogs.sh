@@ -7,7 +7,7 @@ rm -rf img/blog
 
 echo "Start cloning blogs repository..."
 
-git clone https://github.com/OpenLiberty/blogs.git --branch master blogs_temp
+git clone git@github.ibm.com:ICP4APPs/blogs.git --branch master blogs_temp
 
 mv blogs_temp/drafts/ .
 mv drafts/ _drafts

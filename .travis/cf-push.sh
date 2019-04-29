@@ -11,7 +11,8 @@ echo "============== LOGGING INTO CLOUD FOUNDRY =============="
 ./cf login -a=$BLUEMIX_API -s=$BLUEMIX_SPACE -o=$BLUEMIX_ORGANIZATION -u=$BLUEMIX_USER -p=$BLUEMIX_PASSWORD
 
 # ==== VARIABLE SETUP ====
-APP=`echo $ROUTE | sed -e 's,\..*,,'`
+#APP=`echo $ROUTE | sed -e 's,\..*,,'`
+APP=code-conjuring
 echo "App name is $APP"
 
 # ==== DEPLOYMENT ====
