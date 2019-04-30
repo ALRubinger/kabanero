@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-left"> 
+                <ul class="nav navbar-nav navbar-left">
                     <li>
                         <a href="/guides">Guides</a>
                     </li>
@@ -29,9 +29,6 @@
                             <ul class="dropdown-menu">
                                 <li><a href="/docs/ref/javaee/">Java EE API</a></li>
                                 <li><a href="/docs/ref/microprofile/">MicroProfile API</a></li>
-                                <li><a href="/docs/ref/config/">Server Config</a></li>
-                                <li><a href="/docs/ref/feature/">Server Features</a></li>
-                                <li><a href="/docs/ref/command/">Server Commands</a></li>
                                 <li><a href="/docs/ref/general/">General</a></li>
                             </ul>
                     </li>
@@ -54,9 +51,9 @@
                         <span class="icon-bar"></span>
                         <img src="{{ " /img/toc_close_green.svg " | relative }}" id="header_close_toc_svg" class="hidden img-responsive" alt="Table of contents close button"/>
                     </button>
-                {% endif %}  
+                {% endif %}
 
-                <ol class="breadcrumb fluid-container">   
+                <ol class="breadcrumb fluid-container">
                     <li>
                         <a href="/docs">Docs</a>
                     </li>
@@ -79,18 +76,10 @@
                                 {% else %}
                                     <a href="{{ javadoc.url }}" onclick="versionClick(event)">{{ javadoc.version }}</a>
                                 {% endif %}
-                                
-                            </li>
-                            {% endfor %} 
-                        {% endif %}
 
-                    {% elsif page.type == 'config' %}
-                        <li>
-                            <a class="inactive_link">Reference</a>
-                        </li>
-                        <li>
-                            <a href="/docs/ref/config/">Config</a>
-                        </li>
+                            </li>
+                            {% endfor %}
+                        {% endif %}
 
                     {% elsif page.type == 'general' %}
                     <li>
@@ -104,34 +93,19 @@
                     {% elsif page.url contains '/docs/intro' %}
                         <li class="active">{{ page.title }}</li>
 
-                    {% elsif page.type == 'feature' %}
-                        <li>
-                            <a class="inactive_link">Reference</a>
-                        </li>
-                        <li>
-                            <a href="/docs/ref/feature/">Features</a>
-                        </li>
-
-                    {% elsif page.type == 'command' %}
-                        <li>
-                            <a class="inactive_link">Reference</a>
-                        </li>
-                        <li>
-                            <a href="/docs/ref/command/">Commands</a>
-                        </li>
                     <!-- All Guides page -->
                     {% elsif page.url == '/guides/' %}
                         <li class="active">Guides</li>
-                    
+
                     <!-- Individual Guides -->
                     {% else %}
-                        <li> 
+                        <li>
                             <a href="/guides">Guides</a>
                         </li>
                         <li class="active">{{ page.title }}</li>
                     {% endif %}
                 </ol>
-            </div> 
+            </div>
             {% if page.type == 'config' or page.type == 'feature' or page.type == 'command' or page.type == 'general' %}
                 <div class="breadcrumb_hamburger_nav" role="button" data-toggle="collapse" data-target="#toc_column" aria-expanded="true" aria-controls="toc_column">
                     <!-- Hamburger icon for showing the table of contents -->
@@ -143,8 +117,8 @@
                     </button>
                     <span id="breadcrumb_hamburger_title">Table of Content</span>
                 </div>
-            {% endif %}  
-        {% endif %}      
+            {% endif %}
+        {% endif %}
         </div>
     </nav>
     <!-- Docs -->
