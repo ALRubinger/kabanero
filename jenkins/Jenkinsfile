@@ -37,7 +37,7 @@ pipeline {
 		string(name: 'BLOGS_GIT_URL', defaultValue: 'git@github.ibm.com:ICP4APPs/blogs.git', description: 'Git ssh url to clone for the blogs repository')
 		string(name: 'BLOGS_GIT_REVISION', defaultValue: 'master', description: 'Branch to clone for the docs repository')
 
-		booleanParam(name: 'REBUILD_DOCKER_IMAGE', defaultValue: false, description: 'Rebuild the dockerfile.deploy docker image')
+		booleanParam(name: 'REBUILD_DOCKER_IMAGE', defaultValue: false, description: 'Rebuild the dockerfile.build docker image')
 	})
 
 	stages {
@@ -88,23 +88,23 @@ pipeline {
 			}
 		}
 
-        stage ('Rebuild Docker Image') {
-            when {
-                expression {
-                    return params.REBUILD_DOCKER_IMAGE
-                }
-            }
-            steps {
-                script {
-                    sh 'docker build -f Dockerfile.deploy -t codeconjuring .'
-                }
-            }
-        }
+		stage ('Rebuild Docker Image') {
+			when {
+				expression {
+					return params.REBUILD_DOCKER_IMAGE
+				}
+			}
+			steps {
+				script {
+					sh 'docker build -f Dockerfile.build -t codeconjuring .'
+				}
+			}
+		}
 
 		stage ('Build site') {
 			steps {
 				withDockerContainer(image: "codeconjuring") {
-					sh '"${WORKSPACE}/jenkins/build.sh"'
+					sh '"${WORKSPACE}"/jenkins/build.sh'
 				}
 			}
 		}
