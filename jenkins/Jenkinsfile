@@ -1,6 +1,7 @@
 def getIBMCloudAPI(String target){
 	ibmCloudAPI = ""
-	switch(params.TARGET) {
+	// only doing staging for CF currently
+	switch(target) {
 	  case "staging":
 	    ibmCloudAPI = "api.stage1.ng.bluemix.net"
 	    break
@@ -8,7 +9,6 @@ def getIBMCloudAPI(String target){
 	    ibmCloudAPI = "api.stage1.ng.bluemix.net"
 	    break
 	}
-	
 	return ibmCloudAPI
 }
 
@@ -20,7 +20,8 @@ pipeline {
 	}
 	
 	parameters({
-		string(name: 'TARGET', defaultValue: 'staging', description: 'Where to deploy the site to') // this will be a choice parameter later
+  		choice choices: ['SELECT ONE...',  'test1',  'test2',  'test3',  'test4', 'staging'], description: 'Which deployment environment to deploy to', name: 'DEPLOY_TARGET'
+		
 		string(name: 'SITE_GIT_URL', defaultValue: 'git@github.ibm.com:ICP4APPs/code-conjuring.git', description: 'Git ssh url to clone for the site repository')
 		string(name: 'SITE_GIT_REVISION', defaultValue: 'master', description: 'Branch to clone for the site repository')
 		
@@ -43,6 +44,20 @@ pipeline {
 		stage ('Clean Workspace') {
 			steps {
 				cleanWs()
+			}
+		}
+		
+		stage ('Check Target') {
+			steps {
+				script{
+					if( params.DEPLOY_TARGET.equals("SELECT ONE...") ) {
+	   					error('FAIL. Please select a target to deploy to.')
+					}
+					
+					if( params.IBM_CLOUD_CREDENTIALS.equals("") ) {
+	   					error('FAIL. Please select an IBM Cloud credential to use for the cloud foundry deployment.')
+					}
+				}
 			}
 		}
 		
@@ -86,13 +101,19 @@ pipeline {
             }
         }
 
-		stage ('Build and deploy site') {
+		stage ('Build site') {
+			steps {
+				withDockerContainer(image: "codeconjuring") {
+					sh '"${WORKSPACE}/jenkins/build.sh"'
+				}
+			}
+		}
+		
+		stage ('Deploy site to Cloud Foundry') {
 			steps {
 				withCredentials([usernamePassword(credentialsId: '${IBM_CLOUD_CREDENTIALS}', passwordVariable: "IBM_CLOUD_PASSWORD", usernameVariable: "IBM_CLOUD_USER")]) {
-					withDockerContainer(image: "codeconjuring", args: "-e IBM_CLOUD_API=${getIBMCloudAPI(params.TARGET)} -e IBM_CLOUD_SPACE=${params.IBM_CLOUD_SPACE} -e IBM_CLOUD_ORGANIZATION=${params.IBM_CLOUD_ORG}") {
-						sh '''
-						"${WORKSPACE}/jenkins/build.sh" && "${WORKSPACE}/.travis/cf-push.sh"
-						'''
+					withDockerContainer(image: "codeconjuring", args: "-e IBM_CLOUD_API=${getIBMCloudAPI(params.DEPLOY_TARGET)} -e IBM_CLOUD_SPACE=${params.IBM_CLOUD_SPACE} -e IBM_CLOUD_ORGANIZATION=${params.IBM_CLOUD_ORG}") {
+						sh '"${WORKSPACE}"/.travis/cf-push.sh code-conjuring-${DEPLOY_TARGET}'
 					}
 				}
 			}
@@ -101,7 +122,7 @@ pipeline {
     
 	post {
 		always {
-			archiveArtifacts allowEmptyArchive: true, artifacts: "${WORKSPACE}/target/*.war"
+			archiveArtifacts allowEmptyArchive: true, artifacts: "target/*.war"
 		}
 	}
 }
