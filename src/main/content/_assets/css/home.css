@@ -8,7 +8,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
- 
+
 /* INTRO */
 
 #intro_background_image {
@@ -34,12 +34,12 @@
 #intro_lighten_up_title {
     font-size: 24px;
     font-family: BunueloBold, Arial Narrow, Helvetica, Arial;
-    color: white;
-    margin: 20px 0 16px 0; 
+    color: #212529;
+    margin: 20px 0 16px 0;
 }
 
 #intro_paragraph {
-    color: #C8D2D2;
+    color: #212529;
     max-width: 460px;
     margin-bottom: 30px;
 }
@@ -60,7 +60,7 @@
     padding-right: 40px;
     margin-bottom: 8px;
     text-align: center;
-    transition: background-color .2s;    
+    transition: background-color .2s;
     min-width: 280px;
 }
 
@@ -77,6 +77,7 @@
 }
 
 #an_ibm_open_source_project {
+  color: #212529;
 	position: absolute;
     font-size: 14px;
     top: 95px;
@@ -208,7 +209,7 @@
 }
 
 @media (max-width: 1199.98px) {
-   
+
    #intro_background_image {
       background-size: auto 650px;
       height: 670px;
@@ -255,7 +256,7 @@
         background-size: auto 500px;
         height: 520px;
     }
-   
+
     #logo {
         margin-bottom: 10px;
         width: 400px;
@@ -297,7 +298,7 @@
     #intro_background {
         padding-bottom: 30px;
     }
-   
+
     #intro_background_image {
         padding-top: 0;
         background: none;
@@ -323,7 +324,7 @@
     }
 
     #intro_logo {
-        width: 100%; 
+        width: 100%;
         margin-bottom: 5px;
     }
 
@@ -342,7 +343,7 @@
 
 #quick_start_background {
     position: relative;
-    background-color: #313653;
+    background-color: #ffffff;
     color: white;
     padding-top: 96px;
 }
@@ -353,9 +354,10 @@
     height: 110px;
     width: 100%;
     background-color: #1D1E3C;
-} 
+}
 
 #quick_start_title {
+    color: #212529;
     font-size: 35px;
     font-family: BunueloLight, Arial Narrow, Helvetica, Arial;
     margin-top: 0;
@@ -363,6 +365,7 @@
 }
 
 #quick_start_paragraph {
+    color: #212529;
     display: inline-block;
     margin-bottom: 40px;
 }
@@ -409,12 +412,14 @@
 }
 
 #guides_title {
+    color: #212529;
     font-size: 35px;
     font-family: BunueloLight, Arial Narrow, Helvetica, Arial;
     margin-bottom: 31px;
 }
 
 #guides_description {
+    color: #212529;
     font-size: 16px;
     letter-spacing: 0;
     line-height: 22px;
@@ -435,7 +440,7 @@
     padding: 15px 40px;
     margin-bottom: 8px;
     text-align: center;
-    transition: background-color .2s;    
+    transition: background-color .2s;
     min-width: 280px;
 }
 
@@ -489,7 +494,7 @@
     padding: 15px 0px;
     margin-bottom: 8px;
     text-align: center;
-    transition: background-color .2s;    
+    transition: background-color .2s;
     margin-bottom: 24px;
     width: 300px;
 }
@@ -526,6 +531,7 @@
 /* CONNECT */
 
 #connect_container {
+    background-color: #f4f4f4;
     position: relative;
     margin-bottom: 70px;
 }
@@ -574,8 +580,8 @@
     padding-left: 40px;
     padding-right: 40px;
     text-align: center;
-    transition: background-color .2s;    
-    min-width: 280px; 
+    transition: background-color .2s;
+    min-width: 280px;
 }
 
 #twitter_link:hover {
@@ -598,8 +604,8 @@
     padding-left: 40px;
     padding-right: 40px;
     text-align: center;
-    transition: background-color .2s;    
-    min-width: 280px; 
+    transition: background-color .2s;
+    min-width: 280px;
 }
 
 #blog_link:hover {

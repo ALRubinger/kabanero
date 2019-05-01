@@ -16,13 +16,13 @@ main {
     background-color: transparent;
 }
 
-.qa-descriptor {	
-    position: absolute;	
-    top: 10px;	
-    right: 10px;	
-    color: blue;	
-    background-color: orange;	
-    padding: 10px 15px;	
+.qa-descriptor {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: blue;
+    background-color: orange;
+    padding: 10px 15px;
 }
 
 #ol_logo {
@@ -46,18 +46,18 @@ main {
 .navbar-dark .navbar-nav .nav-link {
     margin-left: 34px;
     font-size: 16px;
-    color: #C9D6FE;
+    color: #80a0a2;
 }
 
 #fork_button {
-    border: 1px solid #ABD155;
+    border: 1px solid #9bb3b3;
     border-radius: 3px;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 31px;
     padding-right: 31px;
     margin-top: 2px;
-    color: #E6EDA8;
+    color: #9bb3b3;
 }
 
 #fork_button:hover {
@@ -95,7 +95,7 @@ main {
 
 .header_round_btn {
     display: inline-block;
-    height: 68px;       
+    height: 68px;
     width: 68px;
 }
 
@@ -115,7 +115,7 @@ main {
         height: 46px;
         border-bottom: 1px solid rgba(94, 107, 141, 0.29);
     }
-    
+
     #tablet_nav {
         width: 100%;
         max-width: 100%;
@@ -142,7 +142,7 @@ main {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(235, 247, 173)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
         z-index: 9999999;
     }
-    
+
     .close_button {
         position: relative;
         left: -10px;
