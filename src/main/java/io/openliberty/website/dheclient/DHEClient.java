@@ -31,27 +31,28 @@ public class DHEClient {
 	}
 
 	public JsonObject retrieveJSON(String url) {
-		WebTarget target = client.target(url);
-		Builder builder = target.request("application/json");
-		Response response = builder.get();
-		if (response.getStatus() == 200) {
-			if (MediaType.APPLICATION_JSON_TYPE.equals(response.getMediaType())) {
-				return response.readEntity(JsonObject.class);
-			} else if (MediaType.TEXT_PLAIN_TYPE.equals(response.getMediaType())) {
-				String responseBody = response.readEntity(String.class);
-				return Json.createReader(new StringReader(responseBody)).readObject();
-			}
-		}
 		return null;
+//		WebTarget target = client.target(url);
+//		Builder builder = target.request("application/json");
+//		Response response = builder.get();
+//		if (response.getStatus() == 200) {
+//			if (MediaType.APPLICATION_JSON_TYPE.equals(response.getMediaType())) {
+//				return response.readEntity(JsonObject.class);
+//			} else if (MediaType.TEXT_PLAIN_TYPE.equals(response.getMediaType())) {
+//				String responseBody = response.readEntity(String.class);
+//				return Json.createReader(new StringReader(responseBody)).readObject();
+//			}
+//		}
+//		return null;
 	}
 
 	public String retrieveSize(String url) {
-		WebTarget target = client.target(url);
-		Builder builder = target.request();
-		Response response = builder.head();
-		if (response.getStatus() == 200) {
-			return response.getHeaderString(Constants.CONTENT_LENGTH);
-		}
+//		WebTarget target = client.target(url);
+//		Builder builder = target.request();
+//		Response response = builder.head();
+//		if (response.getStatus() == 200) {
+//			return response.getHeaderString(Constants.CONTENT_LENGTH);
+//		}
 		return null;
 	}
 
