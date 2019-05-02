@@ -5,15 +5,14 @@ main {
 }
 
 .navbar {
-    padding: 10px 0px 10px 0px;
-    width: 80%;
-    max-width: 1560px;
+    padding: 10px 10px 10px 50px;
     margin: 0 auto;
     z-index: 9999;
 }
 
 .bg-custom {
-    background-color: transparent;
+    color: #000000;
+    background-color: #d8d8d8;
 }
 
 .qa-descriptor {
@@ -46,18 +45,18 @@ main {
 .navbar-dark .navbar-nav .nav-link {
     margin-left: 34px;
     font-size: 16px;
-    color: #80a0a2;
+    color: #000000;
 }
 
 #fork_button {
-    border: 1px solid #9bb3b3;
+    border: 1px solid #000000;
     border-radius: 3px;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 31px;
     padding-right: 31px;
     margin-top: 2px;
-    color: #9bb3b3;
+    color: #000000;
 }
 
 #fork_button:hover {
