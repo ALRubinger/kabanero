@@ -741,12 +741,12 @@
   background-color:white;
   border:1px solid #979797;
   border-top:none;
+  margin-right:15px
 }
 
 .borderPlaceholder{
   border-bottom: 1px solid #979797;
-  padding-right:0px;
-  padding-left:0px;
+
 }
 
 .listButtons{
@@ -763,4 +763,12 @@
 .listGroupText {
   margin-top:10px;
   margin-bottom:10px;
+}
+
+.right_box {
+  margin-right:0px;
+}
+
+.bumper {
+  margin-left:10px;
 }
