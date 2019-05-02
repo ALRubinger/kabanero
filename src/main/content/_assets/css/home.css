@@ -649,3 +649,53 @@
     }
 
 }
+
+.list-group-item-action .active{
+  border-bottom: none !important;
+}
+
+.listGroupImg {
+  height: 85%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.list-item-centered {
+  text-align:center !important;
+  font-size:24px;
+  font-family:BunueloBold, Arial Narrow, Helvetica, Arial;
+  border:1px solid black;
+}
+
+.tab-content {
+  padding-top:5px;
+  padding-bottom:5px;
+  background-color:white;
+  border:1px solid black;
+  border-top:none;
+}
+
+.borderPlaceholder{
+  border-bottom: 1px solid black;
+  padding-right:0px;
+  padding-left:0px;
+}
+
+.listButtons{
+  padding-right:0px;
+}
+
+.list-group-item-action.active{
+  background-color:white !important;
+  color: #495057;
+  border-color: black;
+  border-bottom:0px;
+}
+
+.listGroupText {
+  margin-top:10px;
+  margin-bottom:10px;
+}
