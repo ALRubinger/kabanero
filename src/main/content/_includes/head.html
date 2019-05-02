@@ -1,5 +1,5 @@
 {% assign description = '' %}
-{% if page.seo-description %}    
+{% if page.seo-description %}
   {% assign description = page.seo-description | escape %}
 {% elsif page.description %}
   {% assign description = page.description | escape %}
@@ -16,13 +16,13 @@
   <meta name="description" content="{{ description }}">
 
   {% if page.layout == "default" or page.layout == "post" %}
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   {% else %}
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   {% endif %}
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  
+
   {% css openliberty %}
   {% css coderay-custom %}
 
@@ -41,13 +41,13 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <link href="https://fonts.googleapis.com/css?family=Asap:400,500" rel="stylesheet">
-    
+
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@OpenLibertyIO" />
   <meta name="twitter:title" content="{% if page.seo-title %}{{ page.seo-title }}{% else %}{{site.title}}{% endif %}" />
   <meta name="twitter:description" content="{{ description }}" />
   <meta name="twitter:image" content="https://openliberty.io/img/twitter_card.jpg" />
-  
+
   <meta name="google-site-verification" content="h2P030H9b66CyL1nEmWfrZB8Fr14h9LmVMG7Ur0caBs" />
 
 </head>

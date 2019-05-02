@@ -707,3 +707,60 @@
     }
 
 }
+
+.list-group-item-action .active{
+  border-bottom: none !important;
+}
+
+.listGroupImg {
+  height: 50%;
+  display:block;
+  position:relative;
+  top:35px;
+  margin-left:25px;
+  margin-right:auto;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.list-item-centered {
+  color:black !important;
+  text-align:center !important;
+  font-size:24px;
+  font-family:BunueloBold, Arial Narrow, Helvetica, Arial;
+  border:1px solid #979797;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.tab-content {
+  padding-top:5px;
+  padding-bottom:5px;
+  background-color:white;
+  border:1px solid #979797;
+  border-top:none;
+}
+
+.borderPlaceholder{
+  border-bottom: 1px solid #979797;
+  padding-right:0px;
+  padding-left:0px;
+}
+
+.listButtons{
+  padding-right:0px;
+}
+
+.list-group-item-action.active{
+  background-color:white !important;
+  color: black;
+  border-color: #979797;
+  border-bottom:0px;
+}
+
+.listGroupText {
+  margin-top:10px;
+  margin-bottom:10px;
+}
