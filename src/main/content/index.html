@@ -10,24 +10,28 @@ css: home
     <div style="height:900px;">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <div id="intro_content">
-                        <h1 id="intro_logo" style="font-size:78px;font-family:BunueloBold, Arial Narrow, Helvetica, Arial;color:#30676a;" alt="Code Conjuring: An IBM open source project">Code Conjuring</h1>
+                        <h1 id="intro_logo" alt="Awesomesauce: An IBM open source project">Awesomesauce</h1>
                         <div id="an_ibm_open_source_project">An IBM Open Source Project</div>
-                        <h3 id="intro_lighten_up_title">Jump on board and work at lightspeed</h3>
+                        <h3 id="intro_lighten_up_title">Create more, faster</h3>
                         <p id="intro_paragraph">
-                            Build cloud-native apps and microservices while running only what you need.
-                            Code Conjuring is the most flexible server runtime available to Java<sup>TM</sup> developers in this solar system.
-                            <a href="/about" style="position:relative;top:50px;color:#ba9f43;" class="light_green_link_dark_background">Learn more about Code Conjuring.</a>
+                            Industry-specific solutions for your whole team - developers, ops, and architects - to help you deliver applications faster.
+                            Use new and existing middleware tools to modernize your process. Simplify the creation of apps with best-of-breed cloud-native
+                            architecture and reduce developer overhead, esp. choice/compliance/audit. Reduce complexity of managing apps at scale.
                         </p>
+                        <a id="get_started_link" href="/guides">Get Started</a>
                     </div>
+                </div>
+                <div class="col-md-4 boxes_image">
+                  <img src="{{ "/img/boxes_home.png" | relative }}" class="img-fluid" alt="boxes">
                 </div>
             </div><br><br>
             <div class="row">
               <div class="col-5 listButtons">
                 <div class="list-group list-group-horizontal" id="list-tab" role="tablist">
-                  <a class="list-group-item list-group-item-action list-item-centered" id="list-dev-list" data-toggle="list" href="#list-dev" role="tab" aria-controls="profile">Developer</a>
-                  <a class="list-group-item list-group-item-action active list-item-centered" id="list-arch-list" data-toggle="list" href="#list-arch" role="tab" aria-controls="home">Architecht</a>
+                  <a class="list-group-item list-group-item-action active list-item-centered" id="list-dev-list" data-toggle="list" href="#list-dev" role="tab" aria-controls="profile">Developer</a>
+                  <a class="list-group-item list-group-item-action list-item-centered" id="list-arch-list" data-toggle="list" href="#list-arch" role="tab" aria-controls="home">Architect</a>
                   <a class="list-group-item list-group-item-action list-item-centered" id="list-op-list" data-toggle="list" href="#list-op" role="tab" aria-controls="messages">Operations</a>
                 </div>
               </div>
@@ -36,32 +40,135 @@ css: home
             <div class="row">
               <div class="col-md-12" style="padding-right:0px;">
                   <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="list-arch" role="tabpanel" aria-labelledby="list-arch-list">
+                    <div class="tab-pane fade show active" id="list-dev" role="tabpanel" aria-labelledby="list-dev-list">
                       <div class="row">
                         <div class="col-2">
                           <img class="listGroupImg" src="/img/3_Like.png">
                         </div>
-                        <p class="col-9 listGroupText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="col-9 listGroupText">
+                          <strong style="font-size:25px;">Create more, faster.</strong>
+                          <br><br>Use your favorite tools to build production ready cloud-native systems on any cloud using a 100% open source toolchain. Develop, test, and deploy faster with the confidence you're automatically compliant with company policy. When you're on-call, you need integrated observability and diagnostics to solve problems fast (and get back to sleep).
+                          <br><br><br><strong>100% Open Source.  Automated.  Integrated.</strong></p>
                       </div>
                     </div>
-                    <div class="tab-pane fade" id="list-dev" role="tabpanel" aria-labelledby="list-dev-list">
+                    <div class="tab-pane fade" id="list-arch" role="tabpanel" aria-labelledby="list-arch-list">
                       <div class="row">
                         <div class="col-2">
-                          <img class="listGroupImg" src="/img/2_Dislike.png">
+                          <img class="listGroupImg" src="/img/3_Like.png">
                         </div>
-                        <p class="col-9 listGroupText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="col-9 listGroupText">
+                          <strong style="font-size:25px;">Architect more, faster.</strong>
+                          <br><br>Use your favorite tools to build production ready cloud-native systems on any cloud using a 100% open source toolchain. Develop, test, and deploy faster with the confidence you're automatically compliant with company policy. When you're on-call, you need integrated observability and diagnostics to solve problems fast (and get back to sleep).
+                          <br><br><br><strong>100% Open Source.  Automated.  Integrated.</strong></p>
                       </div>
                     </div>
                     <div class="tab-pane fade" id="list-op" role="tabpanel" aria-labelledby="list-op-list">
                       <div class="row">
                         <div class="col-2">
-                          <img class="listGroupImg" src="/img/1_Extreme_Dislike.png">
+                          <img class="listGroupImg" src="/img/3_Like.png">
                         </div>
-                        <p class="col-9 listGroupText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="col-9 listGroupText">
+                          <strong style="font-size:25px;">Operate more, faster.</strong>
+                          <br><br>Use your favorite tools to build production ready cloud-native systems on any cloud using a 100% open source toolchain. Develop, test, and deploy faster with the confidence you're automatically compliant with company policy. When you're on-call, you need integrated observability and diagnostics to solve problems fast (and get back to sleep).
+                          <br><br><br><strong>100% Open Source.  Automated.  Integrated.</strong></p>
                       </div>
                     </div>
                   </div>
               </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modernize & Cloud Native boxes -->
+<div class="neutral_background">
+    <div style="height:250px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md term_box">
+                    <h2>Modernize</h2>
+                    <p class="term_paragraph">
+                        Awesomesauce can help your team modernize its applications and microservices
+                    </p>
+                    <a href="#" class="term_learn_more">Learn More</a>
+                </div>
+                <div class="col-md term_box">
+                    <h2>Cloud Native</h2>
+                    <p class="term_paragraph">
+                        Awesomesauce can help you create Cloud Native applications with your team
+                    </p>
+                    <a href="#" class="term_learn_more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Featured Models -->
+<div class="neutral_background">
+    <div>
+        <div class="container">
+            <div class="row">
+            	<div class="col-md">
+                    <hr class="separator"/>
+            	</div>
+            </div>
+            <div class="row">
+            	<div id="featured_models_col" class="col-md">
+            		<h2 id="featured_models_title">Featured Models</h2>
+            		<a href="#" id="see_all_models">SEE ALL MODELS -></a>
+            	</div>
+            </div>
+            <div class="row">
+                <div class="col-md model_logo">
+                	<img src="{{ "/img/logos/microprofile_logo_black.png" | relative }}" class="img-fluid" alt="microprofile logo">
+                	<div>Java MicroProfile</div>
+                </div>
+                <div class="col-md model_logo">
+                	<img src="{{ "/img/logos/java_spring_logo_black.png" | relative }}" class="img-fluid" alt="java spring logo">
+                	<div>Java Spring</div>
+                </div>
+                <div class="col-md model_logo">
+                	<img src="{{ "/img/logos/nodejs_logo_black.png" | relative }}" class="img-fluid" alt="nodejs logo">
+                	<div>NodeJS</div>
+                </div>
+                <div class="col-md model_logo">
+                	<img src="{{ "/img/logos/swift_logo_black.png" | relative }}" class="img-fluid" alt="swift logo">
+                	<div>Swift</div>
+                </div>
+                <div class="col-md model_logo">
+                	<img src="{{ "/img/logos/serverless_logo_black.png" | relative }}" class="img-fluid" alt="serverless logo">
+                	<div>Serverless</div>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-md separator">
+                    <hr />
+            	</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Featured Models -->
+<div class="neutral_background">
+    <div>
+        <div class="container">
+            <div class="row">
+            	<div id="open_source_title" class="col-md">
+            		<h2>Open Source Tools</h2>
+            	</div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                	<!-- TODO: Use one big image for now and split into separate images later when we get the icons  -->
+                	<img src="{{ "/img/logos/temp_open_source_tools.png" | relative }}" class="img-fluid" alt="open source tool logos">
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-md">
+                    <hr class="separator"/>
+            	</div>
             </div>
         </div>
     </div>
@@ -76,7 +183,7 @@ css: home
             <div class="col-lg-4 col-md-12">
                 <h2 id="quick_start_title">Launch a sample app</h2>
                 <p id="quick_start_paragraph">
-                    Code Conjuring is fast and composable, but don’t
+                    Awesomesauce is fast and composable, but don’t
                     take our word for it - try it out!
                 </p>
             </div>
@@ -97,7 +204,7 @@ css: home
         <div id="guides_container" class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <h2 id="guides_title">Set course for the Code Conjuring guides</h2>
+                    <h2 id="guides_title">Set course for the Awesomesauce guides</h2>
                     <p id="guides_description">
                         Your sample app looks great - but what next?
                         <br>
@@ -106,7 +213,7 @@ css: home
                         your next project a reality.
                     </p>
                     <div id="guides_link_container">
-                        <a id="guides_link" href="/guides">View all Code Conjuring guides</a>
+                        <a id="guides_link" href="/guides">View all Awesomesauce guides</a>
                     </div>
                 </div>
             </div>
@@ -116,23 +223,24 @@ css: home
 
 
 <!-- CONNECT -->
-<div id="connect_container">
+<div id="connect_container" class="container">
     <div class="row">
-        <div class="col-sm-12">
-                <h2 id="connect_title">Code Conjuring is blasting off… Keep up with us!</h2>
-                <p id="connect_paragraph_1">
-                    Stay in touch with the rest of the crew, and never miss an update by
-                    <br>
-                    following Code Conjuring on Twitter.
-                </p>
-                <a id="twitter_link" href="https://twitter.com/OpenLibertyIO/" class="skip_outbound_link_analytics">@OpenLibertyio</a>
+        <div class="col-md">
+            <h2 id="connect_title">Awesomesauce is blasting off… Keep up with us!</h2>
+            <p id="connect_paragraph_1">
+                Stay in touch with the rest of the crew, and never miss an update by
+                <br>
+                following Awesomesauce on Twitter.
+            </p>
 
-                <p id="connect_paragraph_2">
-                    Check out the Code Conjuring blog for in-depth discussions about new
-                    <br>
-                    releases, general open source topics, upcoming events, etc.
-                </p>
-                <a id="blog_link" href="/blog" class="skip_outbound_link_analytics">Code Conjuring blog</a>
+            <a id="twitter_link" href="https://twitter.com/OpenLibertyIO/" class="skip_outbound_link_analytics">@Awesomesauce</a>
+
+            <p id="connect_paragraph_2">
+                Check out the Awesomesauce blog for in-depth discussions about new
+                <br>
+                releases, general open source topics, upcoming events, etc.
+            </p>
+            <a id="blog_link" href="/blog" class="skip_outbound_link_analytics">Awesomesauce blog</a>
         </div>
     </div>
 </div>

@@ -20,7 +20,7 @@ pipeline {
 	}
 	
 	parameters({
-  		choice choices: ['SELECT ONE...',  'test1',  'test2',  'test3',  'test4', 'staging'], description: 'Which deployment environment to deploy to', name: 'DEPLOY_TARGET'
+  		choice choices: ['SELECT ONE...',  'ajlohr',  'kdsee',  'test3', 'staging'], description: 'Which deployment environment to deploy to. Right now its just used to append to the CF app name', name: 'DEPLOY_TARGET'
 		
 		string(name: 'SITE_GIT_URL', defaultValue: 'git@github.ibm.com:ICP4APPs/code-conjuring.git', description: 'Git ssh url to clone for the site repository')
 		string(name: 'SITE_GIT_REVISION', defaultValue: 'master', description: 'Branch to clone for the site repository')
