@@ -11,7 +11,7 @@
 
 /* Nav bar color corrections for light page */
 .navbar-dark .navbar-nav .nav-link {
-    color: #5E6B8D;
+    color: #000000;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -19,8 +19,8 @@
 }
 
 #fork_button {
-    border: 1px solid #ABD155;
-    color: #4F660A;
+    border: 1px solid #000000;
+    color: #000000;
 }
 
 #fork_button:hover {

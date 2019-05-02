@@ -53,6 +53,7 @@ $blue-grey-color: #5d6a8e;
 
 #guide_search_input {
     height: 52px;
+    margin-top: 50px;
     max-width: 556px;
     min-width: 200px;
     font-size: 14px;
@@ -126,11 +127,11 @@ $blue-grey-color: #5d6a8e;
 #guides_information_container {
     position: relative;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 115px;
     padding-bottom: 29px;
     padding-left: 34px;
     padding-right: 34px;
-    background:#24243b;
+    background:#a09e9e;
 
     min-height: 143px;
     @media (max-width: 767.98px) {
@@ -219,7 +220,7 @@ $blue-grey-color: #5d6a8e;
 
 #guides_description {
     font-size: 16px;
-    color: white;
+    color: #000000;
 }
 
 #guides_microprofile_banner,
