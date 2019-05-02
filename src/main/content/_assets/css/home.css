@@ -10,6 +10,9 @@
  *******************************************************************************/
 
 /* INTRO */
+.separator {
+    margin: 35px 0 35px 0;
+}
 
 #intro_background_image {
     background-image: url('/img/home1.png');
@@ -19,28 +22,34 @@
     padding-top: 60px;
 }
 
+.boxes_image {
+    margin-top: 100px;
+}
+
 #intro_content {
     position: relative;
-    margin-top: 220px;
+    margin-top: 100px;
     color: white;
 }
 
 #intro_logo {
     height: 101px;
     width: 502px;
-    margin-bottom: 48px;
+	font-size:78px;font-family:BunueloBold, Arial Narrow, Helvetica, Arial;
+	color: #000000;
+    margin-bottom: 15px;
 }
 
 #intro_lighten_up_title {
-    font-size: 24px;
-    font-family: BunueloBold, Arial Narrow, Helvetica, Arial;
+    font-size: 35px;
+    font-family: Arial Narrow, Helvetica, Arial;
     color: #212529;
     margin: 20px 0 16px 0;
 }
 
 #intro_paragraph {
     color: #212529;
-    max-width: 460px;
+    max-width: 640px;
     margin-bottom: 30px;
 }
 
@@ -76,12 +85,60 @@
 	font-size: 4.5em;
 }
 
+.term_box{
+	border: 1px solid #979797;
+	padding: 25px;
+	margin: 0 15px 0 15px;
+}
+
+.term_learn_more{
+	color: #000000;
+	float: right;
+	font-size: 16px;
+}
+
+.term_box:nth-of-type(2){
+	margin-left: 50px;
+}
+
 #an_ibm_open_source_project {
   color: #212529;
 	position: absolute;
     font-size: 14px;
-    top: 95px;
-    right: calc(50% - 185px);
+    top: 80px;
+    right: calc(50% - 117px);
+}
+
+#featured_models_col {
+    position: relative;
+    text-align: center;
+    padding: 15px 15px 50px 15px;
+}
+
+#featured_models_title{
+    display: inline;
+}
+
+#see_all_models{
+    position: absolute;
+    padding-right: 15px;
+    right: 0;
+    color: #000000;
+}
+
+.model_logo{
+    text-align: center;
+    font-size: 1.2em;
+    margin-left: 1.8em;
+}
+
+.model_logo .img-fluid{
+    height: 100px;
+}
+
+#open_source_title {
+    margin: 30px 0 30px 0;
+    text-align: center;
 }
 
 #shooting_star_1 {
@@ -430,18 +487,19 @@
     display: inline-block;
 }
 
-#guides_link {
+#get_started_link {
     display: block;
     font-size: 20px;
     font-weight: 500;
-    color: #24253A;
-    background-color: #E6EDA8;
-    border-radius: 3px;
+    color: #000000;
+    background-color: #d8d8d8;
+    border-radius: 15px;
     padding: 15px 40px;
     margin-bottom: 8px;
     text-align: center;
     transition: background-color .2s;
-    min-width: 280px;
+    width: 250px;
+    min-width: 200px;
 }
 
 #guides_link:hover {
