@@ -220,8 +220,8 @@ main {
 
 }
 
-.resourcesDropdown{
-    left:15px;
+.docsDropdown{
+    margin-left:36px;
 }
 
 .dropdown-option:hover{
