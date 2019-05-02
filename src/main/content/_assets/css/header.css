@@ -219,3 +219,11 @@ main {
     }
 
 }
+
+.resourcesDropdown{
+    left:15px;
+}
+
+.dropdown-option:hover{
+    color: gray !important;
+}
