@@ -221,7 +221,7 @@ main {
 }
 
 .resourcesDropdown{
-    left:15px;
+    margin-left:36px;
 }
 
 .dropdown-option:hover{
