@@ -791,3 +791,9 @@
     color: #212529;
 }
 
+.joinCommunityBox{
+    height:388px;
+    display:table;
+    text-align:center;
+}
+
