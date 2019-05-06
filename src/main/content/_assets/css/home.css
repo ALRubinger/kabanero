@@ -768,3 +768,37 @@
 .bumper {
   margin-left:10px;
 }
+
+.blogPosts {
+    position: relative;
+    bottom: 420px;
+}
+
+.blogPostBoxes{
+    border: 1px solid #979797;
+    padding: 25px;
+	margin: 0 15px 0 15px;
+}
+
+.communityLearnMore{
+    position: relative;
+    top: 200px;
+}
+
+.blogLink{
+    position:relative;
+    left:28px;
+    color: #212529;
+}
+
+.joinCommunityBox{
+    height:388px;
+    display:table;
+    text-align:center;
+}
+
+.blogBoxBottom{
+    position:relative;
+    top:50px;
+}
+
