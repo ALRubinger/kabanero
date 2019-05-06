@@ -797,3 +797,8 @@
     text-align:center;
 }
 
+.blogBoxBottom{
+    position:relative;
+    top:50px;
+}
+
