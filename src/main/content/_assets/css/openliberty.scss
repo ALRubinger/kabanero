@@ -283,7 +283,7 @@ a {
 }
 
 .link_green_border {
-    border-color: #cadd98;   
+    border-color: #cadd98;
 }
 
 .link_green_border:hover {
@@ -322,6 +322,10 @@ a {
     color: #C8D2D2;
 }
 
+.neutral_background {
+
+}
+
  .blue_black_gradient_background {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#2C2D4F), to(#131427));
     background-image: -webkit-linear-gradient(top, #2C2D4F, #131427);
@@ -356,7 +360,6 @@ a {
 
 footer {
     clear: both;
-    padding-top: 25px;
 }
 
 #footer_gray_background {
@@ -368,7 +371,6 @@ footer {
     #footer_open_liberty {
         width: 150px;
         padding: 25px 25px 10px 25px;
-        background-image: url(/img/small_logo_dark_gray.svg);
         background-repeat: no-repeat;
         transition: background-image .2s;
         float: left;
@@ -378,7 +380,7 @@ footer {
     #footer_project_container {
         padding-top: 18px;
         overflow: hidden;
-        display: inline-block;   
+        display: inline-block;
     }
 
     #footer_project {
@@ -397,7 +399,7 @@ footer {
 
     .footer_round_btn {
         display: inline-block;
-        width: 45px;        
+        width: 45px;
         height: 45px;
         float: left;
     }
@@ -461,13 +463,13 @@ footer {
     .vertical_bar {
         margin: 0 4px;
     }
-    
+
     .right_footer_link {
         font-size: 14px;
         margin-top: 10px;
         float: left;
     }
-    
+
     #footer_support_link, #footer_blog_link {
         margin-left: 28px;
     }
@@ -494,7 +496,7 @@ footer {
     .vertical_bar {
         margin: 0 4px;
     }
-    
+
     .right_footer_link {
         font-size: 14px;
         float: right;
@@ -510,7 +512,7 @@ footer {
     #footer_gray_background {
         height: 131px;
     }
-    
+
     #footer_open_liberty, #footer_project {
         display: none;
     }
@@ -543,21 +545,21 @@ footer {
 
 
 #teconsent {
-    height: 40px; 
-    background-color: rgb(255, 255, 255); 
+    height: 40px;
+    background-color: rgb(255, 255, 255);
     z-index: 2147483647;
-    bottom: 0px; 
-    right: 0px; 
-    margin: 0px; 
-    padding: 0px 16px; 
-    line-height: 40px; 
-    vertical-align: middle; 
+    bottom: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 0px 16px;
+    line-height: 40px;
+    vertical-align: middle;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 3px;
     float: right;
     margin-bottom: 10px;
     margin-left: 10px;
 }
-    
+
 
 
 /* UTILS */

@@ -8,8 +8,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
- 
+
 /* INTRO */
+.separator {
+    margin: 35px 0 35px 0;
+}
 
 #intro_background_image {
     background-image: url('/img/home1.png');
@@ -19,28 +22,34 @@
     padding-top: 60px;
 }
 
+.boxes_image {
+    margin-top: 100px;
+}
+
 #intro_content {
     position: relative;
-    margin-top: 220px;
+    margin-top: 100px;
     color: white;
 }
 
 #intro_logo {
     height: 101px;
     width: 502px;
-    margin-bottom: 48px;
+	font-size:78px;font-family:BunueloBold, Arial Narrow, Helvetica, Arial;
+	color: #000000;
+    margin-bottom: 15px;
 }
 
 #intro_lighten_up_title {
-    font-size: 24px;
-    font-family: BunueloBold, Arial Narrow, Helvetica, Arial;
-    color: white;
-    margin: 20px 0 16px 0; 
+    font-size: 35px;
+    font-family: Arial Narrow, Helvetica, Arial;
+    color: #212529;
+    margin: 20px 0 16px 0;
 }
 
 #intro_paragraph {
-    color: #C8D2D2;
-    max-width: 460px;
+    color: #212529;
+    max-width: 640px;
     margin-bottom: 30px;
 }
 
@@ -60,7 +69,7 @@
     padding-right: 40px;
     margin-bottom: 8px;
     text-align: center;
-    transition: background-color .2s;    
+    transition: background-color .2s;
     min-width: 280px;
 }
 
@@ -76,11 +85,60 @@
 	font-size: 4.5em;
 }
 
+.term_box{
+	border: 1px solid #979797;
+	padding: 25px;
+	margin: 0 15px 0 15px;
+}
+
+.term_learn_more{
+	color: #000000;
+	float: right;
+	font-size: 16px;
+}
+
+.term_box:nth-of-type(2){
+	margin-left: 50px;
+}
+
 #an_ibm_open_source_project {
+  color: #212529;
 	position: absolute;
     font-size: 14px;
-    top: 95px;
-    right: calc(50% - 185px);
+    top: 80px;
+    right: calc(50% - 117px);
+}
+
+#featured_models_col {
+    position: relative;
+    text-align: center;
+    padding: 15px 15px 50px 15px;
+}
+
+#featured_models_title{
+    display: inline;
+}
+
+#see_all_models{
+    position: absolute;
+    padding-right: 15px;
+    right: 0;
+    color: #000000;
+}
+
+.model_logo{
+    text-align: center;
+    font-size: 1.2em;
+    margin-left: 1.8em;
+}
+
+.model_logo .img-fluid{
+    height: 100px;
+}
+
+#open_source_title {
+    margin: 30px 0 30px 0;
+    text-align: center;
 }
 
 #shooting_star_1 {
@@ -208,7 +266,7 @@
 }
 
 @media (max-width: 1199.98px) {
-   
+
    #intro_background_image {
       background-size: auto 650px;
       height: 670px;
@@ -255,7 +313,7 @@
         background-size: auto 500px;
         height: 520px;
     }
-   
+
     #logo {
         margin-bottom: 10px;
         width: 400px;
@@ -297,7 +355,7 @@
     #intro_background {
         padding-bottom: 30px;
     }
-   
+
     #intro_background_image {
         padding-top: 0;
         background: none;
@@ -323,7 +381,7 @@
     }
 
     #intro_logo {
-        width: 100%; 
+        width: 100%;
         margin-bottom: 5px;
     }
 
@@ -342,7 +400,7 @@
 
 #quick_start_background {
     position: relative;
-    background-color: #313653;
+    background-color: #ffffff;
     color: white;
     padding-top: 96px;
 }
@@ -353,9 +411,10 @@
     height: 110px;
     width: 100%;
     background-color: #1D1E3C;
-} 
+}
 
 #quick_start_title {
+    color: #212529;
     font-size: 35px;
     font-family: BunueloLight, Arial Narrow, Helvetica, Arial;
     margin-top: 0;
@@ -363,6 +422,7 @@
 }
 
 #quick_start_paragraph {
+    color: #212529;
     display: inline-block;
     margin-bottom: 40px;
 }
@@ -409,12 +469,14 @@
 }
 
 #guides_title {
+    color: #212529;
     font-size: 35px;
     font-family: BunueloLight, Arial Narrow, Helvetica, Arial;
     margin-bottom: 31px;
 }
 
 #guides_description {
+    color: #212529;
     font-size: 16px;
     letter-spacing: 0;
     line-height: 22px;
@@ -425,18 +487,19 @@
     display: inline-block;
 }
 
-#guides_link {
+#get_started_link {
     display: block;
     font-size: 20px;
     font-weight: 500;
-    color: #24253A;
-    background-color: #E6EDA8;
-    border-radius: 3px;
+    color: #000000;
+    background-color: #d8d8d8;
+    border-radius: 15px;
     padding: 15px 40px;
     margin-bottom: 8px;
     text-align: center;
-    transition: background-color .2s;    
-    min-width: 280px;
+    transition: background-color .2s;
+    width: 250px;
+    min-width: 200px;
 }
 
 #guides_link:hover {
@@ -489,7 +552,7 @@
     padding: 15px 0px;
     margin-bottom: 8px;
     text-align: center;
-    transition: background-color .2s;    
+    transition: background-color .2s;
     margin-bottom: 24px;
     width: 300px;
 }
@@ -526,6 +589,7 @@
 /* CONNECT */
 
 #connect_container {
+    background-color: #f4f4f4;
     position: relative;
     margin-bottom: 70px;
 }
@@ -574,8 +638,8 @@
     padding-left: 40px;
     padding-right: 40px;
     text-align: center;
-    transition: background-color .2s;    
-    min-width: 280px; 
+    transition: background-color .2s;
+    min-width: 280px;
 }
 
 #twitter_link:hover {
@@ -598,8 +662,8 @@
     padding-left: 40px;
     padding-right: 40px;
     text-align: center;
-    transition: background-color .2s;    
-    min-width: 280px; 
+    transition: background-color .2s;
+    min-width: 280px;
 }
 
 #blog_link:hover {
@@ -643,3 +707,98 @@
     }
 
 }
+
+.list-group-item-action .active{
+  border-bottom: none !important;
+}
+
+.listGroupImg {
+  height: 50%;
+  display:block;
+  position:relative;
+  top:35px;
+  margin-left:25px;
+  margin-right:auto;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.list-item-centered {
+  color:black !important;
+  text-align:center !important;
+  font-size:24px;
+  font-family:BunueloBold, Arial Narrow, Helvetica, Arial;
+  border:1px solid #979797;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.tab-content {
+  padding-top:5px;
+  padding-bottom:5px;
+  background-color:white;
+  border:1px solid #979797;
+  border-top:none;
+  margin-right:15px
+}
+
+.borderPlaceholder{
+  border-bottom: 1px solid #979797;
+  margin-right: 15px;
+}
+
+.listButtons{
+  padding-right:0px;
+}
+
+.list-group-item-action.active{
+  background-color:white !important;
+  color: black;
+  border-color: #979797;
+  border-bottom:0px;
+}
+
+.listGroupText {
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.bumper {
+  margin-left:10px;
+}
+
+.blogPosts {
+    position: relative;
+    bottom: 420px;
+}
+
+.blogPostBoxes{
+    border: 1px solid #979797;
+    padding: 25px;
+	margin: 0 15px 0 15px;
+}
+
+.communityLearnMore{
+    position: relative;
+    top: 200px;
+}
+
+.blogLink{
+    position:relative;
+    left:28px;
+    color: #212529;
+}
+
+.joinCommunityBox{
+    height:388px;
+    display:table;
+    text-align:center;
+}
+
+.blogBoxBottom{
+    position:relative;
+    top:50px;
+}
+
