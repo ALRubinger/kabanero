@@ -1,0 +1,122 @@
+---
+layout: default
+js: stacks
+css: stacks
+permalink: /stacks/
+seo-title: Awesomesauce
+---
+
+<div class="container" id="page_container">
+    <div class="row">
+        <div class="col-xl-2">
+            <div class="row filterHeader">
+                <button type="button" class="btn btn-outline-dark" disabled>Language</button>
+            </div>
+            <div class="row filterOption">
+                <div class="form-check">
+                    <input class="form-check-input languageCheck" type="checkbox" value="java" id="javaCheck" onchange="filterStacks()">
+                    <label class="form-check-label" for="javaCheck">Java</label>
+                </div>
+            </div>
+            <div class="row filterOption">
+                <div class="form-check">
+                    <input class="form-check-input languageCheck" type="checkbox" value="swift" id="swiftCheck" onchange="filterStacks()">
+                    <label class="form-check-label" for="swiftCheck">Swift</label>
+                </div>
+            </div>
+            <div class="row filterOption">
+                <div class="form-check">
+                    <input class="form-check-input languageCheck" type="checkbox" value="node" id="nodeCheck" onchange="filterStacks()">
+                    <label class="form-check-label" for="nodeCheck">Node</label>
+                </div>
+            </div>
+            
+            <div class="row emptyRow"></div>
+
+            <div class="row filterHeader">
+                <button type="button" class="btn btn-outline-dark" disabled>Platform</button>
+            </div>
+            <div class="row filterOption">
+                <div class="form-check">
+                    <input class="form-check-input platformCheck" type="checkbox" value="aws" id="awsCheck" onchange="filterStacks()">
+                    <label class="form-check-label" for="awsCheck">AWS</label>
+                </div>
+            </div>
+            <div class="row filterOption">
+                <div class="form-check">
+                    <input class="form-check-input platformCheck" type="checkbox" value="google" id="googleCheck" onchange="filterStacks()">
+                    <label class="form-check-label" for="googleCheck">Google</label>
+                </div>
+            </div>
+            <div class="row filterOption">
+                <div class="form-check">
+                    <input class="form-check-input platformCheck" type="checkbox" value="IBM" id="IBMCheck" onchange="filterStacks()">
+                    <label class="form-check-label" for="IBMCheck">IBM</label>
+                </div>
+            </div>
+            <div class="row filterOption">
+                <div class="form-check">
+                    <input class="form-check-input platformCheck" type="checkbox" value="openShift" id="openShiftCheck" onchange="filterStacks()">
+                    <label class="form-check-label" for="openShiftCheck">Open Shift</label>
+                </div>
+            </div>
+
+            <div class="row emptyRow"></div>
+
+            <div class="row filterHeader">
+                <button type="button" class="btn btn-outline-dark" disabled>Tools</button>
+            </div>
+            <div class="row filterOption">
+                <div class="form-check">
+                    <input class="form-check-input toolsCheck" type="checkbox" value="tekton" id="tektonCheck" onchange="filterStacks()">
+                    <label class="form-check-label" for="tektonCheck">Tekton</label>
+                </div>
+            </div>
+            <div class="row filterOption">
+                <div class="form-check">
+                    <input class="form-check-input toolsCheck" type="checkbox" value="openLiberty" id="openLibertyCheck" onchange="filterStacks()">
+                    <label class="form-check-label" for="openLibertyCheck">Open Liberty</label>
+                </div>
+            </div>
+            <div class="row filterOption">
+                <div class="form-check">
+                    <input class="form-check-input toolsCheck" type="checkbox" value="Docker" id="dockerCheck" onchange="filterStacks()">
+                    <label class="form-check-label" for="dockerCheck">Docker</label>
+                </div>
+            </div>
+            <div class="row filterOption">
+                <div class="form-check">
+                    <input class="form-check-input toolsCheck" type="checkbox" value="kubernetes" id="kubernetesCheck" onchange="filterStacks()">
+                    <label class="form-check-label" for="kubernetesCheck">Kubernetes</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-10">
+            <div class="row bottomBorder">
+                <p style="display:inline-block;">Stacks</p>
+            </div>
+            <div class="row">
+                <div class="col-3 stackTile" data-language="java" data-platform="IBM,openShift" data-tools="openLiberty,tekton">
+                    <img src="/img/logos/microprofile_logo_black.png" class="img-fluid row tileImg">
+                    <label class="row tileLabel">Java Microprofile</label>
+                </div>
+                <div class="col-3 stackTile" data-language="java" data-platform="IBM,openShift,aws" data-tools="openLiberty">
+                    <img src="/img/logos/java_spring_logo_black.png" class="img-fluid row tileImg">
+                    <label class="row tileLabel">Java Spring</label>
+                </div>
+                <div class="col-3 stackTile" data-language="node" data-platform="aws,google,ibm" data-tools="docker,kubernetes">
+                    <img src="/img/logos/nodejs_logo_black.png" class="img-fluid row tileImg">
+                    <label class="row tileLabel">NodeJS</label>
+                </div>
+                <div class="col-3 stackTile" data-language="swift" data-platform="IBM,google,aws,openShift" data-tools="openLiberty,docker">
+                    <img src="/img/logos/swift_logo_black.png" class="img-fluid row tileImg">
+                    <label class="tileLabel">Swift</label>
+                </div>
+                <div class="col-3 stackTile" data-language="java,node" data-platform="IBM,openShift" data-tools="openLiberty,tekton">
+                    <img src="/img/logos/serverless_logo_black.png" class="img-fluid row tileImg">
+                    <label class="row tileLabel">Serverless</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
