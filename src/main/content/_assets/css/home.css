@@ -817,3 +817,14 @@
     margin-bottom:40px;
 }
 
+.followButtonCol{
+    position: relative;
+    left: 330px;
+    top: 48px;
+}
+
+#twitterCol{
+    position: relative;
+    bottom: 48px;
+}
+
