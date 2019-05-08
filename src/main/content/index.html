@@ -264,30 +264,30 @@ seo-title: Awesomesauce
             <div class="col-xl-5">
                 <h3 class="col">Blog Posts<a class="col offset-xl-5 blogLink" href="/blog">Visit our blog-></a></h3>
                 {% for post in site.posts limit:2 %}
-        <div class="row blog_post_row">
-            <div class="col-xl blog_post_column">
-                <div class="blog_post_content">
-                    {% if post.redirect_link %}
-                        <h2 class="blog_post_title"><a href="{{ post.redirect_link }}" class="blog_post_title_link">{{ post.title | escape }}</a></h2>
-                    {% else %}
-                        <h2 class="blog_post_title"><a href="{{ post.url | relative_url }}" class="blog_post_title_link">{{ post.title | escape }}</a></h2>
-                    {% endif %}
-                    <div class="blog_post_author_data_container">
-                        <img src="{{ post.author_picture }}" class="blog_post_author_image" alt="Blog author picture">
-                        <a class="blog_post_author_name" href="{{ post.author_github }}">{{ post.author }}</a>
-                        <span class="blog_post_date">on {{ post.date | date: date_format }}</span>
+                    <div class="row blog_post_row">
+                        <div class="col-xl blog_post_column">
+                            <div class="blog_post_content">
+                                {% if post.redirect_link %}
+                                    <h2 class="blog_post_title"><a href="{{ post.redirect_link }}" class="blog_post_title_link">{{ post.title | escape }}</a></h2>
+                                {% else %}
+                                    <h2 class="blog_post_title"><a href="{{ post.url | relative_url }}" class="blog_post_title_link">{{ post.title | escape }}</a></h2>
+                                {% endif %}
+                                <div class="blog_post_author_data_container">
+                                    <img src="{{ post.author_picture }}" class="blog_post_author_image" alt="Blog author picture">
+                                    <a class="blog_post_author_name" href="{{ post.author_github }}">{{ post.author }}</a>
+                                    <span class="blog_post_date">on {{ post.date | date: date_format }}</span>
+                                </div>
+                                <div class="text-right">
+                                {% if post.redirect_link %}
+                                    <a href="{{ post.redirect_link }}" class="read_more_link">Read more</a>
+                                {% else %}
+                                    <a href="{{ post.url | relative_url }}" class="read_more_link">Read more</a>
+                                {% endif %}
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text-right">
-                    {% if post.redirect_link %}
-                        <a href="{{ post.redirect_link }}" class="read_more_link">Read more</a>
-                    {% else %}
-                        <a href="{{ post.url | relative_url }}" class="read_more_link">Read more</a>
-                    {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
+                {% endfor %}
             </div>
         </div>
     </div>
