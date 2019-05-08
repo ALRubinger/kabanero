@@ -18,9 +18,9 @@ Contributors:
     </featureManager>
     
     <keyStore id="defaultKeyStore" password="changeit"/>	
-	<ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" sslProtocol="TLSv1.2"/>
+    <ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" sslProtocol="TLSv1.2"/>
 
-	<httpEndpoint host="*" httpPort="9081" httpsPort="9444"/>
+    <httpEndpoint host="*" httpPort="9081" httpsPort="9444"/>
 
     <cdi12 enableImplicitBeanArchives='false'/>
     

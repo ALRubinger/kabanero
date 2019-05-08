@@ -1,0 +1,128 @@
+pipeline {
+	agent any
+	
+	options {
+		buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '20')
+	}
+	
+	parameters({
+  	choice (name: 'DOCKER_REGISTRY', choices: ['hyc-icap-open-site-images-docker-local.artifactory.swg-devops.com'], description: 'Which registry to push the image to')
+		credentials(name: 'REGISTRY_CREDENTIALS', credentialType: 'com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl', defaultValue: '', description: 'Registry credentials to login. For artifactory this will be your email and you API key as the password. Get API Key from your profile in artifactory.', required: true)
+		credentials(name: 'IBM_CLOUD_CREDENTIALS', credentialType: 'com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl', defaultValue: '', description: 'IBM Cloud API Key to login via ibmcloud cli for IKS', required: true)
+
+		string(name: 'IMAGE_TAG', defaultValue: 'latest', description: 'tag used to tag the image')
+
+		string(name: 'SITE_GIT_URL', defaultValue: 'git@github.ibm.com:ICP4APPs/code-conjuring.git', description: 'Git ssh url to clone for the site repository')
+		string(name: 'SITE_GIT_REVISION', defaultValue: 'master', description: 'Branch to clone for the site repository')
+								
+		string(name: 'DOCS_GIT_URL', defaultValue: 'git@github.ibm.com:ICP4APPs/docs.git', description: 'Git ssh url to clone for the docs repository')
+		string(name: 'DOCS_GIT_REVISION', defaultValue: 'master', description: 'Branch to clone for the docs repository')
+		
+		string(name: 'BLOGS_GIT_URL', defaultValue: 'git@github.ibm.com:ICP4APPs/blogs.git', description: 'Git ssh url to clone for the blogs repository')
+		string(name: 'BLOGS_GIT_REVISION', defaultValue: 'master', description: 'Branch to clone for the docs repository')
+		
+		booleanParam(name: 'BUILD_PUSH_IMAGE', defaultValue: true, description: 'If true, the job will build and push the docker image to the registry. If false, the job will skip building and pushing the image to the registry.')
+		booleanParam(name: 'DEPLOY_IMAGE_IKS', defaultValue: true, description: 'If true, the job will deploy the image to IKS. If false, the job will not deploy the image.')
+		
+		booleanParam(name: 'REBUILD_BUILD_DOCKER_IMAGE', defaultValue: false, description: 'Rebuild our build docker image. In this context its the one used to deploy to IKS, not the actual site image.')
+
+	})
+
+	stages {
+		stage ('Clean Workspace') {
+			steps {
+				cleanWs()
+			}
+		}
+		
+		stage ('Checkout site Repository') {
+			steps {
+ 				checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: "${SITE_GIT_REVISION}"]],
+					doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory']],
+					submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'd07dc7e8-4db5-4f8b-bc86-cab254d2858a', url: "${SITE_GIT_URL}"]]]
+			}
+		}
+		
+		stage ('Checkout Docs Repository') {
+			steps {
+ 				checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: "${DOCS_GIT_REVISION}"]],
+					doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'src/main/content/docs']],
+					submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'd07dc7e8-4db5-4f8b-bc86-cab254d2858a', url: "${DOCS_GIT_URL}"]]]
+			}
+		}
+		
+		stage ('Checkout Blogs Repository') {
+			steps {
+ 				checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: "${BLOGS_GIT_REVISION}"]],
+					doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'blogs']],
+					submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'd07dc7e8-4db5-4f8b-bc86-cab254d2858a', url: "${BLOGS_GIT_URL}"]]]
+				
+				// blogs repository needs certain parts in different dirs
+				sh 'rsync -av blogs/ src/main/content/ && rm -rf blogs'
+			}
+		}
+
+		stage ('Rebuild Build Docker Image') {
+			when {
+				expression {
+					return params.REBUILD_BUILD_DOCKER_IMAGE
+				}
+			}
+			steps {
+				script {
+					sh 'docker build -f "${WORKSPACE}"/Dockerfile.build -t codeconjuring .'
+				}
+			}
+		}
+		
+		stage ('Build Site') {
+			when {
+					expression {
+							return params.BUILD_PUSH_IMAGE
+					}
+			}
+			steps {
+				withCredentials([usernamePassword(credentialsId: '${REGISTRY_CREDENTIALS}', passwordVariable: 'DOCKER_REGISTRY_PASSWORD', usernameVariable: 'DOCKER_REGISTRY_USER')]) {
+					withDockerContainer(image: "codeconjuring", args: '-u root') {
+						sh '"${WORKSPACE}"/jenkins/build.sh'
+					}
+        }
+			}
+		}
+
+		stage ('Build and push Docker Image') {
+			when {
+					expression {
+							return params.BUILD_PUSH_IMAGE
+					}
+			}
+			steps {
+				withCredentials([usernamePassword(credentialsId: '${REGISTRY_CREDENTIALS}', passwordVariable: 'DOCKER_REGISTRY_PASSWORD', usernameVariable: 'DOCKER_REGISTRY_USER')]) {
+					sh '"${WORKSPACE}"/kube/build-deploy-image.sh'
+        }
+			}
+		}
+
+		stage ('Deploy to IKS') {
+			when {
+					expression {
+							return params.DEPLOY_IMAGE_IKS
+					}
+			}
+			steps {
+				withCredentials([usernamePassword(credentialsId: '${REGISTRY_CREDENTIALS}', passwordVariable: 'DOCKER_REGISTRY_PASSWORD', usernameVariable: 'DOCKER_REGISTRY_USER'),
+												usernamePassword(credentialsId: '${IBM_CLOUD_CREDENTIALS}', passwordVariable: "IBM_CLOUD_API_KEY", usernameVariable: "IBM_CLOUD_USER")]) {
+						
+						withDockerContainer(image: "codeconjuring", args: '-u root') {
+							sh '"${WORKSPACE}"/kube/deploy_iks.sh code-conjure us-south conjure conjure-image "${IMAGE_TAG}" "${IBM_CLOUD_API_KEY}"'
+						}
+        }
+			}
+		}
+	}
+	post {
+		always {
+			archiveArtifacts allowEmptyArchive: true, artifacts: "target/liberty/wlp/usr/servers/"
+		}
+	}
+}

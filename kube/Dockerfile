@@ -6,8 +6,7 @@ USER root
 RUN ln -s /opt/ol/wlp/usr/servers /servers
 USER 1001
 
-EXPOSE 9081
-EXPOSE 9444
+ADD work/servers  /servers
 
 # Run the server script and start the defaultServer by default.
 ENTRYPOINT ["/opt/ol/wlp/bin/server", "run"]
