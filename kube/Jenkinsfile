@@ -79,46 +79,46 @@ pipeline {
 		
 		stage ('Build Site') {
 			when {
-					expression {
-							return params.BUILD_PUSH_IMAGE
-					}
+				expression {
+					return params.BUILD_PUSH_IMAGE
+				}
 			}
 			steps {
 				withCredentials([usernamePassword(credentialsId: '${REGISTRY_CREDENTIALS}', passwordVariable: 'DOCKER_REGISTRY_PASSWORD', usernameVariable: 'DOCKER_REGISTRY_USER')]) {
 					withDockerContainer(image: "codeconjuring", args: '-u root') {
 						sh '"${WORKSPACE}"/jenkins/build.sh'
 					}
-        }
+        		}
 			}
 		}
 
 		stage ('Build and push Docker Image') {
 			when {
-					expression {
-							return params.BUILD_PUSH_IMAGE
-					}
+				expression {
+					return params.BUILD_PUSH_IMAGE
+				}
 			}
 			steps {
 				withCredentials([usernamePassword(credentialsId: '${REGISTRY_CREDENTIALS}', passwordVariable: 'DOCKER_REGISTRY_PASSWORD', usernameVariable: 'DOCKER_REGISTRY_USER')]) {
 					sh '"${WORKSPACE}"/kube/build-deploy-image.sh'
-        }
+        		}
 			}
 		}
 
 		stage ('Deploy to IKS') {
 			when {
-					expression {
-							return params.DEPLOY_IMAGE_IKS
-					}
+				expression {
+					return params.DEPLOY_IMAGE_IKS
+				}
 			}
 			steps {
 				withCredentials([usernamePassword(credentialsId: '${REGISTRY_CREDENTIALS}', passwordVariable: 'DOCKER_REGISTRY_PASSWORD', usernameVariable: 'DOCKER_REGISTRY_USER'),
-												usernamePassword(credentialsId: '${IBM_CLOUD_CREDENTIALS}', passwordVariable: "IBM_CLOUD_API_KEY", usernameVariable: "IBM_CLOUD_USER")]) {
+									usernamePassword(credentialsId: '${IBM_CLOUD_CREDENTIALS}', passwordVariable: "IBM_CLOUD_API_KEY", usernameVariable: "IBM_CLOUD_USER")]) {
 						
-						withDockerContainer(image: "codeconjuring", args: '-u root') {
-							sh '"${WORKSPACE}"/kube/deploy_iks.sh "$IKS_CLUSTER_NAME" "$REGION" kabanero kabanero-site "${IMAGE_TAG}" "${IBM_CLOUD_API_KEY}"'
-						}
-        }
+					withDockerContainer(image: "codeconjuring", args: '-u root') {
+						sh '"${WORKSPACE}"/kube/deploy_iks.sh "$IKS_CLUSTER_NAME" "$REGION" kabanero kabanero-site "${IMAGE_TAG}" "${IBM_CLOUD_API_KEY}"'
+					}
+        		}
 			}
 		}
 	}
