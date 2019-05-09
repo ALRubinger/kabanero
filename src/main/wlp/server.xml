@@ -20,13 +20,13 @@ Contributors:
     <keyStore id="defaultKeyStore" password="changeit"/>	
     <ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" sslProtocol="TLSv1.2"/>
 
-    <httpEndpoint host="*" httpPort="9081" httpsPort="9444"/>
+    <httpEndpoint host="*" httpPort="9080" httpsPort="9443"/>
 
     <cdi12 enableImplicitBeanArchives='false'/>
     
-    <webApplication location="openliberty.war" contextRoot="/"/>
+    <webApplication location="kabanero.war" contextRoot="/"/>
 
     <!-- Enable the following to enable trace 
-    <logging traceSpecification="io.openliberty.website.*=all"></logging>
+    <logging traceSpecification="io.kabanero.website.*=all"></logging>
     -->
 </server>

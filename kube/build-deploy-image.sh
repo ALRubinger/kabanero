@@ -5,8 +5,8 @@
 # Exit immediately if a simple command exits with a non-zero status.
 set -e
 
-DOCKER_IMAGE_NAME=conjure-image
-NAMESPACE=conjure
+DOCKER_IMAGE_NAME=kabanero-site
+NAMESPACE=kabanero
 
 CUR_DIR="$(cd $(dirname $0) && pwd)"
 WORK_DIR="$CUR_DIR"/work
