@@ -11,10 +11,6 @@
 
  #page_container {
     position: relative;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #515b7d), to(#1f203e));
-    background-image: -webkit-linear-gradient(bottom, #515b7d 9%, #1f203e 100%);
-    background-image: -o-linear-gradient(bottom, #515b7d 9%, #1f203e 100%);
-    background-image: linear-gradient(0deg, #515b7d 9%, #1f203e 100%);
     padding-top: 227px;
     overflow: hidden;
 }
@@ -22,7 +18,7 @@
 #error_message {
     font-family: BunueloLight, Arial Narrow, Helvetica, Arial;
     font-size: 40px;
-    color: white;
+    color: black;
     text-align: center;
     width: 559px;
     margin-right: auto;

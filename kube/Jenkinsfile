@@ -10,7 +10,9 @@ pipeline {
 		credentials(name: 'REGISTRY_CREDENTIALS', credentialType: 'com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl', defaultValue: '', description: 'Registry credentials to login. For artifactory this will be your email and you API key as the password. Get API Key from your profile in artifactory.', required: true)
 		credentials(name: 'IBM_CLOUD_CREDENTIALS', credentialType: 'com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl', defaultValue: '', description: 'IBM Cloud API Key to login via ibmcloud cli for IKS', required: true)
 
+  		choice (name: 'REGION', choices: ['us-south', 'us-east', 'eu-gb', 'eu-de','au-syd', 'jp-tok', 'ch-ctu'], description: 'Which region to deploy the image to: us-south: Dallas, us-east: Washington DC, au-syd: Sydney, eu-de: Frankfurt, eu-gb: London, ch-ctu: Chengdu, jp-tok: Tokyo')
 		string(name: 'IMAGE_TAG', defaultValue: 'latest', description: 'tag used to tag the image')
+		string(name: 'IKS_CLUSTER_NAME', defaultValue: 'kabanero', description: 'name of your IKS cluster')
 
 		string(name: 'SITE_GIT_URL', defaultValue: 'git@github.ibm.com:ICP4APPs/code-conjuring.git', description: 'Git ssh url to clone for the site repository')
 		string(name: 'SITE_GIT_REVISION', defaultValue: 'master', description: 'Branch to clone for the site repository')
@@ -114,7 +116,7 @@ pipeline {
 												usernamePassword(credentialsId: '${IBM_CLOUD_CREDENTIALS}', passwordVariable: "IBM_CLOUD_API_KEY", usernameVariable: "IBM_CLOUD_USER")]) {
 						
 						withDockerContainer(image: "codeconjuring", args: '-u root') {
-							sh '"${WORKSPACE}"/kube/deploy_iks.sh code-conjure us-south conjure conjure-image "${IMAGE_TAG}" "${IBM_CLOUD_API_KEY}"'
+							sh '"${WORKSPACE}"/kube/deploy_iks.sh "$IKS_CLUSTER_NAME" "$REGION" kabanero kabanero-site "${IMAGE_TAG}" "${IBM_CLOUD_API_KEY}"'
 						}
         }
 			}

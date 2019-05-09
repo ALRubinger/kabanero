@@ -2,7 +2,9 @@
 layout: default
 home: true
 js: download
-css: home
+css: 
+- home
+- blog
 seo-title: Awesomesauce
 ---
 
@@ -222,33 +224,82 @@ seo-title: Awesomesauce
     </div>
 </div>
 
+<div class="neutral_background">
+    <div class="container">
+        <div class="row openSourcePlatformRow">
+            <div class="col-md">
+                <img src="img/logos/temp_open_source_platform.png" class="img-fluid">
+            </div>
+        </div>
+        <div class="row openSourcePlatformRow">
+            <div class="col-md-1">
+                <img src="img/logos/serverless_logo_black.png" class="img-fluid modernizeImg">
+            </div>
+            <div class="col-md">
+                <div class="row modernizeAppsHeading">
+                    MODERNIZE AND BUILD APPS FOR ENTERPRISE WITH SPEED AND CONTROL.
+                </div>
+                <div class="row">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis mostrud exerciation ullamco laboris.
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="col-md">
+                <img src="img/logos/temp_open_source_logos.png" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <hr class="separator"/>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="neutral_background">
     <div class="container">
-        <div class="row" style="height:605px;">
+        <div class="row blogRow">
             <div class="col-xl-5">
-                <h3 class="col-xl-6">Join Our Community</h3>
-                <div class="col term_box joinCommunityBox">
-                    <p>Information about events, meetups, stackoverflow, slack, and it could take the user to a microsite about the community like OpenShift Commons.</p>
-                    <button type="button" class="btn btn-secondary communityLearnMore">Learn More</button>
-                </div>
-                
-            </div>
-            <div class="col-xl-5 offset-xl-6 blogPosts">
                 <h3 class="col">Blog Posts<a class="col offset-xl-5 blogLink" href="/blog">Visit our blog-></a></h3>
+                {% for post in site.posts limit:2 %}
+                    <div class="row blog_post_row">
+                        <div class="col-xl blog_post_column">
+                            <div class="blog_post_content">
+                                {% if post.redirect_link %}
+                                    <h2 class="blog_post_title"><a href="{{ post.redirect_link }}" class="blog_post_title_link">{{ post.title | escape }}</a></h2>
+                                {% else %}
+                                    <h2 class="blog_post_title"><a href="{{ post.url | relative_url }}" class="blog_post_title_link">{{ post.title | escape }}</a></h2>
+                                {% endif %}
+                                <div class="blog_post_author_data_container">
+                                    <img src="{{ post.author_picture }}" class="blog_post_author_image" alt="Blog author picture">
+                                    <a class="blog_post_author_name" href="{{ post.author_github }}">{{ post.author }}</a>
+                                    <span class="blog_post_date">on {{ post.date | date: date_format }}</span>
+                                </div>
+                                <div class="text-right">
+                                {% if post.redirect_link %}
+                                    <a href="{{ post.redirect_link }}" class="read_more_link">Read more</a>
+                                {% else %}
+                                    <a href="{{ post.url | relative_url }}" class="read_more_link">Read more</a>
+                                {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="col-xl-5 offset-xl-1" id="twitterCol">
+                <div class="row">
+                    <div class="col followButtonCol">
+                        <a href="https://twitter.com/IBM?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @IBM</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="twitter-timeline" data-height="748" href="https://twitter.com/IBM?ref_src=twsrc%5Etfw">Tweets by IBM </a>
+                </div>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 
-                <div class="col blogPostBoxes">
-                    <h2>Blog Post Title</h2>
-                    <p class="term_paragraph">
-                        Awesomesauce can help your team modernize existing applications to leverage benefits of cloud and containers.
-                    </p>
-                </div>
-                <div class="col blogPostBoxes blogBoxBottom">
-                    <h2>Blog Post Title</h2>
-                    <p class="term_paragraph">
-                        Awesomesauce can help you create Cloud Native applications with your team.
-                    </p>
-                </div>
             </div>
         </div>
     </div>

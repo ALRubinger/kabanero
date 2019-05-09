@@ -1,0 +1,36 @@
+#page_container {
+    position: relative;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.bottomBorder{
+    border-bottom:1px solid gainsboro;
+    text-align: center;
+}
+
+.tileImg{
+    height:160px !important;
+    display:block;
+    margin:auto;
+}
+
+.stackTile{
+    text-align: center;
+}
+
+.tileLabel{
+    display: inline-block;
+}
+
+.emptyRow{
+    height:25px;
+}
+
+.filterOption{
+    margin-bottom: 3px;
+}
+
+.filterHeader{
+    margin-bottom: 2px;
+}
