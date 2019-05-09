@@ -67,11 +67,11 @@ VOLUME /home/jekyll
 #  Set the working directory
 WORKDIR /home/jekyll
 
-# openliberty.io gem dependencies
+# kabanero.io gem dependencies
 COPY ./scripts /home/jekyll/scripts
 RUN scripts/build_gem_dependencies.sh
 
-# openliberty.io custom gems
+# kabanero.io custom gems
 COPY ./gems /home/jekyll/gems
 RUN pushd gems/ol-asciidoc \
     && gem build ol-asciidoc.gemspec \

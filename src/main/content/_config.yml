@@ -3,9 +3,9 @@ email: ajlohr@us.ibm.com
 description: >
   Awesomesauce delivers new and existing middleware tools to modernize your cloud journey.
 baseurl: ""
-url: "https://openliberty.io"
-twitter_username: openlibertyio
-github_username:  NottyCode
+url: "https://kabanero.io"
+twitter_username: kabanerol
+github_username:  Kabanero-io
 
 asciidoctor:
   base_dir: :docdir

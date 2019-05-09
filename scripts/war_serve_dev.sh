@@ -2,7 +2,7 @@
 
 SCRIPT_DIR=$(dirname $0)
 
-WAR=$SCRIPT_DIR/../target/openliberty.war
+WAR=$SCRIPT_DIR/../target/kabanero.war
 XML_SRC=$SCRIPT_DIR/../src/main/wlp/server.xml
 SERVER_DIR=$SCRIPT_DIR/../target/liberty/wlp/usr/servers/BoostServer
 APPS_DIR=$SERVER_DIR/apps/
@@ -11,8 +11,8 @@ KEY_JKS=$SERVER_DIR/resources/security/key.jks
 
 source $SCRIPT_DIR/get_dhe_signer.sh
 
-if [[ ! -f $SCRIPT_DIR/../target/openliberty.war ]]; then
-  echo "The openliberty.war file does not exist in target/ - did you run scripts/build_jekyll_maven.sh ?"
+if [[ ! -f $SCRIPT_DIR/../target/kabanero.war ]]; then
+  echo "The kabanero.war file does not exist in target/ - did you run scripts/build_jekyll_maven.sh ?"
   exit 1
 fi
 
@@ -21,7 +21,7 @@ mvn boost:start
 
 echo "Creating server.xml"
 sed -e 's/<\/server>//g' $XML_SRC > $XML_DEST
-echo '<variable name="appLocation" value="openliberty.war" /><featureManager><feature>transportSecurity-1.0</feature><feature>appSecurity-2.0</feature></featureManager></server>' >> $XML_DEST
+echo '<variable name="appLocation" value="kabanero.war" /><featureManager><feature>transportSecurity-1.0</feature><feature>appSecurity-2.0</feature></featureManager></server>' >> $XML_DEST
 
 
 # Check if required public.dhe.ibm.com is present
