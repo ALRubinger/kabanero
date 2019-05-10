@@ -832,3 +832,7 @@
     height: 800px;
 }
 
+.featuredModelsCollapse{
+    position:relative;
+    top:20px;
+}
