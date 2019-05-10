@@ -1,3 +1,13 @@
+title: Kabanero
+email: ajlohr@us.ibm.com
+description: >
+  Kabanero delivers new and existing middleware tools to modernize your cloud journey.
+baseurl: ""
+url: "https://kabanero.io"
+twitter_url: https://twitter.com/Kabaneroio
+twitter_username: KabaneroIO
+github_username:  Kabanero-io
+
 assets:
   compress:
     css: false
