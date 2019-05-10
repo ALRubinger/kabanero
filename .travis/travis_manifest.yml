@@ -1,7 +1,7 @@
 memory: 512M
 instances: 1
 disk_quota: 1024M
-path: ../target/openliberty.war
+path: ../target/kabanero.war
 buildpack: liberty-for-java
 
 env:
