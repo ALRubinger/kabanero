@@ -37,7 +37,7 @@
 }
 
 #updatesNews{
-    margin-left: 45px;
+    margin-left: 43px;
 }
 
 #intro_logo {
@@ -832,14 +832,10 @@
 
 .toolsLabel{
     margin-top: 10px;
-    display:none;
+    visibility: hidden;
 }
 
-.toolsLabel:hover{
+.foundationalImg:hover + .toolsLabel{
     margin-top: 10px;
-    display:block;
-}
-
-.toolsImgRow{
-    height:120px;
+    visibility: visible;
 }
