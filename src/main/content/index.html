@@ -1,7 +1,9 @@
 ---
 layout: default
 home: true
-js: download
+js: 
+- download
+- home
 css: 
 - home
 - blog
@@ -237,11 +239,38 @@ seo-title: Kabanero
                 </div>
             </div>
         </div>
-        <div>
-            <div class="col-md">
-                <img src="img/logos/temp_open_source_logos.png" class="img-fluid">
+        <div class="row">
+            <div class="col-md-12 textAlignCenter">
+                <h2 class="foundationalToolsText">FOUNDATIONAL TOOLS</h2>
             </div>
         </div>
+        <div class="row toolsImgRow">
+            <div class="col-md-2 textAlignCenter">
+                <img src="/img/logos/85x85/kubernetes.png" class="img-fluid" onmouseover="showImgText(this)" onmouseout="hideImgText(this)">
+                <p class="toolsLabel">Kubernetes</p>
+            </div>
+            <div class="col-md-2 textAlignCenter">
+                <img src="/img/logos/85x85/helm.png" class="img-fluid" onmouseover="showImgText(this)" onmouseout="hideImgText(this)">
+                <p class="toolsLabel">Helm</p>
+            </div>
+            <div class="col-md-2 textAlignCenter">
+                <img src="/img/logos/85x85/operator_framework.png" class="img-fluid" onmouseover="showImgText(this)" onmouseout="hideImgText(this)">
+                <p class="toolsLabel">Operator</p>
+            </div>
+            <div class="col-md-2 textAlignCenter">
+                <img src="/img/logos/85x85/istio.png" class="img-fluid" onmouseover="showImgText(this)" onmouseout="hideImgText(this)">
+                <p class="toolsLabel">Itsio</p>
+            </div>
+            <div class="col-md-2 textAlignCenter">
+                <img src="/img/logos/85x85/knative.png" class="img-fluid" onmouseover="showImgText(this)" onmouseout="hideImgText(this)">
+                <p class="toolsLabel">Knative</p>
+            </div>
+            <div class="col-md-2 textAlignCenter">
+                <img src="/img/logos/85x85/tekton.png" class="img-fluid" onmouseover="showImgText(this)" onmouseout="hideImgText(this)">
+                <p class="toolsLabel">Tekton</p>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-md">
                 <hr class="separator"/>
