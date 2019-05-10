@@ -843,4 +843,14 @@
 
 .toolsLabel{
     margin-top: 10px;
+    display:none;
+}
+
+.toolsLabel:hover{
+    margin-top: 10px;
+    display:block;
+}
+
+.toolsImgRow{
+    height:120px;
 }
