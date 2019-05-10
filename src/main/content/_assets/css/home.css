@@ -832,3 +832,15 @@
     height: 800px;
 }
 
+.textAlignCenter{
+    text-align: center;
+}
+
+.foundationalToolsText{
+    display:inline-block;
+    margin-bottom:30px;
+}
+
+.toolsLabel{
+    margin-top: 10px;
+}
