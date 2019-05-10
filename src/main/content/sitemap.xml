@@ -4,32 +4,32 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
     <url>
-        <loc>https://openliberty.io/</loc>
+        <loc>https://kabanero.io/</loc>
         <lastmod>2017-10-02T21:04:44+00:00</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://openliberty.io/about/</loc>
+        <loc>https://kabanero.io/about/</loc>
         <lastmod>2017-10-02T21:04:44+00:00</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://openliberty.io/guides/</loc>
+        <loc>https://kabanero.io/guides/</loc>
         <lastmod>2017-10-02T21:04:44+00:00</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://openliberty.io/downloads/</loc>
+        <loc>https://kabanero.io/downloads/</loc>
         <lastmod>2017-10-02T21:04:44+00:00</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://openliberty.io/blog/</loc>
+        <loc>https://kabanero.io/blog/</loc>
         <lastmod>2017-10-02T21:04:44+00:00</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://openliberty.io/contribute/</loc>
+        <loc>https://kabanero.io/contribute/</loc>
         <lastmod>2017-10-02T21:04:44+00:00</lastmod>
         <changefreq>weekly</changefreq>
     </url>

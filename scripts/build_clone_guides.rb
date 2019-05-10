@@ -1,7 +1,7 @@
 # This script is to automate the publication of guides to 
-# openliberty.io and the staging site (openlibertydev.mybluemix.net)
+# kabanero.io and the staging site (kabanerodev.mybluemix.net)
 #
-# The assumption is that guides that are ready for openliberty.io 
+# The assumption is that guides that are ready for kabanero.io 
 # have a GitHub repository name starting with:
 #       guide* or iguide*
 #
@@ -11,7 +11,7 @@
 require 'octokit'
 
 # This variable is to determine if we want to clone the "still in progress"
-# guides that are not ready to be on openliberty.io
+# guides that are not ready to be on kabanero.io
 cloneDraftGuides = ARGV[0]
 
 # --------------------------------------------

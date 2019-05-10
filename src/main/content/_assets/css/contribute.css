@@ -169,28 +169,28 @@
 
 
 
-/* THE FUTURE OF OPEN LIBERTY */
-#the_future_of_open_liberty_container {
+/* THE FUTURE OF KABANERO */
+#the_future_of_kabanero_container {
     margin-bottom: 120px;
 }
 
-#the_future_of_open_liberty_bar {
+#the_future_of_kabanero_bar {
     width: 64px;
     height: 7px;
     background-color: #606D8F;
     margin-bottom: 24px
 }
 
-#the_future_of_open_liberty_title {
+#the_future_of_kabanero_title {
     margin-top: 0px;
 }
 
-#the_future_of_open_liberty_paragraph {
+#the_future_of_kabanero_paragraph {
     margin-bottom: 20px;
 }
 
 @media (max-width: 767.98px) {
-    #the_future_of_open_liberty_container {
+    #the_future_of_kabanero_container {
         margin-bottom: 60px;
     }
 }

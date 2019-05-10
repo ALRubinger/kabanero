@@ -1,67 +1,67 @@
 memory: 512M
 instances: 1
 disk_quota: 1024M
-path: target/openliberty.war
+path: target/kabanero.war
 
 applications:
 # US South
-- name: openliberty-blue
+- name: kabanero-blue
 #  routes:
-#    - route: www.openliberty.io
-#    - route: openliberty.io
-#    - route: us-south.openliberty.io
-#- name: openliberty-green
+#    - route: www.kabanero.io
+#    - route: kabanero.io
+#    - route: us-south.kabanero.io
+#- name: kabanero-green
 #  routes:
-#    - route: www.openliberty.io
-#    - route: openliberty.io
-#    - route: us-south.openliberty.io
-#- name: openlibertydev
+#    - route: www.kabanero.io
+#    - route: kabanero.io
+#    - route: us-south.kabanero.io
+#- name: kabanerodev
 #  routes:
-#    - route: openlibertydev.mybluemix.net
+#    - route: kabanerodev.mybluemix.net
 # US East
-#- name: openliberty-blue-east
+#- name: kabanero-blue-east
 #  routes:
-#    - route: www.openliberty.io
-#    - route: openliberty.io
-#    - route: us-east.openliberty.io
-#- name: openliberty-green-east
+#    - route: www.kabanero.io
+#    - route: kabanero.io
+#    - route: us-east.kabanero.io
+#- name: kabanero-green-east
 #  routes:
-#    - route: www.openliberty.io
-#    - route: openliberty.io
-#    - route: us-east.openliberty.io
+#    - route: www.kabanero.io
+#    - route: kabanero.io
+#    - route: us-east.kabanero.io
 # United Kingdom
-#- name: openliberty-blue-uk
+#- name: kabanero-blue-uk
 #  routes:
-#    - route: www.openliberty.io
-#    - route: openliberty.io
-#    - route: eu-gb.openliberty.io
-#- name: openliberty-green-uk
+#    - route: www.kabanero.io
+#    - route: kabanero.io
+#    - route: eu-gb.kabanero.io
+#- name: kabanero-green-uk
 #  routes:
-#    - route: www.openliberty.io
-#    - route: openliberty.io
-#    - route: eu-gb.openliberty.io
+#    - route: www.kabanero.io
+#    - route: kabanero.io
+#    - route: eu-gb.kabanero.io
 # Germany
-#- name: openliberty-blue-germany
+#- name: kabanero-blue-germany
 #  routes:
-#    - route: www.openliberty.io
-#    - route: openliberty.io
-#    - route: eu-de.openliberty.io
-#- name: openliberty-green-germany
+#    - route: www.kabanero.io
+#    - route: kabanero.io
+#    - route: eu-de.kabanero.io
+#- name: kabanero-green-germany
 #  routes:
-#    - route: www.openliberty.io
-#    - route: openliberty.io
-#    - route: eu-de.openliberty.io
+#    - route: www.kabanero.io
+#    - route: kabanero.io
+#    - route: eu-de.kabanero.io
 # Sydney
-#- name: openliberty-blue-sydney
+#- name: kabanero-blue-sydney
 #  routes:
-#    - route: www.openliberty.io
-#    - route: openliberty.io
-#    - route: au-syd.openliberty.io
-#- name: openliberty-green-sydney
+#    - route: www.kabanero.io
+#    - route: kabanero.io
+#    - route: au-syd.kabanero.io
+#- name: kabanero-green-sydney
 #  routes:
-#    - route: www.openliberty.io
-#    - route: openliberty.io
-#    - route: au-syd.openliberty.io
+#    - route: www.kabanero.io
+#    - route: kabanero.io
+#    - route: au-syd.kabanero.io
 
 env:
   JBP_CONFIG_LIBERTY: 'app_archive: {features: ["microProfile-1.0","webCache-1.0"]}'
