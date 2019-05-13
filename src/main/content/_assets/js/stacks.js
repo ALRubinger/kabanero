@@ -1,5 +1,9 @@
 $( document ).ready(function() {
     $(".filter").on("change", filterStacks);
+
+    // Change stack imgs to colored version on mouseover and back to black on mouseout
+    $(".tileImg").hover(el => $(el.target).attr("src",($(el.target).data("color-img"))),
+        el => $(el.target).attr("src",($(el.target).data("black-img"))));
 });
 
 function filterStacks(){

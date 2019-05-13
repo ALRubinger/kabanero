@@ -73,7 +73,7 @@ echo "Moving any js and css files published interactive guides..."
 echo "Building with jekyll..."
 echo `jekyll -version`
 mkdir -p "$CUR_DIR"/../target/jekyll-webapp
-jekyll build $JEKYLL_BUILD_FLAGS --source "$CUR_DIR"/../src/main/content --destination "$CUR_DIR"/../target/jekyll-webapp
+bundle exec jekyll build $JEKYLL_BUILD_FLAGS --source "$CUR_DIR"/../src/main/content --destination "$CUR_DIR"/../target/jekyll-webapp
 
 #python3 "$CUR_DIR"/../scripts/parse-feature-toc.py
 

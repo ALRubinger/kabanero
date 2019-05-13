@@ -7,12 +7,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 {% endif %}
 
-{% js devEnvironment %}
-
 {% for js_name in page.js %}
-  {% js {{js_name}} %}
+  {% asset {{js_name}}.js %}
 {% endfor %}
 
 {% for js_name in layout.js %}
-  {% js {{js_name}} %}
+  {% asset {{js_name}}.js %}
 {% endfor %}
