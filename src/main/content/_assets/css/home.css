@@ -22,6 +22,10 @@
     padding-top: 60px;
 }
 
+.area{
+    margin-top: 50px;
+}
+
 .boxes_image {
     margin-top: 100px;
 }
@@ -29,7 +33,11 @@
 #intro_content {
     position: relative;
     margin-top: 100px;
-    color: white;
+    color: #000000;
+}
+
+#updatesNews{
+    margin-left: 43px;
 }
 
 #intro_logo {
@@ -285,24 +293,8 @@
         right: calc(50% - 190px);
     }
 
-    #star1 {
-        top: 400px;
-        right: calc(50% - 480px);
-    }
-
-    #star2 {
-        top: 210px;
-        right: calc(50% - 140px);
-    }
-
-    #star3 {
-        position: absolute;
-        top: 110px;
-        right: calc(50% + 380px);
-    }
-
-    #shooting_star_1 {
-        animation: shooting_star_1_fly_md 15s infinite;
+    .term_box:nth-of-type(2){
+        margin-left: 15px;
     }
 
 }
@@ -320,7 +312,7 @@
     }
 
     #intro_content {
-        margin-top: 20px;
+        margin-top: 45px;
     }
 
     #an_ibm_open_source_project {
@@ -491,10 +483,10 @@
     display: block;
     font-size: 20px;
     font-weight: 500;
-    color: #000000;
-    background-color: #d8d8d8;
+    color: #FFFFFF;
+    background-color: #c43805;
     border-radius: 15px;
-    padding: 15px 40px;
+    padding: 15px 25px;
     margin-bottom: 8px;
     text-align: center;
     transition: background-color .2s;
@@ -763,6 +755,7 @@
 .listGroupText {
   margin-top:10px;
   margin-bottom:10px;
+  padding-left: 30px;
 }
 
 .bumper {
@@ -809,6 +802,7 @@
 }
 
 .modernizeImg{
+    height: 57px;
     position:relative;
     top:10px;
 }
@@ -825,11 +819,6 @@
 
 #twitterCol{
     position: relative;
-    bottom: 48px;
-}
-
-.blogRow {
-    height: 800px;
 }
 
 .textAlignCenter{
@@ -843,14 +832,10 @@
 
 .toolsLabel{
     margin-top: 10px;
-    display:none;
+    visibility: hidden;
 }
 
-.toolsLabel:hover{
+.foundationalImg:hover + .toolsLabel{
     margin-top: 10px;
-    display:block;
-}
-
-.toolsImgRow{
-    height:120px;
+    visibility: visible;
 }
