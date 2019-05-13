@@ -821,6 +821,11 @@
     position: relative;
 }
 
+.featuredModelsCollapse{
+    position:relative;
+    top:30px;
+}
+
 .textAlignCenter{
     text-align: center;
 }
@@ -838,4 +843,53 @@
 .foundationalImg:hover + .toolsLabel{
     margin-top: 10px;
     visibility: visible;
+}
+
+.collapseRow {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.arrowUpOuter{
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    
+    border-bottom: 30px solid rgba(0, 0, 0, 0.125);
+    position: relative;
+    z-index:1;
+    bottom:80px;
+}
+
+.arrowUpInner{
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    
+    border-bottom: 30px solid white;
+    position: relative;
+    z-index:2;
+    bottom:48px;
+}
+
+.springArrow{
+    left:305px;
+}
+
+.microprofileArrow{
+    left:80px;
+}
+
+.nodeArrow{
+    left:535px;
+}
+
+.swiftArrow{
+    left:765px;
+}
+
+.serverlessArrow{
+    left:990px
 }

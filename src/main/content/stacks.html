@@ -96,27 +96,28 @@ seo-title: Kabanero
                 <p style="display:inline-block;">Stacks</p>
             </div>
             <div class="row">
-                <div class="col-3 stackTile" data-language="java" data-platform="ibm,openShift" data-tools="openLiberty,tekton">
-                    <img src="/img/logos/100x100/microprofle_black.png" class="img-fluid row tileImg" onmouseover="showMicroProfileColor(this)" onmouseout="showMicroProfileBlackWhite(this)">
+                <div class="col-3 stackTile" data-language="java" data-platform="ibm,openShift" data-tools="openLiberty,tekton" onclick="toggleStackTileCollapse(this)">
+                    <img src="/img/logos/100x100/microprofle_black.png" class="img-fluid row tileImg" onmouseover="showMicroProfileColor(this)" onmouseout="showMicroProfileBlackWhite(this)" >
                     <label class="row tileLabel">Java Microprofile</label>
                 </div>
-                <div class="col-3 stackTile" data-language="java" data-platform="ibm,openShift,aws" data-tools="openLiberty">
-                    <img src="/img/logos/100x100/spring_black.png" class="img-fluid row tileImg" onmouseover="showSpringColor(this)" onmouseout="showSpringBlackWhite(this)">
+                <div class="col-3 stackTile" data-language="java" data-platform="ibm,openShift,aws" data-tools="openLiberty" onclick="toggleStackTileCollapse(this)">
+                    <img src="/img/logos/100x100/spring_black.png" class="img-fluid row tileImg" onmouseover="showSpringColor(this)" onmouseout="showSpringBlackWhite(this)" >
                     <label class="row tileLabel">Java Spring</label>
                 </div>
-                <div class="col-3 stackTile" data-language="node" data-platform="aws,google,ibm" data-tools="docker,kubernetes">
+                <div class="col-3 stackTile" data-language="node" data-platform="aws,google,ibm" data-tools="docker,kubernetes" onclick="toggleStackTileCollapse(this)">
                     <img src="/img/logos/100x100/nodejs_black.png" class="img-fluid row tileImg" onmouseover="showNodejsColor(this)" onmouseout="showNodejsBlackWhite(this)">
                     <label class="row tileLabel">NodeJS</label>
                 </div>
-                <div class="col-3 stackTile" data-language="swift" data-platform="ibm,google,aws,openShift" data-tools="openLiberty,docker">
+                <div class="col-3 stackTile" data-language="swift" data-platform="ibm,google,aws,openShift" data-tools="openLiberty,docker" onclick="toggleStackTileCollapse(this)">
                     <img src="/img/logos/100x100/swift_black.png" class="img-fluid row tileImg" onmouseover="showSwiftColor(this)" onmouseout="showSwiftBlackWhite(this)">
                     <label class="tileLabel">Swift</label>
                 </div>
-                <div class="col-3 stackTile" data-language="java,node" data-platform="ibm,openShift" data-tools="openLiberty,tekton">
+                <div class="col-3 stackTile" data-language="java,node" data-platform="ibm,openShift" data-tools="openLiberty,tekton" onclick="toggleStackTileCollapse(this)">
                     <img src="/img/logos/100x100/serverless_black.png" class="img-fluid row tileImg" onmouseover="showServerlessColor(this)" onmouseout="showServerlessBlackWhite(this)">
                     <label class="row tileLabel">Serverless</label>
                 </div>
             </div>
+            
         </div>
     </div>
 </div>
