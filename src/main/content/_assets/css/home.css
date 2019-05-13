@@ -27,18 +27,18 @@
 }
 
 .video{
-	background-color: rgba(0, 0, 0, 0.81);
-	color: white;
+    background-color: rgba(0, 0, 0, 0.81);
+    color: white;
 }
 
 .video_description{
-	margin-top: 5%;
+    margin-top: 5%;
 }
 
 .usage_video{
-	border: none !important;
-	padding: 0px !important;
-	margin: 0 15px -5px 15px !important;
+    border: none !important;
+    padding: 0px !important;
+    margin: 0 15px -5px 15px !important;
 }
 
 .boxes_image {
