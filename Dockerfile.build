@@ -15,6 +15,7 @@ RUN apt-get update \
 RUN mkdir -p /home/jekyll \
     && groupadd -rg 1000 jekyll \
     && useradd -rg jekyll -u 1000 -d /home/jekyll jekyll \
+    && mkdir -p /home/jekyll/scripts/gems \
     && mkdir /home/jekyll/cf \
     && mkdir /home/jekyll/ibmcloud \
     && chown -R jekyll:jekyll /home/jekyll
@@ -48,12 +49,7 @@ RUN	curl -L "https://cli.run.pivotal.io/stable?release=debian64&source=github" >
 WORKDIR /home/jekyll
 
 # gem dependencies
-COPY ./scripts /home/jekyll/scripts
+COPY Gemfile Gemfile.lock scripts ./scripts/
+COPY gems ./scripts/gems/
+ENV BUNDLE_GEMFILE=/home/jekyll/scripts/Gemfile
 RUN scripts/build_gem_dependencies.sh
-
-# custom gems
-COPY ./gems /home/jekyll/gems
-RUN pushd gems/ol-asciidoc \
-    && gem build ol-asciidoc.gemspec \
-    && gem install ol-asciidoc-0.0.1.gem \
-    && popd
