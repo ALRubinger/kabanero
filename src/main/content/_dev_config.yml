@@ -9,9 +9,7 @@ twitter_username: KabaneroIO
 github_username:  Kabanero-io
 
 assets:
-  compress:
-    css: false
-    js: false
+  compression: true
   sources:
     - guides/iguides-common/js
     - guides/iguides-common/css
@@ -24,7 +22,9 @@ assets:
     - guides/iguide-retry-timeout/js
     - guides/iguide-retry-timeout/css
 
-minify_html: false
+jekyll-minifier:
+  compress_javascript: false
+  compress_css: false
 
 exclude:
   - feature

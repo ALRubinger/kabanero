@@ -52,10 +52,6 @@ fi
 
 # Special handling for javadocs
 ./scripts/modify_javadoc.sh
-pushd gems/ol-asciidoc
-gem build ol-asciidoc.gemspec
-gem install ol-asciidoc-0.0.1.gem
-popd
 
 echo "Copying guide images to /img/guide"
 mkdir -p src/main/content/img/guide
