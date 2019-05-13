@@ -1,7 +1,11 @@
 /* NAVIGATION BAR */
 
+html, body{
+    height: 100%;
+}
+
 main {
-    margin-top: -60px;
+    min-height: 100%;
 }
 
 .navbar {

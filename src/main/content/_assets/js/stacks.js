@@ -8,6 +8,9 @@ $( document ).ready(function() {
 });
 
 function filterStacks(){
+    // Remove any existing info under stacks before filter
+    $("#stackCollapse").remove();
+
     let selectedTags = $(".filter:checkbox:checked").map((index,filter) => $(filter).val()).get();
 
     // if no filter is selected show all tiles
