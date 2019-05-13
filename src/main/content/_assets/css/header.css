@@ -5,14 +5,23 @@ main {
 }
 
 .navbar {
-    padding: 10px 10px 10px 50px;
     margin: 0 auto;
     z-index: 9999;
+    border-bottom: 3px solid #000000;
+}
+
+.nav-container{
+    width: 100%;
+}
+
+.nav-link{
+    color: #FFFFFF !important;
+    margin-right: 30px;
 }
 
 .bg-custom {
     color: #000000;
-    background-color: #d8d8d8;
+    background-color: #c43805;
 }
 
 .qa-descriptor {
@@ -43,7 +52,6 @@ main {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    margin-left: 34px;
     font-size: 16px;
     color: #000000;
 }
@@ -67,9 +75,8 @@ main {
     display: inline-block;
 }
 
-#float_right_section {
-    width: 100%;
-    text-align: right;
+.float_right_section {
+    float: right;
 }
 
 #header_round_links_container {
@@ -78,8 +85,9 @@ main {
     padding-bottom: 183px;
 }
 
-#header_twitter_link {
-    background-image: url("/img/Header_TwitterBird.svg");
+#header_twitter_img {
+    height: 25px;
+    margin: 6px 25px 0 0;
 }
 
 #header_stackoverflow_link {
@@ -96,6 +104,12 @@ main {
     display: inline-block;
     height: 68px;
     width: 68px;
+}
+
+#header-title{
+    margin-left: 50px;
+    color: #FFFFFF;
+    font-size: 1.8em;
 }
 
 #tablet_images {
@@ -124,7 +138,7 @@ main {
         max-width: 67%;
         z-index: 9999;
         margin-left: 33%;
-        margin-top: -46px;
+        margin-top: -8px;
     }
 
     .navbar-brand {
@@ -148,10 +162,6 @@ main {
         z-index: 99999;
     }
 
-    .navbar-toggler.collapsed > .close_button, .navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
-        display: none;
-    }
-
     .navbar-nav {
         padding-top: 25px;
         border-top: 1px solid rgba(94, 107, 141, 0.29);
@@ -159,7 +169,7 @@ main {
     }
 
     .navbar-collapse {
-        background-image: radial-gradient(circle at bottom left, #5E6B8D 0%, #2C2E50 91%);
+        background-image: radial-gradient(circle at bottom left, #FFFFFF 0%, #c43805 91%);
     }
 
     .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active, #fork_button {
