@@ -3,6 +3,8 @@ layout: default
 home: true
 js: 
 - download
+- home
+- stacks
 - twitterWidgets
 css: 
 - home
@@ -181,31 +183,265 @@ seo-title: Kabanero
                 <a href="#" id="see_all_models">SEE ALL MODELS -></a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md model_logo">
-                <img src="{{ "img/logos/100x100/microprofle_black.png" | relative }}" class="img-fluid" alt="microprofile logo">
-                <div>Java MicroProfile</div>
+            <div class="row">
+                <div class="col-md model_logo">
+                    <img id="microProfileLogo" 
+                        data-toggle="collapse" 
+                        href="#microProfileCollapse" 
+                        aria-expanded="false" 
+                        aria-controls="microProfileCollapse" 
+                        data-black-img="/img/logos/100x100/microprofle_black.png"
+                        data-color-img="/img/logos/100x100/microprofle.png" 
+                        src="{{ "/img/logos/100x100/microprofle_black.png" | relative }}" 
+                        class="img-fluid tileImg" 
+                        alt="microprofile logo" 
+                        onclick="hideAllFeaturedModelsCollapses(this)"/>
+                	<div>Java MicroProfile</div>
+                </div>
+                <div class="col-md model_logo">
+                    <img id="springLogo" 
+                        data-toggle="collapse" 
+                        href="#springCollapse" 
+                        aria-expanded="false" 
+                        aria-controls="springCollapse" 
+                        data-black-img="/img/logos/100x100/spring_black.png"
+                        data-color-img="/img/logos/100x100/spring.png"
+                        src="{{ "/img/logos/100x100/spring_black.png" | relative }}" 
+                        class="img-fluid tileImg" alt="java spring logo" 
+                        onclick="hideAllFeaturedModelsCollapses(this)"/>
+                	<div>Spring</div>
+                </div>
+                <div class="col-md model_logo">
+                    <img id="nodejsLogo" 
+                        data-toggle="collapse" 
+                        href="#nodejsCollapse" 
+                        aria-expanded="false" 
+                        aria-controls="nodejsCollapse" 
+                        data-black-img="/img/logos/100x100/nodejs_black.png"
+                        data-color-img="/img/logos/100x100/nodejs.png"
+                        src="{{ "/img/logos/100x100/nodejs_black.png" | relative }}" 
+                        class="img-fluid tileImg" alt="nodejs logo" 
+                        onclick="hideAllFeaturedModelsCollapses(this)">
+                	<div>NodeJS</div>
+                </div>
+                <div class="col-md model_logo">
+                    <img id="swiftLogo" 
+                        data-toggle="collapse" 
+                        href="#swiftCollapse" 
+                        aria-expanded="false" 
+                        aria-controls="swiftCollapse" 
+                        data-black-img="/img/logos/100x100/swift_black.png"
+                        data-color-img="/img/logos/100x100/swift.png" 
+                        src="{{ "/img/logos/100x100/swift_black.png" | relative }}" 
+                        class="img-fluid tileImg" 
+                        alt="swift logo" 
+                        onclick="hideAllFeaturedModelsCollapses(this)">
+                	<div>Swift</div>
+                </div>
+                <div class="col-md model_logo">
+                    <img id="serverlessLogo" 
+                        data-toggle="collapse" 
+                        href="#serverlessCollapse" 
+                        aria-expanded="false" 
+                        aria-controls="serverlessCollapse" 
+                        data-black-img="/img/logos/100x100/serverless_black.png"
+                        data-color-img="/img/logos/100x100/serverless.png" 
+                        src="{{ "/img/logos/100x100/serverless_black.png" | relative }}" 
+                        class="img-fluid tileImg" 
+                        alt="serverless logo" 
+                        onclick="hideAllFeaturedModelsCollapses(this)">
+                	<div>Serverless</div>
+                </div>
             </div>
-            <div class="col-md model_logo">
-                <img src="{{ "img/logos/100x100/spring_black.png" | relative }}" class="img-fluid" alt="java spring logo">
-                <div>Java Spring</div>
+            <div class="row collapse featuredModelsCollapse" id="microProfileCollapse">
+                <div class="col card card-body">
+                    <div class="arrowUpInner microprofileArrow"></div>
+                    <div class="arrowUpOuter microprofileArrow"></div>
+                    <div class="row collapseRow">
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/helm.png" class="img-fluid">
+                            <p>Helm</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/kubernetes.png" class="img-fluid">
+                            <p>Kubernetes</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/prometheus.png" class="img-fluid">
+                            <p>Prometheus</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/open_liberty.png" class="img-fluid">
+                            <p>Open Liberty</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/EclipseChe.png" class="img-fluid">
+                            <p>Eclipse Che</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/tekton.png" class="img-fluid">
+                            <p>Tekton</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md model_logo">
-                <img src="{{ "img/logos/100x100/nodejs_black.png" | relative }}" class="img-fluid" alt="nodejs logo">
-                <div>NodeJS</div>
+            <div class="row collapse featuredModelsCollapse" id="springCollapse">
+                <div class="col card card-body">
+                    <div class="arrowUpInner springArrow"></div>
+                    <div class="arrowUpOuter springArrow"></div>
+                    <div class="row collapseRow">
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/helm.png" class="img-fluid">
+                            <p>Helm</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/kubernetes.png" class="img-fluid">
+                            <p>Kubernetes</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/prometheus.png" class="img-fluid">
+                            <p>Prometheus</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/open_liberty.png" class="img-fluid">
+                            <p>Open Liberty</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/EclipseChe.png" class="img-fluid">
+                            <p>Eclipse Che</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/tekton.png" class="img-fluid">
+                            <p>Tekton</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md model_logo">
-                <img src="{{ "img/logos/100x100/swift_black.png" | relative }}" class="img-fluid" alt="swift logo">
-                <div>Swift</div>
+            <div class="row collapse featuredModelsCollapse" id="nodejsCollapse">
+                <div class="col card card-body">
+                    <div class="arrowUpInner nodeArrow"></div>
+                    <div class="arrowUpOuter nodeArrow"></div>
+                    <div class="row collapseRow">
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/helm.png" class="img-fluid">
+                            <p>Helm</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/kubernetes.png" class="img-fluid">
+                            <p>Kubernetes</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/prometheus.png" class="img-fluid">
+                            <p>Prometheus</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/open_liberty.png" class="img-fluid">
+                            <p>Open Liberty</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/EclipseChe.png" class="img-fluid">
+                            <p>Eclipse Che</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/tekton.png" class="img-fluid">
+                            <p>Tekton</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md model_logo">
-                <img src="{{ "img/logos/100x100/serverless_black.png" | relative }}" class="img-fluid" alt="serverless logo">
-                <div>Serverless</div>
+            <div class="row collapse featuredModelsCollapse" id="swiftCollapse">
+                <div class="col card card-body">
+                    <div class="arrowUpInner swiftArrow"></div>
+                    <div class="arrowUpOuter swiftArrow"></div>
+                    <div class="row collapseRow">
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/helm.png" class="img-fluid">
+                            <p>Helm</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/kubernetes.png" class="img-fluid">
+                            <p>Kubernetes</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/prometheus.png" class="img-fluid">
+                            <p>Prometheus</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/open_liberty.png" class="img-fluid">
+                            <p>Open Liberty</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/EclipseChe.png" class="img-fluid">
+                            <p>Eclipse Che</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/tekton.png" class="img-fluid">
+                            <p>Tekton</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md separator">
-                <hr />
+            <div class="row collapse featuredModelsCollapse" id="serverlessCollapse">
+                <div class="col card card-body">
+                    <div class="arrowUpInner serverlessArrow"></div>
+                    <div class="arrowUpOuter serverlessArrow"></div>
+                    <div class="row collapseRow">
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/helm.png" class="img-fluid">
+                            <p>Helm</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/kubernetes.png" class="img-fluid">
+                            <p>Kubernetes</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/prometheus.png" class="img-fluid">
+                            <p>Prometheus</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/open_liberty.png" class="img-fluid">
+                            <p>Open Liberty</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/EclipseChe.png" class="img-fluid">
+                            <p>Eclipse Che</p>
+                        </div>
+                        <div class="col-md-2 textAlignCenter">
+                            <img src="/img/logos/85x85/tekton.png" class="img-fluid">
+                            <p>Tekton</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-md separator">
+                    <hr />
+            	</div>
             </div>
         </div>
     </div>
