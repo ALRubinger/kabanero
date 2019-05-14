@@ -29,6 +29,7 @@
 .video{
     background-color: #343332;
     color: white;
+    padding: 15px 0 15px 0;
 }
 
 .featured_models{
@@ -734,10 +735,6 @@
 
 }
 
-.list-group-item-action .active{
-  border-bottom: none !important;
-}
-
 .listGroupImg {
   height: 50%;
   display:block;
@@ -754,7 +751,6 @@
   text-align:center !important;
   font-size:24px;
   font-family:BunueloBold, Arial Narrow, Helvetica, Arial;
-  border:1px solid #979797;
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
@@ -766,7 +762,6 @@
   padding-bottom:5px;
   background-color:white;
   border:1px solid #979797;
-  border-top:none;
   margin-right:15px
 }
 
@@ -779,11 +774,18 @@
   padding-right:0px;
 }
 
+.list-group-item-action{
+    background-color:white !important;
+    color: black;
+    border-top: 0px;
+    font-size:20px;
+}
+
 .list-group-item-action.active{
   background-color:white !important;
   color: black;
-  border-color: #979797;
-  border-bottom:0px;
+  border-top: 0px;
+  border-bottom: 5px solid #c43805 !important;
 }
 
 .listGroupText {
