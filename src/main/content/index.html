@@ -529,7 +529,7 @@ seo-title: Kabanero
                                 <div class="blog_post_author_data_container">
                                     <img src="{{ post.author_picture }}" class="blog_post_author_image" alt="Blog author picture">
                                     <a class="blog_post_author_name" href="{{ post.author_github }}">{{ post.author }}</a>
-                                    <span class="blog_post_date">on {{ post.date | date: date_format }}</span>
+                                    <span class="blog_post_date">on {{ post.date | date: "%B %d, %Y" }}</span>
                                 </div>
                                 <div class="text-right">
                                 {% if post.redirect_link %}

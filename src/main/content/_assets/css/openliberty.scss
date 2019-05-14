@@ -209,7 +209,7 @@ a {
 }
 
 .link_blue_border {
-    border-color: #5E6B8D;
+    border-color: #ffffff;
 }
 
 .link_blue_border:hover {
@@ -314,24 +314,20 @@ a {
     background-color: #96BC32;
 }
 
-.black_blue_gradient_background {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#131427), to(#2C2D4F));
-    background-image: -webkit-linear-gradient(top, #131427, #2C2D4F);
-    background-image: -moz-linear-gradient(top, #131427, #2C2D4F);
-    background-image: linear-gradient(to bottom, #131427, #2C2D4F);
-    color: #C8D2D2;
+.white_red_gradient_background {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#c43805));
+    background-image: -webkit-linear-gradient(top, #FFFFFF, #c43805);
+    background-image: -moz-linear-gradient(top, #FFFFFF, #c43805);
+    background-image: linear-gradient(to bottom, #FFFFFF, #c43805);
+    color: #000000;
 }
 
-.neutral_background {
-
-}
-
- .blue_black_gradient_background {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#2C2D4F), to(#131427));
-    background-image: -webkit-linear-gradient(top, #2C2D4F, #131427);
-    background-image: -moz-linear-gradient(top, #2C2D4F, #131427);
-    background-image: linear-gradient(to bottom, #2C2D4F, #131427);
-    color: #C8D2D2;
+ .red_white_gradient_background {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#c43805), to(#FFFFFF));
+    background-image: -webkit-linear-gradient(top, #c43805, #FFFFFF);
+    background-image: -moz-linear-gradient(top, #c43805, #FFFFFF);
+    background-image: linear-gradient(to bottom, #c43805, #FFFFFF);
+    color: #000000;
 }
 
 
