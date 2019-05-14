@@ -7,7 +7,7 @@ url: "https://kabanero.io"
 twitter_url: https://twitter.com/Kabaneroio
 github_url:  https://github.com/Kabanero
 twitter_username: KabaneroIO
-github_username:  Kabanero-io
+github_username: Kabanero-io
 
 asciidoctor:
   base_dir: :docdir

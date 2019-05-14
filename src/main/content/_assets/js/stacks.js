@@ -31,9 +31,14 @@ function filterStacks(){
 }
 
 function toggleStackTileCollapse(){
-
     //remove currently opened collapse if it exists
     $("#stackCollapse").remove();
+
+    //if we clicked on a tile that has the collapse open already, then toggle it to closed and we're done
+    if($(this).data('isSelected')){
+        $(this).data('isSelected', false);
+        return;
+    }
 
     //figure out what row the element that got clicked on is in
     let tilesIndex = 0;
@@ -53,6 +58,7 @@ function toggleStackTileCollapse(){
     $(getStackCollapseHtml(this)).insertAfter(visibleTiles[appendIndex]);    
     let positionsFromEndOfRow = endOfRowIndex - tilesIndex;
     appendArrows(positionsFromEndOfRow);
+    $(this).data('isSelected', true);
 }
 
 function getStackCollapseHtml(){

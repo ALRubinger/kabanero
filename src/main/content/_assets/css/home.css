@@ -854,7 +854,7 @@
 }
 
 #twitterCol{
-    position: relative;
+    margin-bottom:30px
 }
 
 .featuredModelsCollapse{
@@ -928,4 +928,52 @@
 
 .serverlessArrow{
     left:990px
+}
+
+.visitBlogButton{
+    background-color: #c43805 !important;
+    border-color: #c43805 !important;
+    color: #ffffff;
+    margin: 10px 0px 10px 20px;
+}
+
+.visitBlogButton:hover{
+    color: #ffffff;
+}
+
+.visitText{
+    margin-top:15px;
+    margin-left:10px;
+}
+
+.blog_post_row{
+    background-color: #ffffff;
+}
+
+.emptyRow{
+    height:20px;
+}
+
+.blog_post_column{
+    padding: 20px 40px 20px 40px;
+}
+
+.blogReadMore{
+    color: #c43805;
+}
+
+.blogTitle{
+    color: black;
+}
+
+.blogHeader{
+    margin-bottom: 15px;
+}
+
+.titleRow{
+    margin-bottom:10px;
+}
+
+.boxShadow{
+    box-shadow: 1px 1px 5px #c5c9cf;
 }
