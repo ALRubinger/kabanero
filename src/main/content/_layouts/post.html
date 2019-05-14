@@ -7,7 +7,7 @@ js:
 - header
 ---
 
-<div id="background_container" class="black_blue_gradient_background">
+<div id="background_container" class="white_red_gradient_background">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -23,7 +23,7 @@ js:
                                     <a id="author_name" href="{{ page.author_github }}">{{ page.author }}</a>
                                     <div id="post_date">
                                         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                                            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} {{ page.date | date: date_format }}
+                                            {% assign date_format = site.minima.date_format | default: "%B %d, %Y" %} {{ page.date | date: date_format }}
                                         </time>
                                     </div>
                                 </div>
