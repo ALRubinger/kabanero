@@ -31,6 +31,17 @@
     color: white;
 }
 
+.featured_models{
+	background-color: #f3f5f7;
+    margin-top: 3em;
+    padding-bottom: 7em;
+    padding-top: 3em;
+}
+
+.featured_models_header{
+	margin-left: 7em;
+}
+
 .video_description{
     padding: 50px 0 0 50px;
 }
@@ -874,11 +885,11 @@
 }
 
 .arrowUpOuter{
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
-    
+
     border-bottom: 30px solid rgba(0, 0, 0, 0.125);
     position: relative;
     z-index:1;
@@ -886,11 +897,11 @@
 }
 
 .arrowUpInner{
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
-    
+
     border-bottom: 30px solid white;
     position: relative;
     z-index:2;
