@@ -32,6 +32,17 @@
     padding: 15px 0 15px 0;
 }
 
+.featured_models{
+	background-color: #f3f5f7;
+    margin-top: 3em;
+    padding-bottom: 7em;
+    padding-top: 3em;
+}
+
+.featured_models_header{
+	margin-left: 7em;
+}
+
 .video_description{
     padding: 50px 0 0 50px;
 }
@@ -724,10 +735,6 @@
 
 }
 
-.list-group-item-action .active{
-  border-bottom: none !important;
-}
-
 .listGroupImg {
   height: 50%;
   display:block;
@@ -744,7 +751,6 @@
   text-align:center !important;
   font-size:24px;
   font-family:BunueloBold, Arial Narrow, Helvetica, Arial;
-  border:1px solid #979797;
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
@@ -756,7 +762,6 @@
   padding-bottom:5px;
   background-color:white;
   border:1px solid #979797;
-  border-top:none;
   margin-right:15px
 }
 
@@ -769,11 +774,18 @@
   padding-right:0px;
 }
 
+.list-group-item-action{
+    background-color:white !important;
+    color: black;
+    border-top: 0px;
+    font-size:20px;
+}
+
 .list-group-item-action.active{
   background-color:white !important;
   color: black;
-  border-color: #979797;
-  border-bottom:0px;
+  border-top: 0px;
+  border-bottom: 5px solid #c43805 !important;
 }
 
 .listGroupText {
@@ -875,11 +887,11 @@
 }
 
 .arrowUpOuter{
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
-    
+
     border-bottom: 30px solid rgba(0, 0, 0, 0.125);
     position: relative;
     z-index:1;
@@ -887,11 +899,11 @@
 }
 
 .arrowUpInner{
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
-    
+
     border-bottom: 30px solid white;
     position: relative;
     z-index:2;
