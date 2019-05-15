@@ -277,9 +277,9 @@ seo-title: Kabanero
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col dopdown_text">
                             <p>
-                                Use your favorite development tools to create apps for Kubernetes faster.  Develop, test, 
+                                Use your favorite development tools to create apps for Kubernetes faster.  Develop, test,
                                 and debug in containers and deploy with confidence that you're automatically compliant with company policies.
                             </p>
                         </div>
@@ -317,9 +317,9 @@ seo-title: Kabanero
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col dopdown_text">
                             <p>
-                                Use your favorite development tools to create apps for Kubernetes faster.  Develop, test, 
+                                Use your favorite development tools to create apps for Kubernetes faster.  Develop, test,
                                 and debug in containers and deploy with confidence that you're automatically compliant with company policies.
                             </p>
                         </div>
@@ -357,11 +357,11 @@ seo-title: Kabanero
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col dopdown_text">
                             <p>
-                                Use your favorite development tools to create apps for Kubernetes faster.  Develop, test, 
+                                Use your favorite development tools to create apps for Kubernetes faster.  Develop, test,
                                 and debug in containers and deploy with confidence that you're automatically compliant with company policies.
-                            </p>                        
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -397,11 +397,11 @@ seo-title: Kabanero
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col dopdown_text">
                             <p>
-                                Use your favorite development tools to create apps for Kubernetes faster.  Develop, test, 
+                                Use your favorite development tools to create apps for Kubernetes faster.  Develop, test,
                                 and debug in containers and deploy with confidence that you're automatically compliant with company policies.
-                            </p>                        
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -437,11 +437,11 @@ seo-title: Kabanero
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col dopdown_text">
                             <p>
-                                Use your favorite development tools to create apps for Kubernetes faster.  Develop, test, 
+                                Use your favorite development tools to create apps for Kubernetes faster.  Develop, test,
                                 and debug in containers and deploy with confidence that you're automatically compliant with company policies.
-                            </p>                        
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -450,27 +450,93 @@ seo-title: Kabanero
     </div>
 </div>
 
-<!-- Open Source Platform-->
-<div class="neutral_background">
+<!-- Open Source Platform (for real, not image) -->
+<div class="neutral_background area open_source_platform">
     <div class="container">
-        <div class="row openSourcePlatformRow">
-            <div class="col-md">
-                <img src="img/logos/temp_open_source_platform.png" class="img-fluid">
+        <div class="row">
+            <div class="col-12 open_source_platform_title_row">
+                <p class="open_source_platform_title">
+                    Kabanero Open Source Platform
+                </p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-1">
-                <img src="img/logos/100x100/serverless_black.png" class="img-fluid modernizeImg">
-            </div>
-            <div class="col-md">
-                <span class="modernizeAppsHeading">
-                    MODERNIZE AND BUILD APPS FOR ENTERPRISE WITH SPEED AND CONTROL.
-                </span>
-                <div>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis mostrud exerciation ullamco laboris.
+            <div class="col open_source_platform_col">
+                <div class="open_source_platform_box" id="open_source_platform_modernize_box" onclick="hideAllOpenSourcePlatformsCollapses('modernize')">
+                    <p class="open_source_platform_paragraph">
+                        Modernize Applications
+                    </p>
+                </div>
+                <div class="open_source_platform_vertical_separator" id="open_source_platform_modernize_separator">
                 </div>
             </div>
+            <div class="col open_source_platform_col">
+                <div class="open_source_platform_horizontal_separator">
+                </div>
+            </div>
+            <div class="col open_source_platform_col">
+                <div class="open_source_platform_box" id="open_source_platform_languages_box" onclick="hideAllOpenSourcePlatformsCollapses('languages')">
+                    <p class="open_source_platform_paragraph">
+                        Languages & Runtimes
+                    </p>
+                </div>
+                <div class="open_source_platform_vertical_separator" id="open_source_platform_languages_separator">
+                </div>
+            </div>
+            <div class="col open_source_platform_col">
+                <div class="open_source_platform_horizontal_separator">
+                </div>
+            </div>
+            <div class="col open_source_platform_col">
+                <div class="open_source_platform_box" id="open_source_platform_develop_box" onclick="hideAllOpenSourcePlatformsCollapses('develop')">
+                    <p class="open_source_platform_paragraph">
+                        Develop
+                    </p>
+                </div>
+                <div class="open_source_platform_vertical_separator" id="open_source_platform_develop_separator">
+                </div>
+            </div>
+            <div class="col open_source_platform_col">
+                <div class="open_source_platform_horizontal_separator">
+                </div>
+            </div>
+            <div class="col open_source_platform_col">
+                <div class="open_source_platform_box" id="open_source_platform_build_box" onclick="hideAllOpenSourcePlatformsCollapses('build')">
+                    <p class="open_source_platform_paragraph">
+                        Build
+                    </p>
+                </div>
+                <div class="open_source_platform_vertical_separator" id="open_source_platform_build_separator">
+                </div>
+            </div>
+            <div class="col open_source_platform_col">
+                <div class="open_source_platform_horizontal_separator">
+                </div>
+            </div>
+            <div class="col open_source_platform_col">
+                <div class="open_source_platform_box" id="open_source_platform_manage_box" onclick="hideAllOpenSourcePlatformsCollapses('manage')">
+                    <p class="open_source_platform_paragraph">
+                        Manage
+                    </p>
+                </div>
+                <div class="open_source_platform_vertical_separator" id="open_source_platform_manage_separator">
+                </div>
+            </div>
+        </div>
+        <div class="row collapse open_source_platform_content_box" id="open_source_platform_modernize_collapse">
+            <p>Modernize!</p>
+        </div>
+        <div class="row collapse open_source_platform_content_box" id="open_source_platform_languages_collapse">
+            <p>Languages!</p>
+        </div>
+        <div class="row collapse open_source_platform_content_box" id="open_source_platform_develop_collapse">
+            <p>Develop!</p>
+        </div>
+        <div class="row collapse open_source_platform_content_box" id="open_source_platform_build_collapse">
+            <p>Build!</p>
+        </div>
+        <div class="row collapse open_source_platform_content_box" id="open_source_platform_manage_collapse">
+            <p>Manage!</p>
         </div>
     </div>
 </div>
@@ -574,7 +640,7 @@ seo-title: Kabanero
             </div>
             <div class="col-xl-5 offset-xl-1" id="twitterCol">
                 <div class="row boxShadow">
-                    <a class="twitter-timeline" data-height="748" href="https://twitter.com/IBM?ref_src=twsrc%5Etfw">Tweets by IBM </a>
+                    <a class="twitter-timeline" data-height="748" href="{{site.twitter_url}}">Tweets by {{site.twitter_username}} </a>
                 </div>
             </div>
         </div>
