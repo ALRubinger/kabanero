@@ -246,8 +246,3 @@ main {
 .dropdown-option:hover{
     color: gray !important;
 }
-
-.navPadding{
-    padding-top: 5.5px !important;
-    padding-bottom: 5.5px !important;
-}
