@@ -739,14 +739,19 @@
 }
 
 .listGroupImg {
-  height: 50%;
+  height: 90%;
   display:block;
   position:relative;
   top:35px;
+  left:5px;
   margin-left:25px;
   margin-right:auto;
   margin-top:10px;
   margin-bottom:10px;
+}
+
+.imgCol{
+    max-height:150px;
 }
 
 .list-item-centered {
