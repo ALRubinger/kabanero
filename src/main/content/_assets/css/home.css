@@ -81,18 +81,17 @@
 }
 
 #intro_logo {
-    height: 101px;
     width: 502px;
 	font-size:78px;font-family:BunueloBold, Arial Narrow, Helvetica, Arial;
-	color: #000000;
-    margin-bottom: 15px;
+    color: #000000;
+    margin: 0px;
 }
 
 #intro_lighten_up_title {
     font-size: 35px;
     font-family: Arial Narrow, Helvetica, Arial;
     color: #212529;
-    margin: 20px 0 16px 0;
+    margin: 0px 0 16px 0;
 }
 
 #intro_paragraph {
@@ -130,28 +129,28 @@
 }
 
 #home_title{
-	font-size: 4.5em;
+    font-size: 4.5em;
 }
 
 .term_box{
-	border: 1px solid #979797;
-	padding: 25px;
-	margin: 0 15px 0 15px;
+    border: 1px solid #D8DCDE;
+    padding: 25px;
+    margin: 0 15px 0 15px;
 }
 
 .term_learn_more{
-	color: #000000;
-	float: right;
-	font-size: 16px;
+    color: #000000;
+    float: right;
+    font-size: 16px;
 }
 
 .term_box:nth-of-type(2){
-	margin-left: 50px;
+    margin-left: 50px;
 }
 
 #an_ibm_open_source_project {
-  color: #212529;
-	position: absolute;
+    color: #212529;
+    position: absolute;
     font-size: 14px;
     top: 80px;
     right: calc(50% - 117px);
@@ -524,14 +523,13 @@
     font-size: 20px;
     font-weight: 500;
     color: #FFFFFF;
-    background-color: #c43805;
+    background-color: #c43804;
     border-radius: 15px;
     padding: 15px 25px;
+    margin-top:50px;
     margin-bottom: 8px;
     text-align: center;
     transition: background-color .2s;
-    width: 250px;
-    min-width: 200px;
 }
 
 #guides_link:hover {
@@ -766,7 +764,7 @@
   padding-top:5px;
   padding-bottom:5px;
   background-color:white;
-  border:1px solid #979797;
+  border:1px solid #D8DCDE;
   margin-right:15px
 }
 
@@ -781,16 +779,16 @@
 
 .list-group-item-action{
     background-color:white !important;
-    color: black;
+    color: #696969 !important;
     border-top: 0px;
     font-size:20px;
 }
 
 .list-group-item-action.active{
   background-color:white !important;
-  color: black;
+  color: black !important;
   border-top: 0px;
-  border-bottom: 5px solid #c43805 !important;
+  border-bottom: 5px solid #c43804 !important;
 }
 
 .listGroupText {
@@ -936,8 +934,8 @@
 }
 
 .visitBlogButton{
-    background-color: #c43805 !important;
-    border-color: #c43805 !important;
+    background-color: #c43804 !important;
+    border-color: #c43804 !important;
     color: #ffffff;
     margin: 10px 0px 10px 20px;
 }
@@ -964,7 +962,7 @@
 }
 
 .blogReadMore{
-    color: #c43805;
+    color: #c43804;
 }
 
 .blogTitle{
