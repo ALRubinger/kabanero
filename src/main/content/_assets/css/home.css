@@ -76,18 +76,17 @@
 }
 
 #intro_logo {
-    height: 101px;
     width: 502px;
 	font-size:78px;font-family:BunueloBold, Arial Narrow, Helvetica, Arial;
-	color: #000000;
-    margin-bottom: 15px;
+    color: #000000;
+    margin: 0px;
 }
 
 #intro_lighten_up_title {
     font-size: 35px;
     font-family: Arial Narrow, Helvetica, Arial;
     color: #212529;
-    margin: 20px 0 16px 0;
+    margin: 0px 0 16px 0;
 }
 
 #intro_paragraph {
@@ -129,7 +128,7 @@
 }
 
 .term_box{
-	border: 1px solid #979797;
+	border: 1px solid #D8DCDE;
 	padding: 25px;
 	margin: 0 15px 0 15px;
 }
@@ -522,11 +521,10 @@
     background-color: #c43805;
     border-radius: 15px;
     padding: 15px 25px;
+    margin-top:50px;
     margin-bottom: 8px;
     text-align: center;
     transition: background-color .2s;
-    width: 250px;
-    min-width: 200px;
 }
 
 #guides_link:hover {
@@ -761,7 +759,7 @@
   padding-top:5px;
   padding-bottom:5px;
   background-color:white;
-  border:1px solid #979797;
+  border:1px solid #D8DCDE;
   margin-right:15px
 }
 
@@ -776,14 +774,14 @@
 
 .list-group-item-action{
     background-color:white !important;
-    color: black;
+    color: #696969 !important;
     border-top: 0px;
     font-size:20px;
 }
 
 .list-group-item-action.active{
   background-color:white !important;
-  color: black;
+  color: black !important;
   border-top: 0px;
   border-bottom: 5px solid #c43805 !important;
 }
