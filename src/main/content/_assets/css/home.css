@@ -47,6 +47,10 @@
     padding: 50px 0 0 50px;
 }
 
+.dopdown_text{
+    text-align: center;
+}
+
 #video_sub_header{
     font-size: 1.4em;
 }
