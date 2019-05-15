@@ -58,7 +58,12 @@
 .usage_video{
     border: none;
     padding: 0px;
+    text-align: center;
     margin: 0 15px -5px 15px;
+}
+
+.usage_video > iframe {
+    width: 75%;
 }
 
 .boxes_image {
