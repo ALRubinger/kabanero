@@ -83,7 +83,8 @@
 }
 
 .open_source_platform_vertical_separator_visible{
-    border-left:3px solid;
+    border-width:0 0 0 3px;
+    border-left: solid;
     border-image-source: linear-gradient(180deg, #e3690a, #fbae61);
     border-image-slice:1;
 }
