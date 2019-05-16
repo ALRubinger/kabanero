@@ -23,6 +23,12 @@ main {
     margin-right: 30px;
 }
 
+#kabanero_nav_img{
+    height: 30px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
 .bg-custom {
     color: #292828;
     background-color: #c43804;
@@ -116,7 +122,7 @@ main {
 }
 
 #header-title{
-    margin-left: 25px;
+    margin-left: 5px;
     color: #FFFFFF;
     font-size: 1.8em;
     font-family: 'Hammersmith One', Arial Narrow, Helvetica, Arial;

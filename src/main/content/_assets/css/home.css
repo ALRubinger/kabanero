@@ -30,6 +30,7 @@
     background-color: #343332;
     color: white;
     padding: 15px 0 15px 0;
+    margin-top: 0px;
 }
 
 .open_source_platform{
@@ -39,6 +40,10 @@
 
 .open_source_platform_col{
     padding:0px;
+}
+
+.kabanero_img{
+    height: 580px;
 }
 
 .open_source_platform_title_row{
@@ -146,9 +151,7 @@
     width: 75%;
 }
 
-.boxes_image {
-    margin-top: 100px;
-}
+
 
 #intro_content {
     position: relative;
