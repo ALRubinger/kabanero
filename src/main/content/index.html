@@ -58,8 +58,8 @@ seo-title: Kabanero
         <div class="col-md-2"></div>
         <div class="col-md-8 listButtons">
             <div class="list-group list-group-flush list-group-horizontal" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active list-item-centered" id="list-dev-list" data-toggle="list" href="#list-dev" role="tab" aria-controls="profile">Developer</a>
-            <a class="list-group-item list-group-item-action list-item-centered" id="list-arch-list" data-toggle="list" href="#list-arch" role="tab" aria-controls="home">Architect</a>
+            <a class="list-group-item list-group-item-action active list-item-centered" id="list-dev-list" data-toggle="list" href="#list-dev" role="tab" aria-controls="profile">Development</a>
+            <a class="list-group-item list-group-item-action list-item-centered" id="list-arch-list" data-toggle="list" href="#list-arch" role="tab" aria-controls="home">Architecture</a>
             <a class="list-group-item list-group-item-action list-item-centered" id="list-op-list" data-toggle="list" href="#list-op" role="tab" aria-controls="messages">Operations</a>
             </div>
         </div>
@@ -437,9 +437,9 @@ seo-title: Kabanero
     <div class="container">
         <div class="row">
             <div class="col-12 open_source_platform_title_row">
-                <p class="open_source_platform_title">
+                <h2 class="open_source_platform_title">
                     Kabanero Open Source Platform
-                </p>
+                </h2>
             </div>
         </div>
         <div class="row">
@@ -580,7 +580,7 @@ seo-title: Kabanero
         <div class="container">
             <div class="row">
                 <div class="col-md-12 textAlignCenter">
-                    <h2 class="foundationalToolsText">FOUNDATIONAL TOOLS</h2>
+                    <h3 class="foundationalToolsText">FOUNDATIONAL TOOLS</h3>
                 </div>
             </div>
             <div class="row">
@@ -598,7 +598,7 @@ seo-title: Kabanero
                 </div>
                 <div class="col-md-2 textAlignCenter">
                     <!-- <img src="/img/logos/85x85/istio.png" class="img-fluid foundationalImg" hidden> -->
-                    <p class="toolsLabel hiddenLogo">Itsio</p>
+                    <p class="toolsLabel hiddenLogo">Istio</p>
                 </div>
                 <div class="col-md-2 textAlignCenter">
                     <!-- <img src="/img/logos/85x85/knative.png" class="img-fluid foundationalImg" hidden> -->
@@ -615,7 +615,7 @@ seo-title: Kabanero
     </div>
 
 <!-- Blog Posts -->
-<div style="background-color: #f3f5f7;">
+<div class="neutral_background area">
     <div class="container">
         <div class="row">
             <div class="col-xl-12" style="text-align: center;">
@@ -624,14 +624,14 @@ seo-title: Kabanero
         </div>
         <div class="row">
             <div class="col-xl-6">
-                <div class="row visitBlogRow boxShadow" style="background-color: white;">
+                <div class="row visitBlogRow">
                     <h3 class="col-md-5 visitText">Visit our Blog!</h3>
                     <div class="col-md-3"></div>
                     <a role="button" class="btn col-md-3 visitBlogButton" href="/blog">Visit</a>
                 </div>
                 <div class="row emptyRow"></div>
                 {% for post in site.posts limit:2 %}
-                    <div class="row blog_post_row boxShadow">
+                    <div class="row blog_post_row">
                         <div class="col-xl blog_post_column">
                             <div class="row">
                                 <div class="blogHeader">
@@ -669,7 +669,7 @@ seo-title: Kabanero
                 {% endfor %}
             </div>
             <div class="col-xl-5 offset-xl-1" id="twitterCol">
-                <div class="row boxShadow">
+                <div class="row">
                     <a class="twitter-timeline" data-height="748" href="{{site.twitter_url}}">Tweets by {{site.twitter_username}} </a>
                 </div>
             </div>
