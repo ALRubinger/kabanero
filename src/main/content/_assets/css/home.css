@@ -14,6 +14,7 @@
     margin: 35px 0 35px 0;
 }
 
+
 #intro_background_image {
     background-image: url('/img/home1.png');
     background-repeat: no-repeat;
@@ -27,14 +28,14 @@
 }
 
 .video{
-    background-color: #343332;
+    background-color: #292828;
     color: white;
     padding: 15px 0 15px 0;
     margin-top: 0px;
 }
 
 .open_source_platform{
-    background-color: #343332;
+    background-color: #292828;
     padding: 15px 0 15px 0;
 }
 
@@ -52,7 +53,6 @@
 }
 
 .open_source_platform_title{
-    font-size:1.5em;
     color:white;
     text-align:center;
 }
@@ -96,11 +96,6 @@
     border-top:6px solid #fbae61;
 }
 
-.open_source_platform_content_images{
-    border:10px solid #fbae61;
-    height:100%;
-}
-
 .open_source_platform_content_title{
     font-weight:bold;
 }
@@ -111,11 +106,34 @@
     text-align:center;
     height:100%;
     display:flex;
-    font-size:1.2em;
+    font-size:16px;
+}
+
+.open_source_platform_image_row{
+    height:100%;
+}
+
+.open_source_platform_image_column{
+    position:relative;
+}
+
+.open_source_platform_image_centered{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.open_source_platform_image_medium{
+    width:50px;
+}
+
+.open_source_platform_image_large{
+    width:75px;
 }
 
 .featured_models{
-    background-color: #f4f5f7;
+    background-color: #f3f5f7;
     margin-top: 3em;
     padding-bottom: 7em;
     padding-top: 3em;
@@ -166,15 +184,15 @@
 
 #intro_logo {
     width: 502px;
-    font-size:78px;
+    font-size:70px;
     font-family: 'Hammersmith One', Arial Narrow, Helvetica, Arial;
     color: #292828;
     margin: 0px;
 }
 
 #intro_lighten_up_title {
-    font-size: 35px;
-    font-family: Arial Narrow, Helvetica, Arial;
+    font-size: 25px;
+    font-family: 'IBM Plex Sans' Arial Narrow, Helvetica, Arial;
     color: #212529;
     margin: 0px 0 16px 0;
 }
@@ -249,6 +267,12 @@
 
 #featured_models_title{
     display: inline;
+}
+
+.sectionTitle{
+    font-family: 'IBM Plex Sans';
+    font-weight: 400;
+    font-size: 25px;
 }
 
 #see_all_models{
@@ -605,13 +629,14 @@
 
 #get_started_link {
     display: block;
-    font-size: 20px;
+    width: 227px;
+    font-size: 14px;
     font-weight: 500;
     color: #FFFFFF;
     background-color: #c43804;
-    border-radius: 15px;
+    border-radius: 7px;
     padding: 15px 25px;
-    margin-top:50px;
+    margin-top:40px;
     margin-bottom: 8px;
     text-align: center;
     transition: background-color .2s;
@@ -882,8 +907,8 @@
 }
 
 .listGroupText {
-  margin-top:10px;
-  margin-bottom:10px;
+  margin-top:25px;
+  margin-bottom:30px;
   padding-left: 30px;
 }
 
@@ -936,10 +961,6 @@
     top:10px;
 }
 
-.openSourcePlatformRow{
-    margin-bottom:40px;
-}
-
 .followButtonCol{
     position: relative;
     left: 330px;
@@ -962,6 +983,7 @@
 .foundationalToolsText{
     display:inline-block;
     margin-bottom:30px;
+    font-size:1.5em;
 }
 
 .toolsLabel{
@@ -1038,6 +1060,11 @@
     color: #ffffff;
 }
 
+.visitBlogRow{
+    border: 1px solid #D8DCDE;
+    border-radius: 3px;
+}
+
 .visitText{
     margin-top:15px;
     margin-left:10px;
@@ -1052,6 +1079,8 @@
 }
 
 .blog_post_column{
+    border: 1px solid #D8DCDE;
+    border-radius: 3px;
     padding: 20px 40px 20px 40px;
 }
 
@@ -1060,7 +1089,7 @@
 }
 
 .blogTitle{
-    color: black;
+    color: #000000;
 }
 
 .blogHeader{
@@ -1069,10 +1098,6 @@
 
 .titleRow{
     margin-bottom:10px;
-}
-
-.boxShadow{
-    box-shadow: 1px 1px 5px #c5c9cf;
 }
 
 .featuredModelBox{
@@ -1088,4 +1113,14 @@
 .featuredModelBox:hover{
     color:white;
     background-color: #c43804;
+}
+
+.foundationalTools{
+    background-color: #292828;
+    padding: 15px 0 100px 0;
+}
+
+.foundationalToolsContainer{
+    background-color:white;
+    padding: 20px 0px 30px 0px;
 }
