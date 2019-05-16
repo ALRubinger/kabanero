@@ -109,7 +109,7 @@
 }
 
 .featured_models{
-	background-color: #f3f5f7;
+	background-color: #f4f5f7;
     margin-top: 3em;
     padding-bottom: 7em;
     padding-top: 3em;
@@ -1064,4 +1064,19 @@
 
 .boxShadow{
     box-shadow: 1px 1px 5px #c5c9cf;
+}
+
+.featuredModelBox{
+    border-radius:4rem;
+    color:black;
+    background-color:white;
+    border:0px;
+    outline:0px !important;
+    height: 4rem;
+    font-size:16px;
+}
+
+.featuredModelBox:hover{
+    color:white;
+    background-color: #c43804;
 }
