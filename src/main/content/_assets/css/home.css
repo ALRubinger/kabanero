@@ -962,7 +962,11 @@
 
 .toolsLabel{
     margin-top: 10px;
-    visibility: hidden;
+}
+
+.hiddenLogo {
+    position: relative;
+    top:85px;
 }
 
 .foundationalImg:hover + .toolsLabel{
