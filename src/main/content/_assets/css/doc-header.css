@@ -64,13 +64,13 @@ nav .container-fluid {
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #000000;
+    color: #292828;
     transition: color .2s;
     margin-left: 10px;
 }
 
 .navbar-default .navbar-nav > li > a:focus {
-    color: #000000;
+    color: #292828;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -109,7 +109,7 @@ nav .container-fluid {
 
 .reference_dropdown {
     font-size:16px;
-    color: #000000;
+    color: #292828;
     letter-spacing:0;
     text-align:center;
     border: none;
@@ -170,12 +170,12 @@ nav .container-fluid {
 
 #reference_dropdown_container .dropdown-menu > li {
     font-size: 16px;
-    color: #000000;
+    color: #292828;
     letter-spacing: 0;
 }
 
 .dropdown-menu > li > a {
-    color: #000000;
+    color: #292828;
 }
 
 #reference_dropdown_container .dropdown-menu > li > a:hover, #reference_dropdown_container .dropdown-menu > li > a:focus {
@@ -197,7 +197,7 @@ nav .container-fluid {
 }
 
 #breadcrumb_row a {
-    color:#000000;
+    color:#292828;
 }
 
 /* Unclickable link */
@@ -245,7 +245,7 @@ nav .container-fluid {
 
 #breadcrumb_row .selected_javadoc__version {
     color: #f4914d;
-    font-family: BunueloBold, Arial Narrow, Helvetica, Arial;    
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;    
 }
 
 #breadcrumb_row a.selected_javadoc__version:hover {
@@ -318,7 +318,7 @@ nav .container-fluid {
     }
 
     .navbar-default .navbar-nav > li > a, #reference_dropdown_container > .btn {
-        font-family: BunueloLight, Arial Narrow, Helvetica, Arial;
+        font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
         font-size: 35px;
         color: #FFFFFF;
         margin-left: 0px;

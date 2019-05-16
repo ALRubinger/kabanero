@@ -7,16 +7,6 @@
  * appended to the end of the combined file.
  */
 
-@font-face {
-    font-family: BunueloLight, Arial Narrow, Helvetica, Arial;
-    src: url("/fonts/BunueloCleanPro-Light.otf");
-}
-
-@font-face {
-    font-family: BunueloBold, Arial Narrow, Helvetica, Arial;
-    src: url("/fonts/BunueloCleanPro-SemiBold.otf");
-}
-
 body {
     background-color: white;
     font-family: Asap, 'DejaVu Sans', Arial, Helvetica, sans-serif;
@@ -31,15 +21,15 @@ a[target="classFrame"] {
 }
 
 h1 {
-    font-family: BunueloBold, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
 }
 
 h2 {
-    font-family: BunueloBold, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
 }
 
 th[scope='col'] {
-    font-family: BunueloBold, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
     font-size: 11px; 
 }
 
@@ -57,7 +47,7 @@ th > a {
     border-top: 1px solid #D4D7E3;
     padding: 20px 0px 0px 8px;
 	margin: 20px 10px 5px 0px;
-    font-family: BunueloBold, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
     font-size: 14px;
     color:#313653;
     text-transform: uppercase;
@@ -161,7 +151,7 @@ ul.blockList ul.blockList ul.blockList li.blockList h3 {
 .indexContainer h2,
 .indexContainer h2[title="Packages"] {
     padding: 0 0 0 8px;
-    font-family: BunueloBold, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
     text-transform: uppercase;
     font-size: 14px;
     color:#313653;
@@ -191,7 +181,7 @@ ul.blockList ul.blockList ul.blockList li.blockList h3 {
 }
 
 .overviewSummary tr:nth-child(1):not(.altColor) {
-    font-family:BunueloBold, Arial Narrow, Helvetica, Arial;
+    font-family:'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
 }
 
 .overviewSummary caption span, .memberSummary caption span, .typeSummary caption span,
@@ -199,7 +189,7 @@ ul.blockList ul.blockList ul.blockList li.blockList h3 {
 .requiresSummary caption span, .packagesSummary caption span, .providesSummary caption span,
 .usesSummary caption span {
     background-color:#D6D9E4;
-    font-family: BunueloLight, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
     font-size: 35px;
 	height: auto;
 }
