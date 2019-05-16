@@ -157,7 +157,7 @@
 }
 
 .kabanero_colored_bar {
-    font-family: BunueloLight;
+    font-family: 'IBM Plex Sans';
     font-size: 35px;
     color: #FFFFFF;
     background-color: #c43804;
@@ -165,7 +165,7 @@
     padding-top: 17px;
     padding-bottom: 11px;
     margin-bottom: 0px;
-    border-top: 3px solid #000000;
+    border-top: 3px solid #292828;
     
     @media (max-width: 991.98px) {
         padding-left: 33px;
@@ -197,9 +197,9 @@
 }
 
 .blog_post_title_link {
-    font-family: BunueloLight;
+    font-family: 'IBM Plex Sans';
     font-size: 35px;
-    color: #000000;
+    color: #292828;
     transition: color .2s;
 
     &:hover {
@@ -322,9 +322,9 @@
 }
 
 .blog_post_title_link_condensed {
-    font-family: BunueloBold;
+    font-family: 'IBM Plex Sans';
     font-size: 25px;
-    color: #000000;
+    color: #292828;
     transition: color .2s;
 
     &:hover {
@@ -379,7 +379,7 @@ footer {
 #footer_bottom_container {
     margin-bottom: 0px;
     width: 100%;
-    background: #ffffff;
+    background-color: #C43804;
 }
 
 @media (min-width: 767px) {
