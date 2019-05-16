@@ -8,16 +8,6 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-@font-face {
-    font-family: BunueloLight;
-    src: url("/fonts/BunueloCleanPro-Light.otf");
-}
-
-@font-face {
-    font-family: BunueloBold;
-    src: url("/fonts/BunueloCleanPro-SemiBold.otf");
-}
-
 /* make the navbar sticky */
 .navbar {
     position: fixed;
@@ -25,7 +15,7 @@
 }
 
 #page_title {
-    font-family: BunueloLight, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
     font-size: 35px;
     color: #24243B;
     letter-spacing: 0;
@@ -89,7 +79,7 @@ html, body, main {
 }
 
 #feature_title, #common_feature_title, #config_title, #command_title, #general_title { /* for weird reason, the css for config_title is not picked up */
-    font-family: BunueloLight, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
     font-size: 35px;
     letter-spacing: 0;
 }
