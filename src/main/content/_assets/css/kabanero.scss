@@ -407,16 +407,20 @@ footer {
     }
 
     #footer_twitter_link {
-        background-image: url("/img/Footer_TwitterBird.svg");
+        background-image: url("/img/header_twitter_icon.svg");
+        background-repeat: no-repeat;
+        background-size: 25px;
         &:hover {
-            background-image: url("/img/Footer_TwitterBird_Hover.svg");
+            background-image: url("/img/header_twitter_icon_hover.svg");
         }
     }
 
     #footer_github_link {
-        background-image: url("/img/Footer_GitCat.svg");
+        background-image: url("/img/header_github_icon.svg");
+        background-repeat: no-repeat;
+        background-size: 25px;
         &:hover {
-            background-image: url("/img/Footer_GitCat_Hover.svg");
+            background-image: url("/img/header_github_icon_hover.svg");
         }
     }
 
