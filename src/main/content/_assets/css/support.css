@@ -11,7 +11,7 @@
 
 /* Nav bar color corrections for light page */
 .navbar-dark .navbar-nav .nav-link {
-    color: #000000;
+    color: #292828;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -19,8 +19,8 @@
 }
 
 #fork_button {
-    border: 1px solid #000000;
-    color: #000000;
+    border: 1px solid #292828;
+    color: #292828;
 }
 
 #fork_button:hover {
@@ -33,7 +33,7 @@
 
 @media (max-width: 991.98px) {
     .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active, #fork_button {
-        font-family: BunueloLight, Arial Narrow, Helvetica, Arial;
+        font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
         font-size: 35px;
         color: #FFFFFF;
         margin-right: 26px;
@@ -69,14 +69,14 @@
 /* ENTERPRISE SUPPORT */
 
 #not_alone_text{
-    font-family: BunueloLight, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
     font-size: 40px;
     text-align: center;
     margin-top: 160px;
 }
 
 #support_for_all_text {
-    font-family: BunueloBold, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
     font-size: 24px;
     text-align: center;
     margin-top: 12px;
@@ -98,13 +98,13 @@
 }
 
 #enterprise_support_title {
-    font-family: BunueloLight, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
     font-size: 60px;
     margin-top: 30px;
 }
 
 #enterprise_support_text {
-    font-family: BunueloBold, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
     font-size: 24px;
     margin-top: 10px;
     margin-bottom: 0px;
@@ -140,7 +140,7 @@
 }
 
 #community_support_title {
-    font-family: BunueloLight, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
     font-size: 60px;
     color: #FFFFFF;
     text-align: center;
@@ -148,7 +148,7 @@
 }
 
 #community_support_text {
-    font-family: BunueloBold, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
     font-size: 24px;
     color: #FFFFFF;
     text-align: center;
@@ -192,7 +192,7 @@
 .card-body {
     text-align: left;
     height: 82px;
-    font-family: BunueloBold, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
 }
 
 .card-title {
@@ -280,7 +280,7 @@
 }
 
 #contribute_title {
-    font-family: BunueloLight, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
     font-size: 40px;
     color: #24253A;
     text-align: center;
@@ -288,7 +288,7 @@
 }
 
 #contribute_text {
-    font-family: BunueloBold, Arial Narrow, Helvetica, Arial;
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
     font-size: 24px;
     width: 556px;
     text-align: center;
