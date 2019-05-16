@@ -982,6 +982,7 @@
 .foundationalToolsText{
     display:inline-block;
     margin-bottom:30px;
+    font-size:1.5em;
 }
 
 .toolsLabel{
@@ -1111,4 +1112,14 @@
 .featuredModelBox:hover{
     color:white;
     background-color: #c43804;
+}
+
+.foundationalTools{
+    background-color: #292828;
+    padding: 15px 0 100px 0;
+}
+
+.foundationalToolsContainer{
+    background-color:white;
+    padding: 20px 0px 30px 0px;
 }
