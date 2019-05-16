@@ -25,7 +25,7 @@ main {
 
 .bg-custom {
     color: #000000;
-    background-color: #c43805;
+    background-color: #c43804;
 }
 
 .qa-descriptor {
@@ -178,7 +178,7 @@ main {
     }
 
     .navbar-collapse {
-        background-image: radial-gradient(circle at bottom left, #FFFFFF 0%, #c43805 91%);
+        background-image: radial-gradient(circle at bottom left, #FFFFFF 0%, #c43804 91%);
     }
 
     .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active, #fork_button {
