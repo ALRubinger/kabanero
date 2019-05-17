@@ -48,7 +48,7 @@
 }
 
 #article_container {
-    background-color: white;
+    background-color: #f3f5f7;
     color: #24253a;
     padding-top: 55px;
     padding-bottom: 82px;
@@ -218,5 +218,43 @@
     }
     &.content {
         width: 100%;
+    }
+}
+
+.leftArrow{
+    border: solid #c43804;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    vertical-align: middle;
+    -webkit-transform: rotate(135deg);
+    position:relative;
+    top:40px;
+}
+
+.kabanero_colored_link {
+    color: #c43804;
+
+    &:hover {
+        color: #cf3b06;
+    }
+
+    @media (max-width: 767.98px) {
+        color: #F69144;
+
+        &:hover {
+            transition: all .2s;
+            color: #E3700D;
+        }
+    }
+    
+}
+
+.blogTitle{
+    padding-left:25px;
+    color: black;
+
+    &:hover{
+        color:black
     }
 }

@@ -273,8 +273,6 @@
 
 .read_more_link {
     color: #c43804;
-    border: 2px solid #c43804;
-    border-radius: 7px;
     font-size: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -284,7 +282,6 @@
 
     &:hover {
         color: #ce8f78;
-        border-color: #ce8f78;
     }
 
     @media (max-width: 767.98px) {
@@ -390,4 +387,9 @@ footer {
     #footer_bottom_right_section {
         padding-right: 10%;
     }
+}
+
+.blogContent{
+    background-color:#f3f5f7 !important;
+    margin: 20px 0 20px 0;
 }
