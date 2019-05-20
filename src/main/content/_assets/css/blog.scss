@@ -199,12 +199,16 @@
 .blog_post_title_link {
     font-family: 'IBM Plex Sans';
     font-size: 35px;
-    color: #292828;
+    color: #FFFFFF;
     transition: color .2s;
 
     &:hover {
         color: #cf3b06;
     }
+}
+
+.white_text{
+    color:#FFFFFF;
 }
 
 .continued_text {
@@ -330,14 +334,18 @@
 }
 
 #final_post {
-    padding-bottom: 40px;
-
+    background-color: #343332;
+    padding: 25px 10px 25px 20px;
+    margin: 0 0 40px 0;
+    border-top:6px solid #C43804;
     @media (max-width: 991.98px) {
         text-align: center;
     }
     @media (max-width: 767.98px) {
         display: none;
     }
+    position: relative;
+    bottom:20px;
 }
 
 #ufo_images_mobile_container {
