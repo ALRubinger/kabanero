@@ -53,11 +53,12 @@
 .open_source_platform_title_row{
     padding-top:50px;
     padding-bottom:50px;
+    text-align:center;
 }
 
 .open_source_platform_title{
     color:white;
-    text-align:center;
+    margin-bottom:20px;
 }
 
 .open_source_platform_box{
@@ -265,11 +266,11 @@
 #featured_models_col {
     position: relative;
     text-align: center;
-    padding: 15px 15px 50px 15px;
+    padding: 15px 15px 30px 15px;
 }
 
 #featured_models_title{
-    display: inline;
+    margin-bottom:20px;
 }
 
 .sectionTitle{
@@ -1126,4 +1127,12 @@
 .foundationalToolsContainer{
     background-color:white;
     padding: 20px 0px 30px 0px;
+}
+
+.open_source_platform_text{
+    color:#FFFFFF;
+}
+
+.stackImg{
+    height:85px;
 }
