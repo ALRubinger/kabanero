@@ -18,27 +18,35 @@ js:
             <div id="post_column" class="col-sm-12">
                 <div id="article_container">
                     <article class="post" itemscope itemtype="http://schema.org/BlogPosting" aria-label="article">
-                        <header>                        
-                            <div class="post_information_container">
-                                <img src="{{ page.author_picture }}" id="author_image" alt="image of author">
-                                <div id="post_information">
-                                    <a id="author_name" href="{{ page.author_github }}">{{ page.author }}</a>
-                                    <div id="post_date">
-                                        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                                            {% assign date_format = site.minima.date_format | default: "%B %d, %Y" %} {{ page.date | date: date_format }}
-                                        </time>
+                        <div class="postPadding">
+                            <header>                        
+                                <div class="post_information_container">
+                                    <img src="{{ page.author_picture }}" id="author_image" alt="image of author">
+                                    <div id="post_information">
+                                        <a id="author_name" href="{{ page.author_github }}">{{ page.author }}</a>
+                                        <div id="post_date">
+                                            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                                                {% assign date_format = site.minima.date_format | default: "%B %d, %Y" %} {{ page.date | date: date_format }}
+                                            </time>
+                                        </div>
                                     </div>
                                 </div>
+                                <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+                            </header>
+                            <div itemprop="articleBody" id="article_body">
+                                {{ content }}
                             </div>
-                            <h1 itemprop="name headline">{{ page.title | escape }}</h1>
-                        </header>
-                        <div itemprop="articleBody" id="article_body">
-                            {{ content }}
                         </div>
                         <div id="share_post_container">
                             Share this post:
-                            <a id="twitter_link" href="//twitter.com/intent" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('{{page.title | replace: "'", "\\'"}}') + '&url=' + encodeURIComponent(window.location)); return false" aria-label="Twitter link"></a>
-                            <a id="reddit_link" href="//www.reddit.com/submit" onclick="window.open('//www.reddit.com/submit?url=' + encodeURIComponent(window.location)); return false" aria-label="Reddit link"></a>
+                            <div class="linksContainer">
+                                <a target="_blank" href="{{site.github_url}}">
+                                    <img id="header_github_img" src="/img/footer_github_darker.png" class="img-fluid" alt="github logo">
+                                </a>
+                                <a target="_blank" href="{{site.twitter_url}}">
+                                    <img id="header_twitter_img" src="/img/footer_twitter_darker.png" class="img-fluid" alt="twitter logo">
+                                </a>
+                            </div>
                         </div>
                         {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
                     </article>

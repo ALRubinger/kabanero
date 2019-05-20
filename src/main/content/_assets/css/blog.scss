@@ -199,7 +199,7 @@
 .blog_post_title_link {
     font-family: 'IBM Plex Sans';
     font-size: 35px;
-    color: #FFFFFF;
+    color: #292828;
     transition: color .2s;
 
     &:hover {
@@ -400,4 +400,15 @@ footer {
 .blogContent{
     background-color:#f3f5f7 !important;
     margin: 20px 0 20px 0;
+}
+
+.final_post_title{
+    font-family: 'IBM Plex Sans';
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+.blogPageTitle{
+    font-family: 'Hammersmith One', Arial Narrow, Helvetica, Arial;
+    font-size: 35px;
 }
