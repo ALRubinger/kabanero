@@ -401,6 +401,8 @@ footer {
 
     #footer_stackoverflow_link {
         background-image: url("/img/Footer_StackO.svg");
+        background-repeat: no-repeat;
+        background-size: 25px;
         &:hover {
             background-image: url("/img/Footer_StackO_Hover.svg");
         }
