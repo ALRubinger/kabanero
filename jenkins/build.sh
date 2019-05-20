@@ -1,3 +1,4 @@
+#!/bin/bash
 #  Modified version of build_jekyll_maven.sh
 
 # Exit immediately if a simple command exits with a non-zero status.
