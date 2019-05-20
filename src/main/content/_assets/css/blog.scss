@@ -207,6 +207,10 @@
     }
 }
 
+.white_text{
+    color:#FFFFFF;
+}
+
 .continued_text {
     font-size: 16px;
     color: #F69144;
@@ -273,8 +277,6 @@
 
 .read_more_link {
     color: #c43804;
-    border: 2px solid #c43804;
-    border-radius: 7px;
     font-size: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -284,7 +286,6 @@
 
     &:hover {
         color: #ce8f78;
-        border-color: #ce8f78;
     }
 
     @media (max-width: 767.98px) {
@@ -333,14 +334,18 @@
 }
 
 #final_post {
-    padding-bottom: 40px;
-
+    background-color: #343332;
+    padding: 25px 10px 25px 20px;
+    margin: 0 0 40px 0;
+    border-top:6px solid #C43804;
     @media (max-width: 991.98px) {
         text-align: center;
     }
     @media (max-width: 767.98px) {
         display: none;
     }
+    position: relative;
+    bottom:20px;
 }
 
 #ufo_images_mobile_container {
@@ -390,4 +395,20 @@ footer {
     #footer_bottom_right_section {
         padding-right: 10%;
     }
+}
+
+.blogContent{
+    background-color:#f3f5f7 !important;
+    margin: 20px 0 20px 0;
+}
+
+.final_post_title{
+    font-family: 'IBM Plex Sans';
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+.blogPageTitle{
+    font-family: 'Hammersmith One', Arial Narrow, Helvetica, Arial;
+    font-size: 35px;
 }

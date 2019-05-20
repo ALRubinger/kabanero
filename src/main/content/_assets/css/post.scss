@@ -11,7 +11,7 @@
 
 
  #background_container {
-    padding-top: 100px;
+    padding-top: 20px;
     background-size: 100% calc(100% - 280px);
     background-repeat: no-repeat;
     margin-bottom: 67px;
@@ -48,15 +48,10 @@
 }
 
 #article_container {
-    background-color: white;
+    background-color: #f3f5f7;
     color: #24253a;
     padding-top: 55px;
-    padding-bottom: 82px;
-    padding-left: 90px;
-    padding-right: 90px;
-    -webkit-box-shadow: 0px 5px 11px -3px rgba(0,0,0,0.27);
-    -moz-box-shadow: 0px 5px 11px -3px rgba(0,0,0,0.27);
-    box-shadow: 0px 5px 11px -3px rgba(0,0,0,0.27);
+    padding-bottom: 30px;
     overflow: hidden;
 
     @media (max-width: 991.98px) {
@@ -151,10 +146,12 @@
     color: #3F4659;
     font-size: 20px;
     padding-top: 50px;
-
+    padding-left:40px;
     @media (max-width: 767.98px) {
         padding-top: 20px;
     }
+
+    border-top: 6px solid #C43804
 }
 
 #twitter_link {
@@ -219,4 +216,55 @@
     &.content {
         width: 100%;
     }
+}
+
+.leftArrow{
+    border: solid #c43804;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    vertical-align: middle;
+    -webkit-transform: rotate(135deg);
+    position:relative;
+    top:32px;
+}
+
+.kabanero_colored_link {
+    color: #c43804;
+
+    &:hover {
+        color: #cf3b06;
+    }
+
+    @media (max-width: 767.98px) {
+        color: #F69144;
+
+        &:hover {
+            transition: all .2s;
+            color: #E3700D;
+        }
+    }
+    
+}
+
+.blogTitle{
+    font-family: 'Hammersmith One', Arial Narrow, Helvetica, Arial;
+    font-size:35px;
+    padding-left:15px;
+    color: black;
+
+    &:hover{
+        color:black
+    }
+}
+
+.linksContainer{
+    position:relative;
+    left:160px;
+    bottom:35px;
+}
+
+.postPadding{
+    padding-left:40px;
+    padding-right:40px;
 }
