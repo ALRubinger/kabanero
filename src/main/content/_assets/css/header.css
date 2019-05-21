@@ -118,6 +118,11 @@ main {
 	margin: 6px 25px 0 0;
 }
 
+#share_blog_twitter_img{
+    height: 30px;
+    margin: 0 15px 0 0;
+}
+
 #header_github_img{
 	height: 25px;
 	margin: 6px 25px 0 0;
