@@ -78,7 +78,7 @@ pipeline {
 		stage ('Deploy site to Cloud Foundry') {
 			steps {
 				withCredentials([usernamePassword(credentialsId: '${IBM_CLOUD_CREDENTIALS}', passwordVariable: "IBM_CLOUD_PASSWORD", usernameVariable: "IBM_CLOUD_USER")]) {
-					withDockerContainer(image: "codeconjuring", args: "-u root -e IBM_CLOUD_API=api.ng.bluemix.net -e IBM_CLOUD_SPACE=kabanero -e IBM_CLOUD_ORGANIZATION=WAS_Cloud1") {
+					withDockerContainer(image: "codeconjuring", args: "-u root -e JEKYLL_ENV=production -e IBM_CLOUD_API=api.ng.bluemix.net -e IBM_CLOUD_SPACE=kabanero -e IBM_CLOUD_ORGANIZATION=WAS_Cloud1") {
 						sh '"${WORKSPACE}"/.travis/cf-push.sh kabanero-prod'
 					}
 				}
