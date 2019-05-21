@@ -103,7 +103,7 @@ pipeline {
 
 		stage ('Build site') {
 			steps {
-				withDockerContainer(image: "codeconjuring") {
+				withDockerContainer(image: "codeconjuring", args: "-e JEKYLL_ENV=production") {
 					sh '"${WORKSPACE}"/jenkins/build.sh'
 				}
 			}
@@ -112,7 +112,7 @@ pipeline {
 		stage ('Deploy site to Cloud Foundry') {
 			steps {
 				withCredentials([usernamePassword(credentialsId: '${IBM_CLOUD_CREDENTIALS}', passwordVariable: "IBM_CLOUD_PASSWORD", usernameVariable: "IBM_CLOUD_USER")]) {
-					withDockerContainer(image: "codeconjuring", args: "-u root -e JEKYLL_ENV=production -e IBM_CLOUD_API=${getIBMCloudAPI(params.DEPLOY_TARGET)} -e IBM_CLOUD_SPACE=${params.IBM_CLOUD_SPACE} -e IBM_CLOUD_ORGANIZATION=${params.IBM_CLOUD_ORG}") {
+					withDockerContainer(image: "codeconjuring", args: "-u root -e IBM_CLOUD_API=${getIBMCloudAPI(params.DEPLOY_TARGET)} -e IBM_CLOUD_SPACE=${params.IBM_CLOUD_SPACE} -e IBM_CLOUD_ORGANIZATION=${params.IBM_CLOUD_ORG}") {
 						sh '"${WORKSPACE}"/.travis/cf-push.sh code-conjuring-${DEPLOY_TARGET}'
 					}
 				}
