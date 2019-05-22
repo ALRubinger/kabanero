@@ -1134,3 +1134,23 @@
 .stackImg{
     height:85px;
 }
+
+.stackOverFlowCol{
+    border:1px solid #D8DCDE;
+    padding: 11px 0 5px 25px;
+    border-radius:3px;
+    width:100%;
+    color:#292828;
+}
+
+.stackOverflowImg{
+    float:right;
+    height:30px;
+    position:relative;
+    bottom:5px;
+    right:20px;
+}
+
+.floatLeft{
+    float:left;
+}
