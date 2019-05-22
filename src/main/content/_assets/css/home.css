@@ -1137,7 +1137,7 @@
 
 .stackOverFlowCol{
     border:1px solid #D8DCDE;
-    padding: 17px 0 0 22px;
+    padding: 11px 0 5px 25px;
     border-radius:3px;
     width:100%;
     color:#292828;
@@ -1145,8 +1145,12 @@
 
 .stackOverflowImg{
     float:right;
-    height:45px;
+    height:30px;
     position:relative;
-    bottom:13px;
-    right:15px;
+    bottom:5px;
+    right:20px;
+}
+
+.floatLeft{
+    float:left;
 }
