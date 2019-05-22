@@ -188,8 +188,8 @@ seo-title: Kabanero
                 <p>
                     An <strong>application stack</strong> leads a company down the golden path to develop 
                     quality microservice-based applications. A stack provides guides for developing applications, 
-                    templates that ensure consistency in how apps get written, and a default toolchain for developing 
-                    applications with modern tools.
+                    templates that ensure consistency in how apps get written, a runtime in a certified base container image,
+                    and an integrated toolchain for developing applications with modern tools.
                 </p>
             </div>
             <!-- <div id="featured_models_col" class="col-md-2">
@@ -266,10 +266,6 @@ seo-title: Kabanero
                             <p>Prometheus</p>
                         </div>
                         <div class="col textAlignCenter">
-                            <img src="/img/logos/85x85/EclipseChe.png" class="img-fluid">
-                            <p>Eclipse Che&trade;</p>
-                        </div>
-                        <div class="col textAlignCenter">
                             <img src="/img/logos/85x85/tekton.png" class="img-fluid">
                             <p>Tekton&trade;</p>
                         </div>
@@ -279,7 +275,8 @@ seo-title: Kabanero
                             <p>
                                 Eclipse MicroProfile is a tool used to optimize Java applications for a microservices 
                                 architecture. With this stack, you can deliver microservices based upon the Eclipse Microservices 
-                                specifications and projects. Build and run high-quality applications on the Open Liberty runtime.
+                                specifications and projects. Build and run high-quality applications with Open Liberty runtime, which 
+                                includes OpenJDK with the container-optimizations of OpenJ9.
                             </p>
                         </div>
                     </div>
@@ -303,10 +300,6 @@ seo-title: Kabanero
                             <p>Prometheus</p>
                         </div>
                         <div class="col textAlignCenter">
-                            <img src="/img/logos/85x85/EclipseChe.png" class="img-fluid">
-                            <p>Eclipse Che&trade;</p>
-                        </div>
-                        <div class="col textAlignCenter">
                             <img src="/img/logos/85x85/tekton.png" class="img-fluid">
                             <p>Tekton&trade;</p>
                         </div>
@@ -316,7 +309,8 @@ seo-title: Kabanero
                             <p>
                                 Spring is a framework used in Java application development. With this application stack,
                                 you can deliver microservices based upon the Spring framework provided by Pivotal. 
-                                The applications run on the Open Liberty runtime.
+                                Open Liberty runtime provides support for Spring applications with OpenJDK and 
+                                container-optimizations in OpenJ9.
                             </p>
                         </div>
                     </div>
@@ -338,10 +332,6 @@ seo-title: Kabanero
                         <div class="col textAlignCenter">
                             <img src="/img/logos/85x85/prometheus.png" class="img-fluid">
                             <p>Prometheus</p>
-                        </div>
-                        <div class="col textAlignCenter">
-                            <img src="/img/logos/85x85/EclipseChe.png" class="img-fluid">
-                            <p>Eclipse Che&trade;</p>
                         </div>
                         <div class="col textAlignCenter">
                             <img src="/img/logos/85x85/tekton.png" class="img-fluid">
@@ -377,10 +367,6 @@ seo-title: Kabanero
                             <p>Prometheus</p>
                         </div>
                         <div class="col textAlignCenter">
-                            <img src="/img/logos/85x85/EclipseChe.png" class="img-fluid">
-                            <p>Eclipse Che&trade;</p>
-                        </div>
-                        <div class="col textAlignCenter">
                             <img src="/img/logos/85x85/tekton.png" class="img-fluid">
                             <p>Tekton&trade;</p>
                         </div>
@@ -403,16 +389,20 @@ seo-title: Kabanero
                     <div class="arrowUpOuter serverlessArrow"></div>
                     <div class="row collapseRow">
                         <div class="col textAlignCenter">
+                            <img src="/img/logos/85x85/open_liberty.png" class="img-fluid">
+                            <p>Open Liberty</p>
+                        </div>
+                        <div class="col textAlignCenter">
+                            <img class="img-fluid stackImg">
+                            <p>Knative</p>
+                        </div>
+                        <div class="col textAlignCenter">
                             <img src="/img/logos/85x85/helm.png" class="img-fluid">
                             <p>Helm&trade;</p>
                         </div>
                         <div class="col textAlignCenter">
                             <img src="/img/logos/85x85/prometheus.png" class="img-fluid">
                             <p>Prometheus</p>
-                        </div>
-                        <div class="col textAlignCenter">
-                            <img src="/img/logos/85x85/EclipseChe.png" class="img-fluid">
-                            <p>Eclipse Che&trade;</p>
                         </div>
                         <div class="col textAlignCenter">
                             <img src="/img/logos/85x85/tekton.png" class="img-fluid">
@@ -523,9 +513,12 @@ seo-title: Kabanero
                             src="/img/logos/TA-Logo_Light.svg">
                 </div>
                 <div class="col">
-                    <p class="open_source_platform_content_title">Modernize and build apps with speed and control.</p>
-                    <p>Use your favorite development tools to create apps for Kubernetes faster. Develop, test, debug in containers and
-                       deploy with confidence you're automatically compliant with company policies.
+                    <p class="open_source_platform_content_title">Modernize Applications</p>
+                    <p>
+                        Plan, execute, and enhance your cloud modernization journey. 
+                        Kabanero integrates with free modernization tooling from IBM for Java applications. 
+                        Choose to re-factor applications based on ROI. Accelerate development efforts with assistance 
+                        within your IDE using guided code changes.
                     </p>
                 </div>
             </div>
@@ -536,7 +529,7 @@ seo-title: Kabanero
                     <p class="open_source_platform_content_title">Languages and Runtimes</p>
                     <p>
                         Use the right language for the job. Java is at the core of most modern
-                        application environments and can support open MicroProfile or Spring-based microservices.
+                        application environments and can support Eclipse MicroProfile or Spring-based microservices.
                         Node.js and Swift are for channels to various client devices.
                     </p>
                 </div>
@@ -547,31 +540,27 @@ seo-title: Kabanero
                 <p class="yellowLink">Swift</p>
                 <p class="yellowLink">Go</p>
                 <p class="yellowLink">Python</p>
-                <p class="yellowLink">Microprofile</p>
+                <p class="yellowLink">MicroProfile</p>
                 <p class="yellowLink">Jakarta EE</p>
                 <p class="yellowLink">Spring</p>
                 <p class="yellowLink">Open Liberty</p>
-                <p class="yellowLink">OpenWhisk</p>
-                <p class="yellowLink">Knative</p>
             </div>
         </div>
         <div class="row collapse open_source_platform_content_box" id="open_source_platform_develop_collapse">
             <div class="row">
+                <div class="col-1 open_source_platform_image_column">
+                    <img class="open_source_platform_image_centered open_source_platform_image_large"
+                            src="/img/logos/85x85/EclipseChe.png" >
+                </div>
                 <div class="col">
-                    <p class="open_source_platform_content_title">Modernize and build apps for enterprise with speed and control.</p>
+                    <p class="open_source_platform_content_title">Develop</p>
                     <p>
-                        Kabanero provides plugins for leading integrated development environments,
-                        which allows developers to extend their development environment to support
-                        inner loop development and testing. It also provides a hosted environment
-                        based on Eclipse Che.
+                        Develop applications for Kuberentes faster using extensions to industry leading IDEs. 
+                        Perform inner loop development of applications directly in containers from day one. 
+                        Eclipse Codewind provides these extensions to VS Code and Eclipse as well as Eclipse Che 
+                        for teams preferring a cloud hosted IDE.
                     </p>
                 </div>
-            </div>
-            <div class="row languagesRow">
-                <p class="yellowLink leftMostLink">Eclipse Che</p>
-                <p class="yellowLink">Eclipse Codewind</p>
-                <p class="yellowLink">VS Code</p>
-                <p class="yellowLink">Eclipse</p>
             </div>
         </div>
         <div class="row collapse open_source_platform_content_box" id="open_source_platform_build_collapse">
@@ -585,7 +574,7 @@ seo-title: Kabanero
                     <p class="open_source_platform_content_title">Build</p>
                     <p>
                         DevOps is critical for a successful microservice based deployment.
-                        Kabanero brings an open source CI/CD (continuous integration / continuous delivery)
+                        Kabanero supplies an integrated open source CI/CD (continuous integration / continuous delivery)
                         infrastructure based on the open source project Tekton. Kabanero provides for a rich
 						set of stages that pipelines can use to integrate features like patching,
                         vulnerability scanning, and more.
@@ -598,9 +587,11 @@ seo-title: Kabanero
                 <div class="col">
                     <p class="open_source_platform_content_title">Manage</p>
                     <p>
-                        The application is deployed to Kubernetes, where it can be scaled, secured,
-                        and run at high throughput. Kabanero provides the ability to augment the base
-                        containers with additional management capabilities.
+                        Applications are deployed with best practices for Kubernetes deployments including: 
+                        scale, security, health and liveness probes. Kabanero also provides the ability to 
+                        augment the base images with additional management capabilities as defined in the application stack. 
+                        See everything from a single pane of glass with insights and correlation spanning traditional & Kubernetes 
+                        applications for proactive problem determination.
                     </p>
                 </div>
             </div>
@@ -612,21 +603,28 @@ seo-title: Kabanero
 <div class="neutral_background foundationalTools">
         <div class="container foundationalToolsContainer">
             <div class="row">
-                <div class="col-md-2">
-                    <div class="col textAlignCenter">
+                <div id="foundation_kube_container" class="col-md-5">
+                    <div class="col-md">
                         <img src="/img/logos/85x85/kubernetes.png" class="img-fluid kubeImg">
                     </div>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-6">
                     <div class="row">
-                        <p class="open_source_platform_content_title">Built on Kubernetes foundation</p>
+                        <div class="col">
+                            <p class="open_source_platform_content_title">Built on a foundation of</p>
+                        </div>
                     </div>
                     <div class="row">
-                        <p class="orangeLink leftMostLink">Kubernetes</p>
-                        <p class="orangeLink">Helm</p>
-                        <p class="orangeLink">Knative</p>
-                        <p class="orangeLink">Operator Framework</p>
-                        <p class="orangeLink">Istio</p>
+                        <div class="col-xs-1">
+                            <p class="orangeLink leftMostLink">Kubernetes</p>
+                        </div>
+                        <div class="col-xs-1">
+                            <p class="orangeLink">Knative</p>
+                        </div>
+                        <div class="col-xs-1">
+                            <p class="orangeLink">Istio</p>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
