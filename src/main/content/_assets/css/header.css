@@ -248,7 +248,7 @@ main {
     #navbarNav {
         max-width: 100%;
         margin-left: 0;
-        border-bottom: 2px solid #FAFFC7;
+        /* border-bottom: 2px solid #FAFFC7; */
     }
 
     #header_round_links_container {
