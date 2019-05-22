@@ -43,13 +43,13 @@ nav .container-fluid {
     box-shadow: none;
 }
 
-.qa-descriptor {	
-    position: absolute;	
-    top: 10px;	
-    right: 10px;	
-    color: blue;	
-    background-color: orange;	
-    padding: 10px 15px;	
+.qa-descriptor {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: blue;
+    background-color: orange;
+    padding: 10px 15px;
 }
 
 .container-fluid > .navbar-header {
@@ -145,7 +145,7 @@ nav .container-fluid {
 
  .header_round_btn {
     display: inline-block;
-    height: 68px;       
+    height: 68px;
     width: 68px;
 }
 
@@ -194,9 +194,9 @@ nav .container-fluid {
     height: 41px;
 }
 
-#breadcrumb_row .breadcrumb {    
+#breadcrumb_row .breadcrumb {
     background-color: #a09e9e;
-    padding-left: 30px;    
+    padding-left: 30px;
     height: 100%;
     margin-bottom: 0;
     border-radius: 0;
@@ -252,7 +252,7 @@ nav .container-fluid {
 
 #breadcrumb_row .selected_javadoc__version {
     color: #f4914d;
-    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;    
+    font-family: 'IBM Plex Sans', Arial Narrow, Helvetica, Arial;
 }
 
 #breadcrumb_row a.selected_javadoc__version:hover {
@@ -271,7 +271,7 @@ nav .container-fluid {
 
     .navbar-default .navbar-collapse {
         background-image: radial-gradient(circle at top right, #5E6B8D 0%, #2C2E50 91%);
-        border-bottom: 2px solid #FAFFC7;
+        /* border-bottom: 2px solid #FAFFC7; */
     }
 
     .qa-descriptor {
@@ -299,8 +299,8 @@ nav .container-fluid {
     }
 
     #navbar_responsive_button {
-        background-color: #313653;       
-    }    
+        background-color: #313653;
+    }
 
     #header_background {
         padding-top: 0;
@@ -338,7 +338,7 @@ nav .container-fluid {
 
     .dropdown-menu > li > a {
         border-left: 1px solid #FAFFC7 !important;
-        
+
     }
 
     #reference_caret {
@@ -351,7 +351,7 @@ nav .container-fluid {
     }
 
     #reference_dropdown_container.open #reference_caret {
-        background-image: url("/img/reference_caret_up.svg");   
+        background-image: url("/img/reference_caret_up.svg");
     }
 
     #breadcrumb_row {
