@@ -287,11 +287,6 @@
     &:hover {
         color: #ce8f78;
     }
-
-    @media (max-width: 767.98px) {
-        padding-left: 79px;
-        padding-right: 79px;
-    }
 }
 
 .read_more_link_external {
@@ -346,17 +341,6 @@
     }
     position: relative;
     bottom:20px;
-}
-
-#ufo_images_mobile_container {
-    background-image: radial-gradient(circle at top right, #5E6B8D 0%, #2C2E50 70%);
-}
-
-#ufo_images_mobile {
-    min-width: 210%;
-    margin-left: 35%;
-    margin-top: 10px;
-    transform: translateX(-40%);
 }
 
 @media (min-width: 992px) {
