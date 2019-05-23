@@ -242,7 +242,6 @@
     padding: 25px;
     margin: 0 15px 0 15px;
 }
-
 .term_learn_more{
     color: #292828;
     float: right;
@@ -882,16 +881,11 @@
   padding-bottom:5px;
   background-color:white;
   border:1px solid #D8DCDE;
-  margin-right:15px
 }
 
 .borderPlaceholder{
   border-bottom: 1px solid #979797;
   margin-right: 15px;
-}
-
-.listButtons{
-  padding-right:0px;
 }
 
 .list-group-item-action{

@@ -66,20 +66,20 @@ seo-title: Kabanero
 
 <!-- Role Boxes -->
 <div class="neutral_background area">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-8 listButtons">
-            <div class="list-group list-group-flush list-group-horizontal" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active list-item-centered" id="list-dev-list" data-toggle="list" href="#list-dev" role="tab" aria-controls="profile">Development</a>
-            <a class="list-group-item list-group-item-action list-item-centered" id="list-arch-list" data-toggle="list" href="#list-arch" role="tab" aria-controls="home">Architecture</a>
-            <a class="list-group-item list-group-item-action list-item-centered" id="list-op-list" data-toggle="list" href="#list-op" role="tab" aria-controls="messages">Operations</a>
+        <div class="col-md-8">
+            <div class="list-group list-group-flush list-group-horizontal-md" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active list-item-centered" id="list-dev-list" data-toggle="list" href="#list-dev" role="tab" aria-controls="profile">Development</a>
+                <a class="list-group-item list-group-item-action list-item-centered" id="list-arch-list" data-toggle="list" href="#list-arch" role="tab" aria-controls="home">Architecture</a>
+                <a class="list-group-item list-group-item-action list-item-centered" id="list-op-list" data-toggle="list" href="#list-op" role="tab" aria-controls="messages">Operations</a>
             </div>
         </div>
         <div class="col-md-2"></div>
     </div>
     <div class="row">
-        <div class="col-md" style="padding-right:0px;">
+        <div class="col-md">
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="list-dev" role="tabpanel" aria-labelledby="list-dev-list">
                     <div class="row">
@@ -601,35 +601,34 @@ seo-title: Kabanero
 
 <!-- Foundational Tools-->
 <div class="neutral_background foundationalTools">
-        <div class="container foundationalToolsContainer">
-            <div class="row">
-                <div id="foundation_kube_container" class="col-md-5">
-                    <div class="col-md">
-                        <img src="/img/logos/85x85/kubernetes.png" class="img-fluid kubeImg">
+    <div class="container foundationalToolsContainer">
+        <div class="row">
+            <div id="foundation_kube_container" class="col-md-5">
+                <div class="col-md">
+                    <img src="/img/logos/85x85/kubernetes.png" class="img-fluid kubeImg">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col">
+                        <p class="open_source_platform_content_title">Built on a foundation of</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col">
-                            <p class="open_source_platform_content_title">Built on a foundation of</p>
-                        </div>
+                <div class="row">
+                    <div class="col-xs-1">
+                        <p class="orangeLink leftMostLink">Kubernetes</p>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-1">
-                            <p class="orangeLink leftMostLink">Kubernetes</p>
-                        </div>
-                        <div class="col-xs-1">
-                            <p class="orangeLink">Knative</p>
-                        </div>
-                        <div class="col-xs-1">
-                            <p class="orangeLink">Istio</p>
-                        </div>
-                        </div>
+                    <div class="col-xs-1">
+                        <p class="orangeLink">Knative</p>
+                    </div>
+                    <div class="col-xs-1">
+                        <p class="orangeLink">Istio</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 <!-- Blog Posts -->
 <div class="neutral_background area">
