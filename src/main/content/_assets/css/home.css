@@ -143,10 +143,6 @@
     padding-top: 3em;
 }
 
-.featured_models_header{
-	margin-left: 7em;
-}
-
 .video_description{
     padding: 50px 0 0 50px;
 }
@@ -1132,7 +1128,8 @@
 
 .foundationalToolsContainer{
     background-color:white;
-    padding: 20px 0px 30px 0px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .open_source_platform_text{
@@ -1172,9 +1169,4 @@
 
 .languagesRow{
     margin-left:0px;
-}
-
-.kubeImg{
-    margin-bottom: 5px;
-    float: right;
 }
