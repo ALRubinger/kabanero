@@ -18,7 +18,9 @@
 
 function hideAllFeaturedModelsCollapses(element){
     $(".featuredModelsCollapse").collapse('hide');
+    $(".featuredModelBox").removeClass('selectedStack');
     $(element).collapse('show');
+    $(element).addClass('selectedStack');
 }
 
 function hideAllOpenSourcePlatformsCollapses(id){
