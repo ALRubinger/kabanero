@@ -1129,8 +1129,8 @@
 
 .open_source_platform_text{
     color:#FFFFFF;
-	margin-left: 17%;
-	max-width: 65%;
+    margin-left: 17%;
+    max-width: 65%;
 }
 
 .stackImg{
@@ -1158,17 +1158,17 @@
 }
 
 .yellowLink{
-    /* border-bottom: 2px solid #FBAE61; */
+    border-bottom: 2px solid #FBAE61;
     margin: 0 20px 0 10px;
 }
 
 .orangeLink{
-    /* border-bottom: 2px solid #C43804; */
+    border-bottom: 2px solid #C43804;
     margin: 0 30px 0 10px;
 }
 
 .leftMostLink{
-    margin-left:0px;
+    margin-left: 15px;
 }
 
 .languagesRow{
@@ -1176,5 +1176,10 @@
 }
 
 .kubeImg{
-    margin-bottom:5px;
+    margin-bottom: 5px;
+    float: right;
+}
+
+#foundation_kube_container{
+    margin-left: 15px;
 }
