@@ -242,7 +242,6 @@
     padding: 25px;
     margin: 0 15px 0 15px;
 }
-
 .term_learn_more{
     color: #292828;
     float: right;
@@ -882,7 +881,6 @@
   padding-bottom:5px;
   background-color:white;
   border:1px solid #D8DCDE;
-  margin-right:15px
 }
 
 .borderPlaceholder{
@@ -890,8 +888,18 @@
   margin-right: 15px;
 }
 
-.listButtons{
-  padding-right:0px;
+.dot-separator{
+    background: #FBAE61;
+    width: 16px;
+    height: 16px;
+    margin: 0 10px 0 10px;
+    border-radius: 50%;
+    display:inline-flex;
+    vertical-align: text-top;
+} 
+
+.dot-separator.orange{
+    background: #C43804;
 }
 
 .list-group-item-action{
@@ -1113,18 +1121,9 @@
     float:left;
 }
 
-.yellowLink{
-    border-bottom: 2px solid #FBAE61;
-    margin: 0 20px 0 10px;
-}
-
 .orangeLink{
     border-bottom: 2px solid #C43804;
     margin: 0 30px 0 10px;
-}
-
-.leftMostLink{
-    margin-left: 15px;
 }
 
 .languagesRow{
