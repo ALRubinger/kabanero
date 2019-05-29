@@ -1132,6 +1132,26 @@
     color:#FFFFFF;
 }
 
+#foundation_kube_container{
+    margin-left: 15px;
+}
+
+.slackLink{
+    height:30px;
+    margin: 3px 0 0 0;
+}
+
+.slackInvite{
+    color:#C43804;
+    font-size:16px;
+    font-weight: bolder;
+    margin: 0 0 0 15px;
+}
+
+.slackText{
+    margin: 0 0 5px 15px;
+}
+
 #kube-img{
     float:right;
 }
