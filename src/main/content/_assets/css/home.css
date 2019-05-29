@@ -1096,6 +1096,7 @@
 
 .stackImg{
     height:85px;
+    display: inline-block;
 }
 
 .stackOverFlowCol{
