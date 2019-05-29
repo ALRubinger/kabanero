@@ -16,29 +16,20 @@
  *
  ******************************************************************************/
 
-package io.openliberty.website.data;
+package io.kabanero.website;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
-import java.util.TimeZone;
+import java.io.IOException;
+import java.util.Set;
 
-public class DateUtil {
+import javax.servlet.ServletContext;
+import javax.servlet.ServletContainerInitializer;
 
-	/**
-	 * Returns a String for the given Date object in UTC time.
-	 * Formatted as: "Thu Jan 01 00:00:00 UTC 1970"
-	 *
-	 * @param date
-	 * @return A date formatted like "Thu Jan 01 00:00:00 UTC 1970"
-	 */
-	public static String asUTCString(Date date) {
-		if (date == null) {
-			return null;
-		}
-		final SimpleDateFormat sdf = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", Locale.US);
-		sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
-		return sdf.format(date);
-	}
-
+public class ContainerInit implements ServletContainerInitializer {
+  public void onStartup(Set<Class<?>> classes, ServletContext ctx) {
+    try {
+      RedirectFilter.init(ctx);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
 }

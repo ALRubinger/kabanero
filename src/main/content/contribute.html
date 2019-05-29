@@ -4,26 +4,8 @@ title: Contribute
 css:
  - contribute
  - issues
-js: issues
 permalink: /contribute/
 ---
-<!-----------------------------------------------------------------------------
- -
- - Copyright 2019 IBM Corporation and others.
- -
- - Licensed under the Apache License, Version 2.0 (the "License");
- - you may not use this file except in compliance with the License.
- - You may obtain a copy of the License at
- -
- -     http://www.apache.org/licenses/LICENSE-2.0
- -
- - Unless required by applicable law or agreed to in writing, software
- - distributed under the License is distributed on an "AS IS" BASIS,
- - WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- - See the License for the specific language governing permissions and
- - limitations under the License.
- -
- ------------------------------------------------------------------------------>
 
 <!-- INTRO -->
 <div id="contribute_intro_background" class="white_red_gradient_background">
@@ -34,20 +16,18 @@ permalink: /contribute/
             </div>
             <div class="col-md-7">
                 <p id="contribute_intro_paragraph_1">
-                    Contributing to open source projects can seem scarier than a certain spherical, planet-destroying space station, but it doesn't have to be.
+                    Contributing to open source projects can seem scary, but it doesn't have to be.
                 </p>
                 <p id="contribute_intro_paragraph_2">
-                    The Kabanero community welcomes contributions at all levels. Whether you're an ensign or a seasoned commander, every user has the potential to help out.
+                    The Kabanero community welcomes contributions at all levels. Whether you're just starting out or a seasoned committer, every user has the potential to help out.
                 </p>
                 <p>
-                    Kabanero is licensed under <a href="https://github.com/OpenLiberty/open-liberty/blob/master/LICENSE" target="_blank" rel="noopener" class="light_green_link_dark_background">EPL v-1.0.</a>
+                    Kabanero is licensed under <a href="{{site.github_url}}/kabanero/blob/master/LICENSE" target="_blank" rel="noopener" class="light_green_link_dark_background">Apache License, Version 2.0</a>
                 </p>
             </div>
         </div>
     </div>
 </div>
-
-
 
 <!-- GETTING STARTED -->
 <div id="getting_started_container" class="container">
@@ -63,98 +43,14 @@ permalink: /contribute/
         <div class="col-md-7">
             <p id="getting_started_paragraph">
                 Thank you for joining the Kabanero community. We can’t wait to see what we build together! There 
-                are so many ways to contribute to Kabanero; just be sure to check out the contributor guidelines 
-                before you blast off and start making cool stuff.  
+                are so many ways to contribute to Kabanero; just be sure to check out the contributor guidelines.
             </p>
-            <a href="https://github.com/OpenLiberty/open-liberty/blob/integration/CONTRIBUTING.md" class="large_link orange_link_light_background line_link" target="_blank" rel="noopener">
+            <a href="{{site.github_url}}/kabanero/blob/master/CONTRIBUTING.md" class="large_link orange_link_light_background line_link" target="_blank" rel="noopener">
                 <span class="line"></span> View the contributor guidelines
             </a>
         </div>
     </div>
 </div>
-
-
-
-<!-- BROWSE OPEN ISSUES -->
-<div class="white_red_gradient_background relative_position">
-    <div id="browse_open_issues_container" class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div id="issues_description">
-                    <h2 id="issues_title">Fix a bug</h2>
-                    <p id="issues_text">
-                        This is a current list of open, unassigned issues. See something that you might be able to help with? Show us your best solution!
-                    </p>
-                    <a href="https://github.com/OpenLiberty/open-liberty/issues" target="_blank" rel="noopener" class="large_link light_green_link_dark_background line_link"><span class="line"></span> View all open issues</a>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div id="issues_block" class="hidden-xs">
-                    <div id="issues_content">
-                        <div id="issues_message" class="text-center">
-                        </div>
-                    </div>
-                    <div id="issues_arrows">
-                        <a id="issues_up_arrow" class="issues_arrow functional_link" href="" aria-label="Move up"></a>
-                        <a id="issues_down_arrow" class="issues_arrow functional_link" href="" aria-label="Move down"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<!-- TOOLS AND TESTS-->
-<div id="tools_and_tests_container" class="container">
-    <div class="row">
-        <div class="col-12">
-            <div id="tools_and_tests_bar"></div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-5">
-            <h2 id="tools_and_tests_title_1">Tools and tests</h2>
-            <p id="tools_and_tests_paragraph_1">
-                Contribute to the next release by writing tests and helping craft better tools. 
-            </p>
-            <img id="tools_and_tests_image" src="{{ "/img/contribute2.jpg" | relative }}" class="img-fluid d-block mx-auto" alt="Four UFOs working together to transport a hammer and a wrench">
-        </div>
-        <div class="col-md-7">
-            <h3 id="tools_and_tests_title_2">Contribute to developer tools</h3>
-            <p id="tools_and_tests_paragraph_3">
-                Kabanero works with all developer tools, so use whatever you like best! However, we'll be releasing updates to Eclipse developer tools that
-                are tailored for the newest Kabanero releases. With your contributions, these tools will evolve alongside Kabanero to form a perfect
-                pairing, making your workflow smoother. 
-            </p>
-            <div class="row">
-                <div class="col-12">
-                    <a id="tools_and_tests_link_1" href="https://github.com/OpenLiberty/open-liberty-tools/blob/integration/README.md" target="_blank" rel="noopener" class="regular_link orange_link_light_background line_link">
-                        <span class="line"></span> Learn more about Eclipse developer tools
-                    </a>                        
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <a id="tools_and_tests_link_2" href="https://github.com/OpenLiberty/open-liberty-tools" target="_blank" rel="noopener" class="regular_link orange_link_light_background line_link">
-                        <span class="line"></span> View the Eclipse developer tools repository
-                    </a>    
-                </div>
-            </div>
-            <h3 id="tools_and_tests_title_3">Provide a test</h3>
-            <p id="tools_and_tests_paragraph_4">
-                Testing is an essential step to having a robust, helpful release. The more high quality tests we run before a release, the more headaches we
-                save our users in the future. 
-            </p>
-            <a id="tools_and_tests_link_3" href="https://github.com/OpenLiberty/open-liberty/blob/master/README.md#contribute-to-open-liberty" target="_blank" rel="noopener" class="regular_link orange_link_light_background line_link">
-                <span class="line"></span> Learn the ins and outs of testing for Kabanero
-            </a>
-        </div>
-    </div>
-</div>
-
-
 
 <!-- THE FUTURE OF KABANERO -->
 <div id="the_future_of_kabanero_container" class="container">
@@ -172,19 +68,12 @@ permalink: /contribute/
             <p id="the_future_of_kabanero_paragraph">
                 If you’d like to work on new features, get up to speed with our handy guide to writing them. 
                 We also encourage you to participate in the forum to discuss upcoming features, and see where 
-                you could pitch in.  And don’t forget to leave suggestions for future development items so your 
+                you could pitch in. And don’t forget to leave suggestions for future development items so your 
                 great ideas can be heard!
             </p>
             <div class="row">
                 <div class="col-12">
-                    <a id="the_future_of_kabanero_link_1" href="https://groups.io/g/openliberty" target="_blank" rel="noopener" class="regular_link orange_link_light_background line_link">
-                        <span class="line"></span> Kabanero contributor forum (Groups.io)
-                    </a>                        
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <a id="the_future_of_kabanero_link_2" href="https://github.com/OpenLiberty/open-liberty/issues/new" target="_blank" rel="noopener" class="regular_link orange_link_light_background line_link">
+                    <a id="the_future_of_kabanero_link_2" href="{{site.github_url}}/kabanero/issues/new" target="_blank" rel="noopener" class="regular_link orange_link_light_background line_link">
                         <span class="line"></span> Open issues for new features
                     </a>                            
                 </div>
@@ -192,8 +81,6 @@ permalink: /contribute/
         </div>
     </div>
 </div>
-
-
 
 <!-- MORE WAYS TO CONNECT -->
 <div id="more_ways_to_connect_container" class="container">

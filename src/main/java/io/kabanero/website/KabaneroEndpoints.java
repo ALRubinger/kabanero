@@ -16,25 +16,28 @@
  *
  ******************************************************************************/
 
-package io.openliberty.website;
+package io.kabanero.website;
 
-import javax.enterprise.inject.Instance;
-import javax.enterprise.inject.spi.CDI;
-import javax.servlet.ServletContextEvent;
-import javax.servlet.ServletContextListener;
+import javax.enterprise.context.RequestScoped;
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.Application;
 
-public class ContextListener implements ServletContextListener {
-
-    @Override
-    public void contextInitialized(ServletContextEvent servletContextEvent) {
-        Instance<BuildsManager> mgr = CDI.current().select(BuildsManager.class);
-        if (!mgr.isUnsatisfied()) {
-            mgr.get().updateBuilds();
-        }
-    }
-
-    @Override
-    public void contextDestroyed(ServletContextEvent servletContextEvent) {
+@ApplicationPath("api")
+@Path("/")
+@RequestScoped
+public class KabaneroEndpoints extends Application {
+    
+    @GET
+    @Path("builds")
+    @Produces({ "application/json" })
+    public JsonObject status() {
+        // leaving this as a template for when we need backend logic
+        return Json.createObjectBuilder().build();
     }
 
 }
