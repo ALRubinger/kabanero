@@ -103,7 +103,7 @@ pipeline {
 
 		stage ('Build site') {
 			steps {
-				withDockerContainer(image: "codeconjuring", args: "-e JEKYLL_ENV=production") {
+				withDockerContainer(image: "codeconjuring", args: "-e JEKYLL_ENV=development") {
 					sh '"${WORKSPACE}"/jenkins/build.sh'
 				}
 			}
