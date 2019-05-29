@@ -1,1 +1,0 @@
-Instructions moved to https://github.com/OpenLiberty/openliberty.io/wiki
