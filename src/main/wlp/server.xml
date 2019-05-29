@@ -20,9 +20,9 @@ Contributors:
     <keyStore id="defaultKeyStore" password="changeit"/>	
     <ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" sslProtocol="TLSv1.2"/>
 
-    <httpEndpoint host="*" httpPort="9080" httpsPort="9443"/>
+    <httpendpoint />
 
-    <cdi12 enableImplicitBeanArchives='false'/>
+    <cdi12 enableImplicitBeanArchives="false"/>
     
     <webApplication location="kabanero.war" contextRoot="/"/>
 

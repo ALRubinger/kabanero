@@ -16,27 +16,32 @@
  *
  ******************************************************************************/
 
-package io.openliberty.website.data;
+package io.kabanero.website;
 
-import static org.junit.Assert.*;
+import java.io.IOException;
 
-import org.junit.Test;
+import javax.servlet.Filter;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+import javax.servlet.FilterChain;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
 
-public class LatestReleasesTest {
+public class StickyRouting implements Filter {
+    public void destroy() {
+    }
 
-	@Test
-	public void no_releases() {
-		LatestReleases latest = new LatestReleases();
-		assertEquals("{}", latest.asJsonObject().toString());
-	}
+    public void init(FilterConfig cfg) {
+    }
 
-	@Test
-	public void full_release_info() {
-		BuildInfo runtime = new BuildInfo();
-		BuildInfo tools = new BuildInfo();
-		LatestReleases latest = new LatestReleases(runtime, tools);
+    public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain)
+            throws IOException, ServletException {
 
-		assertEquals("{\"runtime\":{},\"tools\":{}}", latest.asJsonObject().toString());
-	}
+        if (req instanceof HttpServletRequest) {
+            ((HttpServletRequest) req).getSession();
+        }
 
+        chain.doFilter(req, resp);
+    }
 }

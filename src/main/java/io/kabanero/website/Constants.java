@@ -16,20 +16,12 @@
  *
  ******************************************************************************/
 
-package io.openliberty.website;
+package io.kabanero.website;
 
-import java.io.IOException;
-import java.util.Set;
+public interface Constants {
 
-import javax.servlet.ServletContext;
-import javax.servlet.ServletContainerInitializer;
+    // HTTP
+    String CONTENT_LENGTH = "Content-Length";
+    String API_SERVLET_PATH = "/api";
 
-public class ContainerInit implements ServletContainerInitializer {
-  public void onStartup(Set<Class<?>> classes, ServletContext ctx) {
-    try {
-      RedirectFilter.init(ctx);
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
-  }
 }
