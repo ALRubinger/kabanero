@@ -62,14 +62,14 @@ pipeline {
 			}
 			steps {
 				script {
-					sh 'docker build -f Dockerfile.build -t codeconjuring .'
+					sh 'docker build -f Dockerfile.build -t kabanero-build .'
 				}
 			}
 		}
 
 		stage ('Build site') {
 			steps {
-				withDockerContainer(image: "codeconjuring", args: "-e JEKYLL_ENV=production") {
+				withDockerContainer(image: "kabanero-build", args: "-e JEKYLL_ENV=production") {
 					sh '"${WORKSPACE}"/jenkins/build.sh'
 				}
 			}
@@ -78,8 +78,8 @@ pipeline {
 		stage ('Deploy site to Cloud Foundry') {
 			steps {
 				withCredentials([usernamePassword(credentialsId: '${IBM_CLOUD_CREDENTIALS}', passwordVariable: "IBM_CLOUD_PASSWORD", usernameVariable: "IBM_CLOUD_USER")]) {
-					withDockerContainer(image: "codeconjuring", args: "-u root -e IBM_CLOUD_API=api.ng.bluemix.net -e IBM_CLOUD_SPACE=kabanero -e IBM_CLOUD_ORGANIZATION=WAS_Cloud1") {
-						sh '"${WORKSPACE}"/.travis/cf-push.sh kabanero-prod'
+					withDockerContainer(image: "kabanero-build", args: "-u root -e IBM_CLOUD_API=api.ng.bluemix.net -e IBM_CLOUD_SPACE=kabanero -e IBM_CLOUD_ORGANIZATION=WAS_Cloud1") {
+						sh '"${WORKSPACE}"/scripts/cf-push.sh kabanero-prod'
 					}
 				}
 			}

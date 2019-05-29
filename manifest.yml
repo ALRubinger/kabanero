@@ -1,67 +1,11 @@
-memory: 512M
-instances: 1
-disk_quota: 1024M
-path: target/kabanero.war
-
+---
 applications:
-# US South
-- name: kabanero-blue
-#  routes:
-#    - route: www.kabanero.io
-#    - route: kabanero.io
-#    - route: us-south.kabanero.io
-#- name: kabanero-green
-#  routes:
-#    - route: www.kabanero.io
-#    - route: kabanero.io
-#    - route: us-south.kabanero.io
-#- name: kabanerodev
-#  routes:
-#    - route: kabanerodev.mybluemix.net
-# US East
-#- name: kabanero-blue-east
-#  routes:
-#    - route: www.kabanero.io
-#    - route: kabanero.io
-#    - route: us-east.kabanero.io
-#- name: kabanero-green-east
-#  routes:
-#    - route: www.kabanero.io
-#    - route: kabanero.io
-#    - route: us-east.kabanero.io
-# United Kingdom
-#- name: kabanero-blue-uk
-#  routes:
-#    - route: www.kabanero.io
-#    - route: kabanero.io
-#    - route: eu-gb.kabanero.io
-#- name: kabanero-green-uk
-#  routes:
-#    - route: www.kabanero.io
-#    - route: kabanero.io
-#    - route: eu-gb.kabanero.io
-# Germany
-#- name: kabanero-blue-germany
-#  routes:
-#    - route: www.kabanero.io
-#    - route: kabanero.io
-#    - route: eu-de.kabanero.io
-#- name: kabanero-green-germany
-#  routes:
-#    - route: www.kabanero.io
-#    - route: kabanero.io
-#    - route: eu-de.kabanero.io
-# Sydney
-#- name: kabanero-blue-sydney
-#  routes:
-#    - route: www.kabanero.io
-#    - route: kabanero.io
-#    - route: au-syd.kabanero.io
-#- name: kabanero-green-sydney
-#  routes:
-#    - route: www.kabanero.io
-#    - route: kabanero.io
-#    - route: au-syd.kabanero.io
-
-env:
-  JBP_CONFIG_LIBERTY: 'app_archive: {features: ["microProfile-1.0","webCache-1.0"]}'
+- name: kabanero
+  memory: 512M
+  instances: 1
+  disk_quota: 1024M
+  path: target/kabanero.war
+  buildpacks:
+    - liberty-for-java
+  env:
+    JBP_CONFIG_LIBERTY: 'app_archive: {features: ["microProfile-1.0","webCache-1.0"]}'

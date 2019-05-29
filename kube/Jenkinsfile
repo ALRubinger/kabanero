@@ -72,7 +72,7 @@ pipeline {
 			}
 			steps {
 				script {
-					sh 'docker build -f "${WORKSPACE}"/Dockerfile.build -t codeconjuring .'
+					sh 'docker build -f "${WORKSPACE}"/Dockerfile.build -t kabanero-build .'
 				}
 			}
 		}
@@ -85,7 +85,7 @@ pipeline {
 			}
 			steps {
 				withCredentials([usernamePassword(credentialsId: '${REGISTRY_CREDENTIALS}', passwordVariable: 'DOCKER_REGISTRY_PASSWORD', usernameVariable: 'DOCKER_REGISTRY_USER')]) {
-					withDockerContainer(image: "codeconjuring", args: '-u root') {
+					withDockerContainer(image: "kabanero-build", args: '-u root') {
 						sh '"${WORKSPACE}"/jenkins/build.sh'
 					}
         		}
@@ -115,7 +115,7 @@ pipeline {
 				withCredentials([usernamePassword(credentialsId: '${REGISTRY_CREDENTIALS}', passwordVariable: 'DOCKER_REGISTRY_PASSWORD', usernameVariable: 'DOCKER_REGISTRY_USER'),
 									usernamePassword(credentialsId: '${IBM_CLOUD_CREDENTIALS}', passwordVariable: "IBM_CLOUD_API_KEY", usernameVariable: "IBM_CLOUD_USER")]) {
 						
-					withDockerContainer(image: "codeconjuring", args: '-u root') {
+					withDockerContainer(image: "kabanero-build", args: '-u root') {
 						sh '"${WORKSPACE}"/kube/deploy_iks.sh "$IKS_CLUSTER_NAME" "$REGION" kabanero kabanero-site "${IMAGE_TAG}" "${IBM_CLOUD_API_KEY}"'
 					}
         		}
