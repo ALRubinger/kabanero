@@ -892,7 +892,7 @@
     margin: 0 10px 0 10px;
     border-radius: 50%;
     display:inline-flex;
-} 
+}
 
 .dot-separator.orange{
     background: #C43804;
@@ -1154,4 +1154,8 @@
 
 #kube-img{
     float:right;
+}
+
+.image_link{
+	  color: #292828;
 }
